@@ -1,0 +1,366 @@
+[gd_scene load_steps=33 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ishtar.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cwspxfvdpdk60" path="res://Assets/Graphics/Char_Ishtar_body.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://epu5c7wb8p8p" path="res://Assets/Graphics/Char_Nacha_hair.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c78sxhs3it5nj" path="res://Assets/Graphics/Char_Ishtar_head.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b11m3wenfen4c" path="res://Assets/Graphics/Char_Ishtar_nose.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c562c5sq0l4sx" path="res://Assets/Graphics/Char_Ishtar_nose_doppel_01.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://by74rxkd618sq" path="res://Assets/Graphics/Char_Ishtar_nose_doppel_02.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://by74vfqnokgqx" path="res://Assets/Graphics/Char_Ishtar_nose_doppel_03.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bictr3gwuhua2" path="res://Assets/Graphics/Char_Ishtar_mouth_01.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cih54xjf1krsg" path="res://Assets/Graphics/Char_Ishtar_mouth_04.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dkb7pmiejtupo" path="res://Assets/Graphics/Char_Ishtar_mouth_03.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://cch2xb3xcysnl" path="res://Assets/Graphics/Char_Ishtar_mouth_02.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://blwsiclmtou3k" path="res://Assets/Graphics/Char_Ishtar_mouth_05.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://caf4b7p72pnsb" path="res://Assets/Graphics/Char_Ishtar_eyes.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cgjb0e4ebxk1m" path="res://Assets/Graphics/Char_Elenois_Selenne_Mole.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dkb8tqluediw0" path="res://Assets/Graphics/Char_Yog_Scar.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://eokljgms5hth" path="res://Assets/Graphics/Char_Roman_Doppel_Scar.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://da6xuvcflbhn0" path="res://Assets/Graphics/Char_Ishtar_pimples.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bt85lmagxk4lg" path="res://Assets/Graphics/Char_Nacha_top_hair.png" id="19"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="20"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="21"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="22"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="23"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="24"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
+"loop": true,
+"name": &"CLOSE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}],
+"loop": true,
+"name": &"TALK",
+"speed": 10.0
+}]
+script = null
+
+[sub_resource type="Animation" id="2"]
+resource_name = "IDLE"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.03, 1.03)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "WALK"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="5"]
+_data = {
+"IDLE": SubResource("2"),
+"RESET": SubResource("3"),
+"WALK": SubResource("4")
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+resource_name = "TALK"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.015, 1.015)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="8"]
+_data = {
+"RESET": SubResource("6"),
+"TALK": SubResource("7")
+}
+script = null
+
+[node name="Ishtar" type="Node2D"]
+position = Vector2(998, 280)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1")
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="Body"]
+position = Vector2(-10.6667, 627.834)
+texture = ExtResource("2")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Hair" type="Sprite2D" parent="Head"]
+z_index = -1
+position = Vector2(0, 130.5)
+texture = ExtResource("3")
+
+[node name="Head" type="Sprite2D" parent="Head"]
+position = Vector2(-2.66667, 95.834)
+texture = ExtResource("4")
+
+[node name="Nose" type="Sprite2D" parent="Head"]
+position = Vector2(18.6667, 110.5)
+texture = ExtResource("5")
+
+[node name="Nose_doppel_01" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(18.6667, 110.5)
+texture = ExtResource("6")
+
+[node name="Nose_doppel_02" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(18.6667, 110.5)
+texture = ExtResource("7")
+
+[node name="Nose_doppel_03" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(18.6667, 110.5)
+texture = ExtResource("8")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="Head"]
+position = Vector2(-1.33333, 251.834)
+sprite_frames = SubResource("1")
+animation = &"CLOSE"
+
+[node name="Eyes" type="Sprite2D" parent="Head"]
+position = Vector2(-1.33333, 69.167)
+texture = ExtResource("14")
+
+[node name="Mole" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(98.6667, -65.4997)
+texture = ExtResource("15")
+
+[node name="Mole2" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-149.333, -54.833)
+texture = ExtResource("15")
+
+[node name="Mole3" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(17.3333, -48.1663)
+texture = ExtResource("15")
+
+[node name="Scar" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(90.6667, -65.4997)
+texture = ExtResource("16")
+
+[node name="Scar2" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-165.333, -33.4997)
+texture = ExtResource("17")
+
+[node name="Pimples" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-20, -28.1663)
+texture = ExtResource("18")
+
+[node name="Top_hair" type="Sprite2D" parent="Head"]
+position = Vector2(-6.66667, -49.4997)
+texture = ExtResource("19")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("5")
+}
+
+[node name="Talk" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("8")
+}
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20")
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21")
+pitch_scale = 1.5
+
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22")
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23")
+pitch_scale = 1.5
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24")
+pitch_scale = 2.0
+
+[connection signal="finished" from="Voice_05" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_06" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_07" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_08" to="." method="_on_voice_finished"]

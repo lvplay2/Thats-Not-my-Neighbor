@@ -1,0 +1,1113 @@
+[gd_scene load_steps=51 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Record.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ch0ldsrmub4ft" path="res://Assets/Graphics/Background.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bpj1f8kkd0p0s" path="res://Assets/Graphics/Blood_table.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bw4vjoxgef0mr" path="res://Assets/Graphics/Folder_paper.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bsdx6tdxwb4w4" path="res://Assets/Graphics/Folder_options_sound_music.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bv4irjmxkopht" path="res://Assets/Graphics/Folder_options_language.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bdnrl45xfkyy3" path="res://Assets/Graphics/Ranks_wall.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cvky0rsqjcdql" path="res://Assets/Graphics/DDD_logo.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c24oae16ypu4i" path="res://Assets/Graphics/Border.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dl63iwpvjud4m" path="res://Assets/Graphics/Trophie.png" id="10"]
+[ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="11"]
+[ext_resource type="FontFile" uid="uid://d2lr6x8obuyag" path="res://Assets/Fonts/Funny.ttf" id="12"]
+[ext_resource type="Texture2D" uid="uid://vyv7mhbticty" path="res://Assets/Graphics/Folder_achievements.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://g14r4jdj1dbf" path="res://Assets/Graphics/Achievements_locked.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://csr2h56mxk2qu" path="res://Assets/Graphics/Achievement_visitor_42.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bsvbjdtk3fhwm" path="res://Assets/Graphics/Achievement_visitor_peach.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://4qgh2jx6csqv" path="res://Assets/Graphics/Achievement_visitor_nurse.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dw2kn0yyqqv7h" path="res://Assets/Graphics/Achievement_nightmare.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cbjanxue7vko1" path="res://Assets/Graphics/Achievement_evil_chester.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://ct0858vhhxq38" path="res://Assets/Graphics/Achievement_haunted.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://c18luarkkghgb" path="res://Assets/Graphics/Achievement_entity.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://by7wjfmh50epm" path="res://Assets/Graphics/Achievement_all.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bsmqbtsrpaduh" path="res://Assets/Graphics/Folder_button_exit.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cvxpib0018mvr" path="res://Assets/Graphics/Folder_button_exit_hover.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://buhd2plmahjhe" path="res://Assets/Graphics/Folder_floors.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://uj3p33ne0vb3" path="res://Assets/Graphics/Achievement_s_rank.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://bqe7gl7bwhgf4" path="res://Assets/Graphics/Achievement_kill.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://d4hwhe10d083c" path="res://Assets/Graphics/Achievement_be_kill.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://vwji35bwcbug" path="res://Assets/Graphics/Achievement_100_doppels.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://bckupt7jjgfxb" path="res://Assets/Graphics/Achievement_alive.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://b1ahlcg0uixn" path="res://Assets/Graphics/Achievement_no_folders.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://biseaud3bqpc" path="res://Assets/Graphics/Achievement_chester_quiz.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://dxgfxvcjtsyib" path="res://Assets/Graphics/Achievement_unlikely.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://uh65l2fj46bb" path="res://Assets/Graphics/Achievement_40_days.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://c5xlkduda45yj" path="res://Assets/Graphics/Achievement_f_rank.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://c7kcccfn6ph14" path="res://Assets/Graphics/Achievement_100_runs.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://0e8at3imu40k" path="res://Assets/Graphics/Achievement_catch_doppel.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://cp16rqlni7y4e" path="res://Assets/Graphics/Achievement_42.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://bprltj72wcp5i" path="res://Assets/Graphics/Achievement_peach.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://d0m2w7du4p31o" path="res://Assets/Graphics/Achievement_secret.png" id="40"]
+[ext_resource type="AudioStream" uid="uid://dq2opcunboupj" path="res://Assets/SFX-Music/SFX_Select.wav" id="41"]
+[ext_resource type="AudioStream" uid="uid://dalcaapplmsmw" path="res://Assets/SFX-Music/SFX_Accept.wav" id="42"]
+[ext_resource type="AudioStream" uid="uid://57r147slhgnl" path="res://Assets/SFX-Music/Music_Menu.ogg" id="43"]
+[ext_resource type="AudioStream" uid="uid://dfu8mr0j8a1nf" path="res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav" id="44"]
+
+[sub_resource type="StyleBoxEmpty" id="1"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="2"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="3"]
+script = null
+
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(45.0758, 33.1897)
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="5"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="6"]
+script = null
+
+[node name="Record" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1030, 525)
+scale = Vector2(0.699371, 0.757011)
+texture = ExtResource("2")
+
+[node name="Blood" type="Sprite2D" parent="."]
+modulate = Color(0.145098, 0, 0, 0.603922)
+texture = ExtResource("3")
+
+[node name="Blood2" type="Sprite2D" parent="."]
+modulate = Color(0.145098, 0, 0, 0.384314)
+position = Vector2(1051, 568)
+scale = Vector2(1.26041, 1.43315)
+texture = ExtResource("3")
+
+[node name="Blood3" type="Sprite2D" parent="."]
+modulate = Color(0.145098, 0, 0, 0.384314)
+position = Vector2(-121, 1501)
+scale = Vector2(1.76126, 1.99591)
+texture = ExtResource("3")
+
+[node name="Blood4" type="Sprite2D" parent="."]
+modulate = Color(0.145098, 0, 0, 0.603922)
+position = Vector2(1784, 1296)
+texture = ExtResource("3")
+
+[node name="Blood5" type="Sprite2D" parent="."]
+modulate = Color(0.145098, 0, 0, 0.603922)
+position = Vector2(2238, -98)
+texture = ExtResource("3")
+
+[node name="Paper" type="Sprite2D" parent="."]
+position = Vector2(386, 527)
+scale = Vector2(1.12, 1.32891)
+texture = ExtResource("4")
+
+[node name="Paper4" type="Sprite2D" parent="."]
+position = Vector2(1675.72, 9.15518)
+scale = Vector2(1, 1.32891)
+texture = ExtResource("5")
+
+[node name="Paper2" type="Sprite2D" parent="."]
+position = Vector2(1026, -9)
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("6")
+
+[node name="Paper3" type="Sprite2D" parent="."]
+position = Vector2(954, 231.85)
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper6" type="Sprite2D" parent="."]
+position = Vector2(1143, 355.85)
+rotation = 3.14159
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper7" type="Sprite2D" parent="."]
+position = Vector2(952, 486.85)
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper8" type="Sprite2D" parent="."]
+position = Vector2(995, 616.85)
+rotation = 3.14159
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper9" type="Sprite2D" parent="."]
+position = Vector2(1146, 748.85)
+rotation = 3.14159
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper10" type="Sprite2D" parent="."]
+position = Vector2(974, 868.85)
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper11" type="Sprite2D" parent="."]
+position = Vector2(1103, 991.85)
+scale = Vector2(0.8, 0.7)
+texture = ExtResource("7")
+
+[node name="Paper5" type="Sprite2D" parent="."]
+position = Vector2(1644.6, 695.6)
+rotation = 3.14159
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4")
+
+[node name="DDD" type="Sprite2D" parent="."]
+position = Vector2(512, 874)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8")
+
+[node name="Border" type="Sprite2D" parent="."]
+position = Vector2(1648.6, 696.6)
+scale = Vector2(0.55, 0.43)
+texture = ExtResource("9")
+
+[node name="Trophie" type="Sprite2D" parent="."]
+position = Vector2(1413, 144)
+rotation = 0.205237
+scale = Vector2(0.23, 0.23)
+texture = ExtResource("10")
+
+[node name="Menu" type="Button" parent="."]
+offset_left = 1482.0
+offset_top = 539.0
+offset_right = 1918.0
+offset_bottom = 716.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 180
+theme_override_styles/focus = SubResource("1")
+action_mode = 0
+text = "Menu"
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 1483.0
+offset_top = 720.0
+offset_right = 1919.0
+offset_bottom = 897.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 180
+theme_override_styles/focus = SubResource("2")
+action_mode = 0
+text = "Quit"
+flat = true
+
+[node name="Achievements" type="Button" parent="."]
+offset_left = 1300.0
+offset_top = 142.0
+offset_right = 2244.0
+offset_bottom = 319.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 110
+theme_override_styles/focus = SubResource("3")
+action_mode = 0
+text = "Achievements"
+flat = true
+
+[node name="Record" type="Label" parent="."]
+offset_left = 78.0
+offset_top = 39.0
+offset_right = 662.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 80
+text = "Record:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record2" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 248.0
+offset_right = 731.0
+offset_bottom = 348.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "Doppels captured: "
+vertical_alignment = 1
+
+[node name="Record3" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 348.0
+offset_right = 731.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "Doppels you let in: "
+vertical_alignment = 1
+
+[node name="Record4" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 448.0
+offset_right = 731.0
+offset_bottom = 548.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "Neighbors killed: "
+vertical_alignment = 1
+
+[node name="Record5" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 548.0
+offset_right = 731.0
+offset_bottom = 648.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "Times killed: "
+vertical_alignment = 1
+
+[node name="Record6" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 648.0
+offset_right = 731.0
+offset_bottom = 748.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "Times you survived: "
+vertical_alignment = 1
+
+[node name="Record7" type="Label" parent="."]
+offset_left = 878.0
+offset_top = 27.0
+offset_right = 1178.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "Ranks: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record8" type="Label" parent="."]
+offset_left = 788.0
+offset_top = 182.0
+offset_right = 868.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "S: "
+vertical_alignment = 1
+
+[node name="Record10" type="Label" parent="."]
+offset_left = 977.0
+offset_top = 306.0
+offset_right = 1054.0
+offset_bottom = 406.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "A:"
+vertical_alignment = 1
+
+[node name="Record12" type="Label" parent="."]
+offset_left = 788.0
+offset_top = 439.0
+offset_right = 850.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "B:"
+vertical_alignment = 1
+
+[node name="Record14" type="Label" parent="."]
+offset_left = 828.0
+offset_top = 562.0
+offset_right = 893.0
+offset_bottom = 662.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "C:"
+vertical_alignment = 1
+
+[node name="Record16" type="Label" parent="."]
+offset_left = 982.0
+offset_top = 701.0
+offset_right = 1047.0
+offset_bottom = 801.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "D:"
+vertical_alignment = 1
+
+[node name="Record18" type="Label" parent="."]
+offset_left = 815.0
+offset_top = 819.0
+offset_right = 874.0
+offset_bottom = 919.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "E:"
+vertical_alignment = 1
+
+[node name="Record20" type="Label" parent="."]
+offset_left = 945.0
+offset_top = 946.0
+offset_right = 1004.0
+offset_bottom = 1046.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "F:
+"
+vertical_alignment = 1
+
+[node name="Record9" type="Label" parent="."]
+offset_left = 841.0
+offset_top = 180.0
+offset_right = 1141.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record11" type="Label" parent="."]
+offset_left = 1036.0
+offset_top = 307.0
+offset_right = 1336.0
+offset_bottom = 407.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record13" type="Label" parent="."]
+offset_left = 846.0
+offset_top = 437.0
+offset_right = 1146.0
+offset_bottom = 537.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record15" type="Label" parent="."]
+offset_left = 886.0
+offset_top = 565.0
+offset_right = 1186.0
+offset_bottom = 665.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record17" type="Label" parent="."]
+offset_left = 1039.0
+offset_top = 696.0
+offset_right = 1339.0
+offset_bottom = 796.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record19" type="Label" parent="."]
+offset_left = 866.0
+offset_top = 817.0
+offset_right = 1166.0
+offset_bottom = 917.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record21" type="Label" parent="."]
+offset_left = 990.0
+offset_top = 940.0
+offset_right = 1290.0
+offset_bottom = 1040.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Achievements_Folder2" type="Node2D" parent="."]
+z_index = 1
+position = Vector2(40, 1060)
+
+[node name="Folder" type="Sprite2D" parent="Achievements_Folder2"]
+position = Vector2(920, 550)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("13")
+
+[node name="VISITOR_42" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(340, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/VISITOR_42"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/VISITOR_42"]
+visible = false
+texture = ExtResource("15")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/VISITOR_42"]
+position = Vector2(-465, -250)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/VISITOR_42/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="VISITOR_PEACH" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(630, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/VISITOR_PEACH"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/VISITOR_PEACH"]
+visible = false
+texture = ExtResource("16")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/VISITOR_PEACH"]
+position = Vector2(-450, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/VISITOR_PEACH/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="VISITOR_NURSE" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(920, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/VISITOR_NURSE"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/VISITOR_NURSE"]
+visible = false
+texture = ExtResource("17")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/VISITOR_NURSE"]
+position = Vector2(-460, -250)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/VISITOR_NURSE/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="NIGHTMARE" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(1210, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/NIGHTMARE"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/NIGHTMARE"]
+visible = false
+texture = ExtResource("18")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/NIGHTMARE"]
+position = Vector2(-460, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/NIGHTMARE/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="EVIL_CHESTER" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(1500, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/EVIL_CHESTER"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/EVIL_CHESTER"]
+visible = false
+texture = ExtResource("19")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/EVIL_CHESTER"]
+position = Vector2(-465, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/EVIL_CHESTER/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="GHOST" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(340, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/GHOST"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/GHOST"]
+visible = false
+texture = ExtResource("20")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/GHOST"]
+position = Vector2(-450, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/GHOST/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="ENTITY" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(630, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/ENTITY"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/ENTITY"]
+visible = false
+texture = ExtResource("21")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/ENTITY"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/ENTITY/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="ALL" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(920, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/ALL"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/ALL"]
+visible = false
+texture = ExtResource("22")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/ALL"]
+position = Vector2(-465, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/ALL/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="Exit" type="TextureButton" parent="Achievements_Folder2"]
+offset_left = 752.0
+offset_top = 34.0
+offset_right = 866.0
+offset_bottom = 122.0
+action_mode = 0
+texture_normal = ExtResource("23")
+texture_hover = ExtResource("24")
+
+[node name="Panel" type="Panel" parent="Achievements_Folder2"]
+visible = false
+offset_right = 650.0
+offset_bottom = 100.0
+pivot_offset = Vector2(0, 50)
+
+[node name="Label" type="Label" parent="Achievements_Folder2/Panel"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 1.0
+offset_right = 621.0
+offset_bottom = 101.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 40
+text = "BETTER THAN HENRY
+Get S rank on one playthrough."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Page02" type="Button" parent="Achievements_Folder2"]
+offset_left = 546.0
+offset_top = 50.0
+offset_right = 740.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("5")
+text = "Page 2"
+flat = true
+
+[node name="Achievements_Folder" type="Node2D" parent="."]
+z_index = 2
+position = Vector2(40, 1060)
+
+[node name="Folder" type="Sprite2D" parent="Achievements_Folder"]
+position = Vector2(920, 550)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("25")
+
+[node name="S_Rank" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(340, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/S_Rank"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/S_Rank"]
+visible = false
+texture = ExtResource("26")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/S_Rank"]
+position = Vector2(-465, -250)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/S_Rank/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="KILL" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(630, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/KILL"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/KILL"]
+visible = false
+texture = ExtResource("27")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/KILL"]
+position = Vector2(-450, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/KILL/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="BE_KILL" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(920, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/BE_KILL"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/BE_KILL"]
+visible = false
+texture = ExtResource("28")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/BE_KILL"]
+position = Vector2(-460, -250)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/BE_KILL/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="CATCH" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(1210, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/CATCH"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/CATCH"]
+visible = false
+texture = ExtResource("29")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/CATCH"]
+position = Vector2(-460, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/CATCH/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="ALIVE" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(1500, 286)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/ALIVE"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/ALIVE"]
+visible = false
+texture = ExtResource("30")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/ALIVE"]
+position = Vector2(-465, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/ALIVE/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="NO_FOLDER" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(340, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/NO_FOLDER"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/NO_FOLDER"]
+visible = false
+texture = ExtResource("31")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/NO_FOLDER"]
+position = Vector2(-450, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/NO_FOLDER/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="CHESTER" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(630, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/CHESTER"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/CHESTER"]
+visible = false
+texture = ExtResource("32")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/CHESTER"]
+position = Vector2(-465, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/CHESTER/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="UNLIKELY" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(920, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/UNLIKELY"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/UNLIKELY"]
+visible = false
+texture = ExtResource("33")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/UNLIKELY"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/UNLIKELY/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="DAYS_40" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(1210, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/DAYS_40"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/DAYS_40"]
+visible = false
+texture = ExtResource("34")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/DAYS_40"]
+position = Vector2(-460, -230)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/DAYS_40/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="F_Rank" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(1500, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/F_Rank"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/F_Rank"]
+visible = false
+texture = ExtResource("35")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/F_Rank"]
+position = Vector2(-450, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/F_Rank/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="DAYS_100" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(340, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/DAYS_100"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/DAYS_100"]
+visible = false
+texture = ExtResource("36")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/DAYS_100"]
+position = Vector2(-445, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/DAYS_100/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="DOPPEL" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(630, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/DOPPEL"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/DOPPEL"]
+visible = false
+texture = ExtResource("37")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/DOPPEL"]
+position = Vector2(-465, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/DOPPEL/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="SECRET_42" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(920, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/SECRET_42"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/SECRET_42"]
+visible = false
+texture = ExtResource("38")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/SECRET_42"]
+position = Vector2(-465, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/SECRET_42/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="PEACH" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(1210, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/PEACH"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/PEACH"]
+visible = false
+texture = ExtResource("39")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/PEACH"]
+position = Vector2(-465, -245)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/PEACH/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="SECRET" type="Node2D" parent="Achievements_Folder"]
+position = Vector2(1500, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder/SECRET"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/SECRET"]
+visible = false
+texture = ExtResource("40")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder/SECRET"]
+position = Vector2(-465, -235)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder/SECRET/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="Exit" type="TextureButton" parent="Achievements_Folder"]
+offset_left = 400.0
+offset_top = 34.0
+offset_right = 514.0
+offset_bottom = 122.0
+action_mode = 0
+texture_normal = ExtResource("23")
+texture_hover = ExtResource("24")
+
+[node name="Panel" type="Panel" parent="Achievements_Folder"]
+visible = false
+offset_right = 650.0
+offset_bottom = 100.0
+pivot_offset = Vector2(0, 50)
+
+[node name="Label" type="Label" parent="Achievements_Folder/Panel"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 1.0
+offset_right = 621.0
+offset_bottom = 101.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 40
+text = "BETTER THAN HENRY
+Get S rank on one playthrough."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Page01" type="Button" parent="Achievements_Folder"]
+offset_left = 192.0
+offset_top = 50.0
+offset_right = 386.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("6")
+text = "Page 1"
+flat = true
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("41")
+
+[node name="Accept" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("42")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("43")
+pitch_scale = 0.8
+
+[node name="Pick_Up_Folder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("44")
+
+[connection signal="mouse_entered" from="Menu" to="." method="_on_menu_mouse_entered"]
+[connection signal="mouse_exited" from="Menu" to="." method="_on_menu_mouse_exited"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="mouse_entered" from="Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="Quit" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="mouse_entered" from="Achievements" to="." method="_on_achievements_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements" to="." method="_on_achievements_mouse_exited"]
+[connection signal="pressed" from="Achievements" to="." method="_on_achievements_pressed"]
+[connection signal="mouse_entered" from="Achievements_Folder2/VISITOR_42/Area2D" to="." method="_on_visitor_42_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/VISITOR_42/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/VISITOR_PEACH/Area2D" to="." method="_on_visitor_peach_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/VISITOR_PEACH/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/VISITOR_NURSE/Area2D" to="." method="_on_visitor_nurse_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/VISITOR_NURSE/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/NIGHTMARE/Area2D" to="." method="_on_nightmare_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/NIGHTMARE/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/EVIL_CHESTER/Area2D" to="." method="_on_evil_chester_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/EVIL_CHESTER/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/GHOST/Area2D" to="." method="_on_ghost_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/GHOST/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/ENTITY/Area2D" to="." method="_on_entity_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/ENTITY/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/ALL/Area2D" to="." method="_on_all_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/ALL/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="pressed" from="Achievements_Folder2/Exit" to="." method="_on_exit_pressed"]
+[connection signal="mouse_entered" from="Achievements_Folder2/Page02" to="." method="_on_page_02_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/Page02" to="." method="_on_page_02_mouse_exited"]
+[connection signal="pressed" from="Achievements_Folder2/Page02" to="." method="_on_page_02_pressed"]
+[connection signal="mouse_entered" from="Achievements_Folder/S_Rank/Area2D" to="." method="_on_s_rank_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/S_Rank/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/KILL/Area2D" to="." method="_on_kill_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/KILL/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/BE_KILL/Area2D" to="." method="_on_be_kill_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/BE_KILL/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/CATCH/Area2D" to="." method="_on_catch_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/CATCH/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/ALIVE/Area2D" to="." method="_on_alive_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/ALIVE/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/NO_FOLDER/Area2D" to="." method="_on_no_folder_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/NO_FOLDER/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/CHESTER/Area2D" to="." method="_on_chester_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/CHESTER/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/UNLIKELY/Area2D" to="." method="_on_unlikely_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/UNLIKELY/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/DAYS_40/Area2D" to="." method="_on_days_40_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/DAYS_40/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/F_Rank/Area2D" to="." method="_on_f_rank_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/F_Rank/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/DAYS_100/Area2D" to="." method="_on_days_100_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/DAYS_100/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/DOPPEL/Area2D" to="." method="_on_doppel_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/DOPPEL/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/SECRET_42/Area2D" to="." method="_on_secret_42_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/SECRET_42/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/PEACH/Area2D" to="." method="_on_peach_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/PEACH/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder/SECRET/Area2D" to="." method="_on_secret_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/SECRET/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="pressed" from="Achievements_Folder/Exit" to="." method="_on_exit_pressed"]
+[connection signal="mouse_entered" from="Achievements_Folder/Page01" to="." method="_on_page_01_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder/Page01" to="." method="_on_page_01_mouse_exited"]
+[connection signal="pressed" from="Achievements_Folder/Page01" to="." method="_on_page_01_pressed"]

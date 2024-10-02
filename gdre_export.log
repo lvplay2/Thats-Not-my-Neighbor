@@ -1,0 +1,114 @@
+GDRE Tools v0.6.2
+Windows 10.0.19045, NVIDIA GeForce GTX 1650 SUPER, opengl3
+Extracted 2989 files, no errors detected!
+USER WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:58)
+Did not rewrite import metadata for res://icon.svg
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     0
+Failed scripts:                         0
+Imported resources for export session:  2989
+Successfully converted:                 1462
+Lossy:                                  72
+Rewrote metadata:                       0
+Non-importable conversions:             1
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.godot/imported/Funny.ttf-725b165490f89dea5411dee0e24ce8ff.fontdata to res://Assets/Fonts/Funny.ttf
+res://.godot/imported/Nacho.ttf-445b034ab3b78f6866d61abd34e26605.fontdata to res://Assets/Fonts/Nacho.ttf
+res://.godot/imported/NotoSansSC-VariableFont_wght.ttf-4b92806421e961c3ccf25ca9d82f2818.fontdata to res://Assets/Fonts/NotoSansSC-VariableFont_wght.ttf
+res://.godot/imported/NotoSansTC-VariableFont_wght.ttf-68398f545cd506ad14939ff13053a2bc.fontdata to res://Assets/Fonts/NotoSansTC-VariableFont_wght.ttf
+res://.godot/imported/Slasher.ttf-4126d6cde2d517e7d27068554f5a0f7d.fontdata to res://Assets/Fonts/Slasher.ttf
+res://.godot/imported/Music_Dark.ogg-8f75fa5438edc4da0d9e05e42362ab37.oggvorbisstr to res://Assets/SFX-Music/Music_Dark.ogg
+res://.godot/imported/Music_Menu.ogg-14af139f2b5a07e4d093b658e01bd56a.oggvorbisstr to res://Assets/SFX-Music/Music_Menu.ogg
+res://.godot/imported/Music_Tutorial.wav-931f817fb14816f6df75bb220a6c9c2d.sample to res://Assets/SFX-Music/Music_Tutorial.wav
+res://.godot/imported/Music_Tutorial_Nightmare.wav-e179741b787339d85ca340ca21722e0f.sample to res://Assets/SFX-Music/Music_Tutorial_Nightmare.wav
+res://.godot/imported/SFX_Accept.wav-71bf90447dc24f88abd13980b39dbc6e.sample to res://Assets/SFX-Music/SFX_Accept.wav
+res://.godot/imported/SFX_Background.ogg-dbe07473ebeabf7ca89a7a3b69dfaef6.oggvorbisstr to res://Assets/SFX-Music/SFX_Background.ogg
+res://.godot/imported/SFX_Badge.wav-70d4f38faf2045cdf5845129927cf0dc.sample to res://Assets/SFX-Music/SFX_Badge.wav
+res://.godot/imported/SFX_Bite.wav-200550453122c18be0260265e6e52b54.sample to res://Assets/SFX-Music/SFX_Bite.wav
+res://.godot/imported/SFX_Button.wav-30a4aaf106520ef640c5669b09867568.sample to res://Assets/SFX-Music/SFX_Button.wav
+res://.godot/imported/SFX_Calling_Tone.wav-d269b4fc07ff1e409227351968c57ea7.sample to res://Assets/SFX-Music/SFX_Calling_Tone.wav
+res://.godot/imported/SFX_Close_Door.wav-cf946e57e3a86ed2d9b474735e289691.sample to res://Assets/SFX-Music/SFX_Close_Door.wav
+res://.godot/imported/SFX_Countdown.wav-472611fa4647921d1cd20211e571a1ac.sample to res://Assets/SFX-Music/SFX_Countdown.wav
+res://.godot/imported/SFX_Dark_voice_clown.wav-60f9c35eb01e233b61f08e0d3a2d47d7.sample to res://Assets/SFX-Music/SFX_Dark_voice_clown.wav
+res://.godot/imported/SFX_Dial_1.wav-3220f8d4d1471c31e9b0353ca21d7653.sample to res://Assets/SFX-Music/SFX_Dial_1.wav
+res://.godot/imported/SFX_Dial_2.wav-2a8bc5d567dab17fbb3a6ee2a39713be.sample to res://Assets/SFX-Music/SFX_Dial_2.wav
+res://.godot/imported/SFX_Dial_3.wav-d67ed238f1bd218259e7c58b3ce5f304.sample to res://Assets/SFX-Music/SFX_Dial_3.wav
+res://.godot/imported/SFX_Dial_4.wav-9b0d3f57a6b16fb835a7e81d74745b7a.sample to res://Assets/SFX-Music/SFX_Dial_4.wav
+res://.godot/imported/SFX_Dial_5.wav-61834427758afff36c71c5db7d833dd1.sample to res://Assets/SFX-Music/SFX_Dial_5.wav
+res://.godot/imported/SFX_Dial_6.wav-cd4a63a59d55e7faa7be41bfa0f91a45.sample to res://Assets/SFX-Music/SFX_Dial_6.wav
+res://.godot/imported/SFX_Dial_7.wav-bab805ae77ea0d96d87f4242c6b50d83.sample to res://Assets/SFX-Music/SFX_Dial_7.wav
+res://.godot/imported/SFX_Dial_8.wav-696f5c9297303ea67c9d597801a1d35d.sample to res://Assets/SFX-Music/SFX_Dial_8.wav
+res://.godot/imported/SFX_Dial_9.wav-2031e3caea2069193f02ec83257a0e3e.sample to res://Assets/SFX-Music/SFX_Dial_9.wav
+res://.godot/imported/SFX_Dial_Tone.ogg-42d3b3deece4c4b85da083948553be37.oggvorbisstr to res://Assets/SFX-Music/SFX_Dial_Tone.ogg
+res://.godot/imported/SFX_Entity.wav-97e822e6dae626cfce567d026cb8307b.sample to res://Assets/SFX-Music/SFX_Entity.wav
+res://.godot/imported/SFX_Evil_Voice_01.wav-3ec93bc1748b266c7ed048fc812d9d3d.sample to res://Assets/SFX-Music/SFX_Evil_Voice_01.wav
+res://.godot/imported/SFX_Evil_Voice_02.wav-59adbcb26331c777fb28e1f7082fa02d.sample to res://Assets/SFX-Music/SFX_Evil_Voice_02.wav
+res://.godot/imported/SFX_Evil_Voice_03.wav-d979db9bf770310294ed738e09d9309d.sample to res://Assets/SFX-Music/SFX_Evil_Voice_03.wav
+res://.godot/imported/SFX_Evil_Voice_04.wav-f6357589b46e8c0510f55e45087c40e8.sample to res://Assets/SFX-Music/SFX_Evil_Voice_04.wav
+res://.godot/imported/SFX_Film_Noise.ogg-cca617d66f2ef0fdfdff711bd376a70d.oggvorbisstr to res://Assets/SFX-Music/SFX_Film_Noise.ogg
+res://.godot/imported/SFX_Fine_Voice_01.wav-327ebb901bff29a713f1c9cd280e4a96.sample to res://Assets/SFX-Music/SFX_Fine_Voice_01.wav
+res://.godot/imported/SFX_Fine_Voice_02.wav-3d688105557cc6a06892752fe59642ae.sample to res://Assets/SFX-Music/SFX_Fine_Voice_02.wav
+res://.godot/imported/SFX_Fine_Voice_03.wav-eed9ebfb04fcac41de3a4c5673337d7d.sample to res://Assets/SFX-Music/SFX_Fine_Voice_03.wav
+res://.godot/imported/SFX_Fine_Voice_04.wav-92cc351326826a5280fbb8b5610b93bf.sample to res://Assets/SFX-Music/SFX_Fine_Voice_04.wav
+res://.godot/imported/SFX_Footsteps.wav-896b9ad8188ffa429caddebdd1d12379.sample to res://Assets/SFX-Music/SFX_Footsteps.wav
+res://.godot/imported/SFX_Hang_Down_Phone.wav-a67519332bfcd52802148e524a5210b7.sample to res://Assets/SFX-Music/SFX_Hang_Down_Phone.wav
+res://.godot/imported/SFX_Horn.wav-4688b98bb6c8055224300cb666344cd7.sample to res://Assets/SFX-Music/SFX_Horn.wav
+res://.godot/imported/SFX_Interference.wav-d241dacd16d11fd669602f848a7a7db5.sample to res://Assets/SFX-Music/SFX_Interference.wav
+res://.godot/imported/SFX_Laugh.wav-21cb386619e20afa599e8c7745dba81b.sample to res://Assets/SFX-Music/SFX_Laugh.wav
+res://.godot/imported/SFX_Magic_Dust.wav-b92aff7e3a9b218755a2fec81dd9eabb.sample to res://Assets/SFX-Music/SFX_Magic_Dust.wav
+res://.godot/imported/SFX_Open_Door.wav-f74f5b3ba86bd51c7312e8992b547938.sample to res://Assets/SFX-Music/SFX_Open_Door.wav
+res://.godot/imported/SFX_Phone_Ring.ogg-86936e39709ad13a20074f888c3a5f29.oggvorbisstr to res://Assets/SFX-Music/SFX_Phone_Ring.ogg
+res://.godot/imported/SFX_Pick_Up_Folder.wav-66a9d029f879c56ad8f79d8a2cbe9bdc.sample to res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav
+res://.godot/imported/SFX_Pick_Up_Phone.wav-35a34f3138ba64d2f9f81b4094689990.sample to res://Assets/SFX-Music/SFX_Pick_Up_Phone.wav
+res://.godot/imported/SFX_Pickup.wav-a280b93d6e20e7d1be4445041cbb0ce0.sample to res://Assets/SFX-Music/SFX_Pickup.wav
+res://.godot/imported/SFX_Put_Back_Folder.wav-4fb0c9d3743af654bbcd4967f7ac6732.sample to res://Assets/SFX-Music/SFX_Put_Back_Folder.wav
+res://.godot/imported/SFX_Release_1.wav-8a40dc04b604d3c7a1942f37df41a29a.sample to res://Assets/SFX-Music/SFX_Release_1.wav
+res://.godot/imported/SFX_Release_2.wav-ca2e4ea7301963dbad044f14267139ca.sample to res://Assets/SFX-Music/SFX_Release_2.wav
+res://.godot/imported/SFX_Release_3.wav-0eb7f8cbc827d19d688531a2c7510f10.sample to res://Assets/SFX-Music/SFX_Release_3.wav
+res://.godot/imported/SFX_Release_4.wav-c4e3d8b3d817996002d4054deabef559.sample to res://Assets/SFX-Music/SFX_Release_4.wav
+res://.godot/imported/SFX_Release_5.wav-c74a9931d275a5a257813578feaedeaf.sample to res://Assets/SFX-Music/SFX_Release_5.wav
+res://.godot/imported/SFX_Release_6.wav-8e27adaee2b60e2654dc3e6dd8eb3b2c.sample to res://Assets/SFX-Music/SFX_Release_6.wav
+res://.godot/imported/SFX_Release_7.wav-8b092ee88d71af724866ee6cc1dd8312.sample to res://Assets/SFX-Music/SFX_Release_7.wav
+res://.godot/imported/SFX_Release_8.wav-04513b32a361916aac4402680868cce1.sample to res://Assets/SFX-Music/SFX_Release_8.wav
+res://.godot/imported/SFX_Release_9.wav-193678421c21a77429588c2c2145a190.sample to res://Assets/SFX-Music/SFX_Release_9.wav
+res://.godot/imported/SFX_Rough_Voice_01.wav-0094e3f3ea336fea5aa1d6b5156ea1e5.sample to res://Assets/SFX-Music/SFX_Rough_Voice_01.wav
+res://.godot/imported/SFX_Rough_Voice_02.wav-5ac3d072a87fa50332d2cc65f5d2278f.sample to res://Assets/SFX-Music/SFX_Rough_Voice_02.wav
+res://.godot/imported/SFX_Rough_Voice_03.wav-e5fd8a81c8c0f3e2fb1c740877248051.sample to res://Assets/SFX-Music/SFX_Rough_Voice_03.wav
+res://.godot/imported/SFX_Rough_Voice_04.wav-3feb6db2ccf1f3db09bf24578cea3f83.sample to res://Assets/SFX-Music/SFX_Rough_Voice_04.wav
+res://.godot/imported/SFX_Select.wav-3f8aa7e4e1927ab921349d399e1346c6.sample to res://Assets/SFX-Music/SFX_Select.wav
+res://.godot/imported/SFX_Siren.ogg-df54ade22f3c4edbfb419a7f7b117e3e.oggvorbisstr to res://Assets/SFX-Music/SFX_Siren.ogg
+res://.godot/imported/SFX_Squishy.wav-841a167b3209693c1ae3202b9b0d9be7.sample to res://Assets/SFX-Music/SFX_Squishy.wav
+res://.godot/imported/SFX_Trypophobia.wav-19a83358f28086f371f3393c6827d72e.sample to res://Assets/SFX-Music/SFX_Trypophobia.wav
+res://.godot/imported/SFX_Window.wav-fe191f3b35cf8ea85f967a7a932efd22.sample to res://Assets/SFX-Music/SFX_Window.wav
+res://.godot/imported/SFX_Window_Break.wav-bd7d959cbb2d00265fb901fed315ae0d.sample to res://Assets/SFX-Music/SFX_Window_Break.wav
+res://.godot/imported/SFX_Write.wav-c111c33270466e5bd33002efb090153d.sample to res://Assets/SFX-Music/SFX_Write.wav
+res://.godot/imported/SFX_voice_clown.wav-feedd5de2d9e4953b9c8d117955591f9.sample to res://Assets/SFX-Music/SFX_voice_clown.wav
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.2.0 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

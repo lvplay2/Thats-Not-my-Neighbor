@@ -1,0 +1,387 @@
+[gd_scene load_steps=31 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Dagda.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cu514db48xdrx" path="res://Assets/Graphics/Char_Dagda_body.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bfyakxlrnqg3x" path="res://Assets/Graphics/Char_Dagda_hat.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://rf0p6kfpl57q" path="res://Assets/Graphics/Char_Dagda_head.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://druwsnxn2a37o" path="res://Assets/Graphics/Char_Dagda_eyes.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://qtvjtifjd1i0" path="res://Assets/Graphics/Char_Dagda_eyes_doppel.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bjpebyct6yed6" path="res://Assets/Graphics/Char_Dagda_eyes_doppel_02.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bt0n228skbbcb" path="res://Assets/Graphics/Char_Dagda_mouth_01.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dpjtwhnmfjqj7" path="res://Assets/Graphics/Char_Dagda_mouth_02.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cfxqyguvlq4re" path="res://Assets/Graphics/Char_Dagda_mouth_03.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://doqyyjgk4yx8y" path="res://Assets/Graphics/Char_Dagda_seams.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://d42fu8hw060q" path="res://Assets/Graphics/Char_Dagda_seams_doppel.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://eokljgms5hth" path="res://Assets/Graphics/Char_Roman_Doppel_Scar.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://ca6gvgdn8bo30" path="res://Assets/Graphics/Char_Dagda_mask.png" id="14"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="15"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="16"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="17"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="18"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="19"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}],
+"loop": true,
+"name": &"CLOSE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}],
+"loop": true,
+"name": &"TALK",
+"speed": 10.0
+}]
+script = null
+
+[sub_resource type="Animation" id="2"]
+resource_name = "IDLE"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.03, 1.03)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "WALK"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="5"]
+_data = {
+"IDLE": SubResource("2"),
+"RESET": SubResource("3"),
+"WALK": SubResource("4")
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+resource_name = "TALK"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.015, 1.015)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="8"]
+_data = {
+"RESET": SubResource("6"),
+"TALK": SubResource("7")
+}
+script = null
+
+[sub_resource type="Animation" id="9"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Seams:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="10"]
+resource_name = "TALK"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Seams:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="11"]
+_data = {
+"RESET": SubResource("9"),
+"TALK": SubResource("10")
+}
+script = null
+
+[node name="Dagda" type="Node2D"]
+position = Vector2(998, 280)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1")
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="Body"]
+position = Vector2(-26, 559.5)
+texture = ExtResource("2")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Hat" type="Sprite2D" parent="Head"]
+position = Vector2(-23.3334, -176.5)
+texture = ExtResource("3")
+
+[node name="Head" type="Sprite2D" parent="Head"]
+position = Vector2(-46, 178.167)
+texture = ExtResource("4")
+
+[node name="Eyes" type="Sprite2D" parent="Head"]
+position = Vector2(-24.6667, 148.834)
+texture = ExtResource("5")
+
+[node name="Eyes_doppel_01" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-24.6667, 148.834)
+texture = ExtResource("6")
+
+[node name="Eyes_doppel_02" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-24.6667, 148.834)
+texture = ExtResource("7")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="Head"]
+position = Vector2(-11.3334, 350.167)
+sprite_frames = SubResource("1")
+animation = &"CLOSE"
+
+[node name="Seams" type="Node2D" parent="Head"]
+position = Vector2(3.33333, -149.833)
+
+[node name="Seams" type="Sprite2D" parent="Head/Seams"]
+position = Vector2(-16, 501.333)
+texture = ExtResource("11")
+
+[node name="Seams_doppel" type="Sprite2D" parent="Head/Seams"]
+visible = false
+position = Vector2(-16, 501.333)
+texture = ExtResource("12")
+
+[node name="Scar" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(86, 44.8337)
+texture = ExtResource("13")
+
+[node name="Mask" type="Sprite2D" parent="Head"]
+position = Vector2(-18, 222.167)
+texture = ExtResource("14")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("5")
+}
+
+[node name="Talk" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("8")
+}
+
+[node name="Seam_animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("11")
+}
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15")
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16")
+pitch_scale = 1.5
+
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17")
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18")
+pitch_scale = 1.5
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19")
+pitch_scale = 2.0
+
+[connection signal="finished" from="Voice_05" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_06" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_07" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_08" to="." method="_on_voice_finished"]

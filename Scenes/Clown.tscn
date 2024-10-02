@@ -1,0 +1,232 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Clown.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://feiiu786530s" path="res://Assets/Graphics/Char_Clown_Legs.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b66c6pbr04mub" path="res://Assets/Graphics/Char_Clown_Body.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://xwpeh3a1ovis" path="res://Assets/Graphics/Char_Clown_Tunica_02.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b8nbjgrkhx4y1" path="res://Assets/Graphics/Char_Clown_Head.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c1xhl1ygjhvqo" path="res://Assets/Graphics/Char_Clown_Mask.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://c8wo82c6t4una" path="res://Assets/Graphics/Char_Clown_Tunica_01.png" id="7"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="8"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "IDLE"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Face:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.03, 1.03)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Head/Mask:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.005, 1.005)]
+}
+script = null
+
+[sub_resource type="Animation" id="2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Face:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Head/Mask:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Body:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2.66675, 573.333)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Legs:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-6.66675, 808)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+resource_name = "WALK"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-2.66675, 573.333), Vector2(-2.667, 543.333)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Legs:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-6.66675, 808), Vector2(-6.667, 778)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="4"]
+_data = {
+"IDLE": SubResource("1"),
+"RESET": SubResource("2"),
+"WALK": SubResource("3")
+}
+script = null
+
+[node name="Clown" type="Node2D"]
+position = Vector2(950, 326)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1")
+
+[node name="Legs" type="Sprite2D" parent="."]
+position = Vector2(-6.66675, 808)
+texture = ExtResource("2")
+
+[node name="Body" type="Sprite2D" parent="."]
+position = Vector2(-2.66675, 573.333)
+texture = ExtResource("3")
+
+[node name="Rope" type="Sprite2D" parent="Body"]
+visible = false
+position = Vector2(-5.33325, 108)
+texture = ExtResource("4")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Face" type="Sprite2D" parent="Head"]
+texture = ExtResource("5")
+
+[node name="Mask" type="Sprite2D" parent="Head"]
+position = Vector2(1.33325, -4)
+texture = ExtResource("6")
+
+[node name="Tunica" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-2.66667, 82.6667)
+texture = ExtResource("7")
+
+[node name="Fix2" type="Sprite2D" parent="Head/Tunica"]
+z_index = -5
+position = Vector2(148, 108)
+rotation = -3.14159
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7")
+
+[node name="Fix" type="Sprite2D" parent="Head/Tunica"]
+z_index = -5
+position = Vector2(-117.333, 122.667)
+rotation = -3.14159
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7")
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("4")
+}

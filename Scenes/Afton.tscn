@@ -1,0 +1,513 @@
+[gd_scene load_steps=44 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Afton.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://pgs0e2w7v6kn" path="res://Assets/Graphics/Char_Afton_Body.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cup6nd15x6e25" path="res://Assets/Graphics/Char_Afton_Hair.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cpci0ky3tvw73" path="res://Assets/Graphics/Char_Afton_Head.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://civvgiv3rwejg" path="res://Assets/Graphics/Char_Afton_Doppel_Head.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://drc622l0v6wk7" path="res://Assets/Graphics/Char_Roman_Mouth_05.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bd5wtcr424udl" path="res://Assets/Graphics/Char_Roman_Doppel_Mouth_04.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bstvh6y3s3708" path="res://Assets/Graphics/Char_Roman_Doppel_Mouth_01.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c65mjbchj6m3l" path="res://Assets/Graphics/Char_Roman_Doppel_Mouth_02.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b8kckwg1q7m2u" path="res://Assets/Graphics/Char_Roman_Doppel_Mouth_03.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cp7e3bi2vpqsf" path="res://Assets/Graphics/Char_Roman_Mouth_04.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bkoe04c5epjyr" path="res://Assets/Graphics/Char_Roman_Mouth_02.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://baq4j2jy8wkx2" path="res://Assets/Graphics/Char_Roman_Mouth_03.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://b5yuqx1rlgvmu" path="res://Assets/Graphics/Char_Roman_Mouth_01.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://da0ribu40nt1i" path="res://Assets/Graphics/Char_Afton_Glasses.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bbq4bk38vnwwp" path="res://Assets/Graphics/Char_Afton_Nose.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dxkvyxn5adsbe" path="res://Assets/Graphics/Char_Roman_Doppel_Nose.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dukskodqwdkc4" path="res://Assets/Graphics/Char_Afton_Eyebrows.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://du4fmxf24us1l" path="res://Assets/Graphics/Char_Mia_Eyebrows.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://uqj64hr0wowc" path="res://Assets/Graphics/Char_Afton_Doppel_Scar.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://b1ptc8wasqrts" path="res://Assets/Graphics/Char_Lois_tripo.png" id="23"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="24"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="25"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="26"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="27"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="28"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="29"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="30"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="31"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="32"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"Close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
+"loop": true,
+"name": &"Close_Doppel",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
+"loop": true,
+"name": &"Doppel_Talking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}],
+"loop": true,
+"name": &"Talking",
+"speed": 12.0
+}]
+script = null
+
+[sub_resource type="Animation" id="2"]
+resource_name = "Moving"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Iris:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7, 1.8, 2.2, 3.6, 4.2, 5.2, 5.6, 6.5, 6.9, 7.3, 7.6, 9.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-124, 16), Vector2(-124, 16), Vector2(-128, 26.6667), Vector2(-128, 26.6667), Vector2(-138.667, 14.6667), Vector2(-138.667, 14.6667), Vector2(-124, 14.6667), Vector2(-124, 14.6667), Vector2(-112, 13.3333), Vector2(-112, 13.3333), Vector2(-124, 1.33334), Vector2(-124, 1.33334), Vector2(-114.667, 20), Vector2(-114.667, 20)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Iris:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-124, 16)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="4"]
+_data = {
+"Moving": SubResource("2"),
+"RESET": SubResource("3")
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "IDLE"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.03, 1.03)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+resource_name = "WALK"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-7.33333, 625.167), Vector2(-7.333, 595.167)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-7.33333, 625.167), Vector2(-7.333, 595.167)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="8"]
+_data = {
+"IDLE": SubResource("5"),
+"RESET": SubResource("6"),
+"WALK": SubResource("7")
+}
+script = null
+
+[sub_resource type="Animation" id="9"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Head/Doppel_Head:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="10"]
+resource_name = "TALK"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.015, 1.015)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Head/Doppel_Head:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.015, 1.015)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="11"]
+_data = {
+"RESET": SubResource("9"),
+"TALK": SubResource("10")
+}
+script = null
+
+[node name="Afton" type="Node2D"]
+position = Vector2(990, 240)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1")
+
+[node name="Body" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Hair" type="Sprite2D" parent="Head"]
+position = Vector2(6.66667, -720)
+texture = ExtResource("3")
+
+[node name="Head" type="Sprite2D" parent="Head"]
+position = Vector2(-8, -517.333)
+texture = ExtResource("4")
+
+[node name="Doppel_Head" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-9.33333, -530.667)
+texture = ExtResource("5")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="Head"]
+position = Vector2(-9.33337, -381.333)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("1")
+animation = &"Close"
+
+[node name="Glasses" type="Sprite2D" parent="Head"]
+position = Vector2(-5.33333, -518.667)
+texture = ExtResource("15")
+
+[node name="Nose" type="Sprite2D" parent="Head"]
+position = Vector2(-8, -497.333)
+texture = ExtResource("16")
+
+[node name="Doppel_Nose" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-8, -497.333)
+texture = ExtResource("17")
+
+[node name="Eyebrows" type="Sprite2D" parent="Head"]
+position = Vector2(-9.33333, -665.333)
+texture = ExtResource("18")
+
+[node name="Doppel_Eyebrows" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-9.33333, -661.333)
+texture = ExtResource("19")
+
+[node name="Doppel_Scar" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-10.6667, -697.333)
+texture = ExtResource("20")
+
+[node name="third_Eye" type="Node2D" parent="Head"]
+visible = false
+position = Vector2(18.6667, -573.333)
+
+[node name="Eye" type="Sprite2D" parent="Head/third_Eye"]
+position = Vector2(-124, 18.6667)
+texture = ExtResource("21")
+
+[node name="Iris" type="Sprite2D" parent="Head/third_Eye"]
+position = Vector2(-124, 16)
+texture = ExtResource("22")
+
+[node name="Animation" type="AnimationPlayer" parent="Head/third_Eye"]
+libraries = {
+"": SubResource("4")
+}
+
+[node name="fourth_Eye" type="Node2D" parent="Head"]
+visible = false
+position = Vector2(-37.3333, -544)
+rotation = 3.14159
+
+[node name="Eye" type="Sprite2D" parent="Head/fourth_Eye"]
+position = Vector2(-124, 18.6667)
+texture = ExtResource("21")
+
+[node name="Iris" type="Sprite2D" parent="Head/fourth_Eye"]
+position = Vector2(-124, 16)
+texture = ExtResource("22")
+
+[node name="Animation" type="AnimationPlayer" parent="Head/fourth_Eye"]
+libraries = {
+"": SubResource("4")
+}
+
+[node name="Tripo" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-13.3333, -637.333)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("23")
+
+[node name="Tripo" type="Sprite2D" parent="Head/Tripo"]
+position = Vector2(1.66667, 291.667)
+texture = ExtResource("23")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("8")
+}
+
+[node name="Talk" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("11")
+}
+
+[node name="Voice_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24")
+pitch_scale = 1.3
+
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25")
+pitch_scale = 1.3
+
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26")
+pitch_scale = 1.3
+
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27")
+pitch_scale = 1.3
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("28")
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29")
+pitch_scale = 1.5
+
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30")
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31")
+pitch_scale = 1.5
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("32")
+pitch_scale = 2.0
+
+[connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_02" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_03" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_04" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_05" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_06" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_07" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_08" to="." method="_on_voice_01_finished"]

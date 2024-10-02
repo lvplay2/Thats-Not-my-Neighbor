@@ -1,0 +1,118 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Trophie.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dl63iwpvjud4m" path="res://Assets/Graphics/Trophie.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://d2is7hh0b8od5" path="res://Assets/Graphics/Shine_Particles.png" id="3"]
+
+[sub_resource type="Gradient" id="1"]
+colors = PackedColorArray(1, 1, 0, 0.329412, 1, 0.47451, 0, 1)
+script = null
+
+[sub_resource type="GradientTexture1D" id="2"]
+gradient = SubResource("1")
+script = null
+
+[sub_resource type="ParticleProcessMaterial" id="3"]
+particle_flag_disable_z = true
+angle_max = 144.0
+spread = 180.0
+initial_velocity_min = 387.5
+initial_velocity_max = 600.0
+angular_velocity_min = 108.0
+angular_velocity_max = 126.0
+radial_velocity_min = 775.0
+radial_velocity_max = 1002.05
+gravity = Vector3(0, 300, 0)
+scale_min = 0.1
+color_ramp = SubResource("2")
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "IDLE"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Trophie:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.436332, 0.0, -0.436332]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Trophie:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Trophie:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Trophie:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="6"]
+_data = {
+"IDLE": SubResource("4"),
+"RESET": SubResource("5")
+}
+script = null
+
+[node name="Trophie" type="Node2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1")
+
+[node name="Trophie" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+
+[node name="Gold" type="GPUParticles2D" parent="."]
+position = Vector2(-26.6667, -100)
+emitting = false
+amount = 350
+process_material = SubResource("3")
+texture = ExtResource("3")
+lifetime = 3.0
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.98
+randomness = 1.0
+trail_enabled = true
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("6")
+}

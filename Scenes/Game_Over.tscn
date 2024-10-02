@@ -1,0 +1,477 @@
+[gd_scene load_steps=31 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Game_Over.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dj8exx0kirs6l" path="res://Assets/Graphics/Table_game_over.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bpj1f8kkd0p0s" path="res://Assets/Graphics/Blood_table.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://7eb2pef2f15" path="res://Assets/Graphics/Paper.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c24oae16ypu4i" path="res://Assets/Graphics/Border.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cvky0rsqjcdql" path="res://Assets/Graphics/DDD_logo.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://yya3oopdvf1u" path="res://Assets/Graphics/Henry_video.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://disvidnncncs1" path="res://Assets/Graphics/Todays_list.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bsdx6tdxwb4w4" path="res://Assets/Graphics/Folder_options_sound_music.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bv4irjmxkopht" path="res://Assets/Graphics/Folder_options_language.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://buhd2plmahjhe" path="res://Assets/Graphics/Folder_floors.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://gqqjwoy8fkxs" path="res://Assets/Graphics/Papers.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://bw4vjoxgef0mr" path="res://Assets/Graphics/Folder_paper.png" id="13"]
+[ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="14"]
+[ext_resource type="FontFile" uid="uid://d2lr6x8obuyag" path="res://Assets/Fonts/Funny.ttf" id="15"]
+[ext_resource type="FontFile" uid="uid://3lgclirb633g" path="res://Assets/Fonts/Slasher.ttf" id="16"]
+[ext_resource type="AudioStream" uid="uid://dq2opcunboupj" path="res://Assets/SFX-Music/SFX_Select.wav" id="17"]
+[ext_resource type="AudioStream" uid="uid://dalcaapplmsmw" path="res://Assets/SFX-Music/SFX_Accept.wav" id="18"]
+[ext_resource type="AudioStream" uid="uid://dpe74d30ei1jc" path="res://Assets/SFX-Music/SFX_Write.wav" id="19"]
+[ext_resource type="AudioStream" uid="uid://dfu8mr0j8a1nf" path="res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav" id="20"]
+[ext_resource type="AudioStream" uid="uid://b7cwkpu1fivjx" path="res://Assets/SFX-Music/Music_Tutorial.wav" id="21"]
+[ext_resource type="AudioStream" uid="uid://b4kii7ysdr5kn" path="res://Assets/SFX-Music/SFX_Magic_Dust.wav" id="22"]
+[ext_resource type="PackedScene" uid="uid://4mtma7rrk5eo" path="res://Scenes/Trophie.tscn" id="23"]
+
+[sub_resource type="StyleBoxEmpty" id="1"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="2"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="3"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="4"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="5"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="6"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="7"]
+script = null
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(958, 568)
+texture = ExtResource("2")
+
+[node name="Dirt" type="Sprite2D" parent="."]
+modulate = Color(1, 0.0823529, 0.513726, 0.0823529)
+position = Vector2(871, 1104)
+texture = ExtResource("3")
+
+[node name="Dirt2" type="Sprite2D" parent="."]
+modulate = Color(1, 0.0823529, 0.513726, 0.0823529)
+position = Vector2(1187, -21)
+scale = Vector2(1.49261, 1.31349)
+texture = ExtResource("3")
+
+[node name="Paper5" type="Sprite2D" parent="."]
+position = Vector2(1675, 796)
+texture = ExtResource("4")
+
+[node name="Paper6" type="Sprite2D" parent="."]
+position = Vector2(1675, 787)
+texture = ExtResource("5")
+
+[node name="Paper7" type="Sprite2D" parent="."]
+position = Vector2(1762, 889)
+texture = ExtResource("6")
+
+[node name="Paper8" type="Sprite2D" parent="."]
+position = Vector2(1525, 1120)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7")
+
+[node name="Paper2" type="Sprite2D" parent="."]
+position = Vector2(1867, 126)
+texture = ExtResource("8")
+
+[node name="Paper10" type="Sprite2D" parent="."]
+position = Vector2(350, 638)
+texture = ExtResource("8")
+
+[node name="Paper3" type="Sprite2D" parent="."]
+position = Vector2(1876, -66)
+texture = ExtResource("9")
+
+[node name="Paper4" type="Sprite2D" parent="."]
+position = Vector2(1648, 639)
+texture = ExtResource("10")
+
+[node name="Dirt3" type="Sprite2D" parent="."]
+modulate = Color(1, 0.0823529, 0.513726, 0.0823529)
+position = Vector2(1704, 519)
+texture = ExtResource("3")
+
+[node name="Folder" type="Sprite2D" parent="."]
+position = Vector2(276, 440)
+texture = ExtResource("11")
+
+[node name="Papers" type="Sprite2D" parent="."]
+position = Vector2(130, 462)
+texture = ExtResource("12")
+
+[node name="Paper9" type="Sprite2D" parent="."]
+position = Vector2(-57, 291)
+texture = ExtResource("9")
+
+[node name="Dirt4" type="Sprite2D" parent="."]
+modulate = Color(1, 0.0823529, 0.513726, 0.0823529)
+position = Vector2(97, 517)
+rotation = -1.18832
+texture = ExtResource("3")
+
+[node name="Paper" type="Sprite2D" parent="."]
+position = Vector2(594, 550)
+texture = ExtResource("4")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(1479, 502)
+texture = ExtResource("13")
+
+[node name="Blood" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.415686, 0, 0, 1)
+position = Vector2(1380, 1028)
+rotation = 0.174341
+texture = ExtResource("3")
+
+[node name="Blood" type="Sprite2D" parent="Blood"]
+position = Vector2(-1724.67, -631.412)
+rotation = 0.174341
+texture = ExtResource("3")
+
+[node name="Blood2" type="Sprite2D" parent="Blood"]
+modulate = Color(0.415686, 0, 0, 1)
+position = Vector2(-75.1002, 75.1663)
+rotation = 0.174341
+texture = ExtResource("3")
+
+[node name="Blood3" type="Sprite2D" parent="Blood/Blood2"]
+position = Vector2(-1506.01, -618.688)
+rotation = 3.10459
+texture = ExtResource("3")
+
+[node name="Blood3" type="Sprite2D" parent="Blood"]
+modulate = Color(0.415686, 0, 0, 1)
+position = Vector2(-1347.67, 407.949)
+rotation = 0.174341
+texture = ExtResource("3")
+
+[node name="Blood" type="Sprite2D" parent="Blood/Blood3"]
+position = Vector2(1173.11, -1780.98)
+rotation = 0.174341
+texture = ExtResource("3")
+
+[node name="Blood2" type="Sprite2D" parent="Blood/Blood3"]
+modulate = Color(0.415686, 0, 0, 1)
+position = Vector2(317.054, -20.562)
+rotation = 0.174341
+texture = ExtResource("3")
+
+[node name="Blood3" type="Sprite2D" parent="Blood/Blood3/Blood2"]
+position = Vector2(130.219, -1668.04)
+rotation = 3.10459
+texture = ExtResource("3")
+
+[node name="Border" type="Sprite2D" parent="."]
+position = Vector2(593, 547)
+texture = ExtResource("5")
+
+[node name="DDD" type="Sprite2D" parent="."]
+position = Vector2(810, 996)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6")
+
+[node name="Dirt5" type="Sprite2D" parent="."]
+modulate = Color(1, 0.0823529, 0.513726, 0.0823529)
+position = Vector2(1483, 519)
+rotation = -1.22186
+scale = Vector2(0.682, 0.960587)
+texture = ExtResource("3")
+
+[node name="Play_Again" type="Button" parent="."]
+offset_left = 1202.0
+offset_top = 200.0
+offset_right = 1931.0
+offset_bottom = 377.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("14")
+theme_override_font_sizes/font_size = 180
+theme_override_styles/focus = SubResource("1")
+action_mode = 0
+text = "Play again"
+flat = true
+
+[node name="Record" type="Button" parent="."]
+offset_left = 1267.0
+offset_top = 372.0
+offset_right = 1767.0
+offset_bottom = 549.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("14")
+theme_override_font_sizes/font_size = 180
+theme_override_styles/focus = SubResource("2")
+action_mode = 0
+text = "Record"
+flat = true
+
+[node name="Menu2" type="Button" parent="."]
+offset_left = 1297.0
+offset_top = 538.0
+offset_right = 1733.0
+offset_bottom = 715.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("14")
+theme_override_font_sizes/font_size = 180
+theme_override_styles/focus = SubResource("3")
+action_mode = 0
+text = "Menu"
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 1295.0
+offset_top = 700.0
+offset_right = 1731.0
+offset_bottom = 877.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("14")
+theme_override_font_sizes/font_size = 180
+theme_override_styles/focus = SubResource("4")
+action_mode = 0
+text = "Quit"
+flat = true
+
+[node name="Rank" type="Label" parent="."]
+visible = false
+offset_left = 677.0
+offset_top = 651.0
+offset_right = 859.0
+offset_bottom = 908.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 256
+text = "S"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rank_Label" type="Label" parent="."]
+visible = false
+offset_left = 292.0
+offset_top = 664.0
+offset_right = 633.0
+offset_bottom = 921.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 80
+text = "Rank:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level record" type="Label" parent="."]
+offset_left = 244.0
+offset_top = -40.0
+offset_right = 828.0
+offset_bottom = 217.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 80
+text = "Level Summary"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Doppel_Label" type="Label" parent="."]
+visible = false
+offset_left = 246.0
+offset_top = 67.0
+offset_right = 929.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("16")
+theme_override_font_sizes/font_size = 55
+text = "Doppels captured: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Doppel_Label2" type="Label" parent="."]
+visible = false
+offset_left = 217.0
+offset_top = 378.0
+offset_right = 975.0
+offset_bottom = 635.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("16")
+theme_override_font_sizes/font_size = 55
+text = "Doppels that entered: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Neighbor_info" type="Button" parent="."]
+visible = false
+offset_left = 234.0
+offset_top = 329.0
+offset_right = 1194.0
+offset_bottom = 506.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/focus = SubResource("5")
+action_mode = 0
+text = "Click here to see details"
+flat = true
+
+[node name="Doppel_Label3" type="Label" parent="."]
+visible = false
+offset_left = 206.0
+offset_top = 170.0
+offset_right = 964.0
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("16")
+theme_override_font_sizes/font_size = 55
+text = "Neighbors killed: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Doppel_info" type="Button" parent="."]
+visible = false
+offset_left = 234.0
+offset_top = 540.0
+offset_right = 1194.0
+offset_bottom = 717.0
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/focus = SubResource("6")
+action_mode = 0
+text = "Click here to see details"
+flat = true
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17")
+
+[node name="Accept" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18")
+
+[node name="Check_Write" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19")
+pitch_scale = 0.85
+
+[node name="Pick_Up_Folder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21")
+pitch_scale = 0.5
+
+[node name="Magic_Dust" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22")
+
+[node name="Trophie" parent="." instance=ExtResource("23")]
+visible = false
+position = Vector2(1175, 429)
+
+[node name="Details" type="Node2D" parent="."]
+
+[node name="Folder" type="Sprite2D" parent="Details"]
+position = Vector2(-854, 484)
+texture = ExtResource("11")
+
+[node name="Paper" type="Sprite2D" parent="Details"]
+position = Vector2(-430, 535)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("8")
+
+[node name="Title" type="Label" parent="Details"]
+offset_left = -686.0
+offset_top = -21.0
+offset_right = -102.0
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 80
+text = "Details:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Info" type="Label" parent="Details"]
+offset_left = -712.0
+offset_top = 189.0
+offset_right = -128.0
+offset_bottom = 900.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 38
+text = "* one
+
+* two
+
+* tree
+
+* four
+
+* five
+
+* six
+
+* seven
+
+* eight
+
+* nine
+"
+vertical_alignment = 1
+
+[node name="Ok" type="Button" parent="Details"]
+offset_left = -388.0
+offset_top = 907.0
+offset_right = -61.0
+offset_bottom = 1036.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("14")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("7")
+disabled = true
+action_mode = 0
+text = "Ok"
+flat = true
+
+[connection signal="mouse_entered" from="Play_Again" to="." method="_on_play_again_mouse_entered"]
+[connection signal="mouse_exited" from="Play_Again" to="." method="_on_play_again_mouse_exited"]
+[connection signal="pressed" from="Play_Again" to="." method="_on_play_again_pressed"]
+[connection signal="mouse_entered" from="Record" to="." method="_on_record_mouse_entered"]
+[connection signal="mouse_exited" from="Record" to="." method="_on_record_mouse_exited"]
+[connection signal="pressed" from="Record" to="." method="_on_record_pressed"]
+[connection signal="mouse_entered" from="Menu2" to="." method="_on_menu_mouse_entered"]
+[connection signal="mouse_exited" from="Menu2" to="." method="_on_menu_2_mouse_exited"]
+[connection signal="pressed" from="Menu2" to="." method="_on_menu_pressed"]
+[connection signal="mouse_entered" from="Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="Quit" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="mouse_entered" from="Neighbor_info" to="." method="_on_neighbor_info_mouse_entered"]
+[connection signal="mouse_exited" from="Neighbor_info" to="." method="_on_neighbor_info_mouse_exited"]
+[connection signal="pressed" from="Neighbor_info" to="." method="_on_neighbor_info_pressed"]
+[connection signal="mouse_entered" from="Doppel_info" to="." method="_on_doppel_info_mouse_entered"]
+[connection signal="mouse_exited" from="Doppel_info" to="." method="_on_doppel_info_mouse_exited"]
+[connection signal="pressed" from="Doppel_info" to="." method="_on_doppel_info_pressed"]
+[connection signal="mouse_entered" from="Details/Ok" to="." method="_on_ok_mouse_entered"]
+[connection signal="mouse_exited" from="Details/Ok" to="." method="_on_ok_mouse_exited"]
+[connection signal="pressed" from="Details/Ok" to="." method="_on_ok_pressed"]

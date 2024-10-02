@@ -1,0 +1,539 @@
+[gd_scene load_steps=48 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Lois_Stilnsky.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c7x384jqtm2l" path="res://Assets/Graphics/Char_Lois_Body.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://g0hw48carary" path="res://Assets/Graphics/Char_Lois_Arms.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://tqjyq145pvuv" path="res://Assets/Graphics/Char_Lois_Chest.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bbdi023hgbrlq" path="res://Assets/Graphics/Char_Lois_Scarf.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ul84g4qx2kip" path="res://Assets/Graphics/Char_Lois_Neckless.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bmg3juclbyubc" path="res://Assets/Graphics/Char_Lois_Hair.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://br0spkx80uhk8" path="res://Assets/Graphics/Char_Lois_Hat.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://yqwtdc1bjwlu" path="res://Assets/Graphics/Char_Lois_Head.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c8jlx5kru8mi" path="res://Assets/Graphics/Char_Lois__Doppel_Head.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b1ptc8wasqrts" path="res://Assets/Graphics/Char_Lois_tripo.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dqwjquda7xau5" path="res://Assets/Graphics/Char_Lois_Hair_Top.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://yvvtcsmhpni1" path="res://Assets/Graphics/Char_Lois_Mouth_01.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bht42p42xxfmc" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_01.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cleaj702qx8dt" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_02.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://coisbqar6yhdi" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_03.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://c3t3vccsopd6j" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_04.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cqm0oef7pachf" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_05.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://dxmhqphxkan35" path="res://Assets/Graphics/Char_Lois_Mouth_02.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cboe0dm7yi5gr" path="res://Assets/Graphics/Char_Lois_Mouth_03.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://0m66rbw7iexw" path="res://Assets/Graphics/Char_Lois_Mouth_04.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://b55c5qbaf2km1" path="res://Assets/Graphics/Char_Lois_Mouth_05.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://sek7e5ve0p0" path="res://Assets/Graphics/Char_Lois__Doppel_Mouth_01.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://p0cfhocrn36" path="res://Assets/Graphics/Char_Lois__Doppel_Mouth_02.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://c0m7pqofxurhw" path="res://Assets/Graphics/Char_Lois__Doppel_Mouth_03.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://e7hxco465k6w" path="res://Assets/Graphics/Char_Lois__Doppel_Mouth_04.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://bsmg8fwkupgk3" path="res://Assets/Graphics/Char_Lois__Doppel_Mouth_05.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://b4ptt72vg3mw0" path="res://Assets/Graphics/Char_Lois_Mole.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://8t0s1bxgrp0x" path="res://Assets/Graphics/Char_Lois_Hair_Top_Doppel.png" id="29"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="30"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="31"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="32"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="33"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="34"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="35"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="36"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="37"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="38"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13")
+}],
+"loop": true,
+"name": &"CLOSE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14")
+}],
+"loop": true,
+"name": &"CLOSE_DOPPEL",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}],
+"loop": true,
+"name": &"DOPPEL_TALK",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}],
+"loop": true,
+"name": &"TALK",
+"speed": 10.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23")
+}],
+"loop": true,
+"name": &"CLOSE",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}],
+"loop": true,
+"name": &"TALK",
+"speed": 10.0
+}]
+script = null
+
+[sub_resource type="Animation" id="3"]
+resource_name = "IDLE"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.02, 1.02)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(6.66663, -8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "WALK"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(6.66663, -8), Vector2(6.667, -38)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="6"]
+_data = {
+"IDLE": SubResource("3"),
+"RESET": SubResource("4"),
+"WALK": SubResource("5")
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body/Chest:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99, 0.99)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head/Hair_Top:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Head/Hair_Long:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="8"]
+resource_name = "TALK"
+length = 0.4
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.015, 1.015)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body/Chest:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.99, 0.99), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head/Hair_Top:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.005, 1.005)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Head/Hair_Long:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.005, 1.005)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="9"]
+_data = {
+"RESET": SubResource("7"),
+"TALK": SubResource("8")
+}
+script = null
+
+[node name="Lois_Stinlsky" type="Node2D"]
+position = Vector2(881, 310)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1")
+
+[node name="Body" type="Node2D" parent="."]
+position = Vector2(6.66663, -8)
+
+[node name="Butt" type="Sprite2D" parent="Body"]
+position = Vector2(54.8333, 706)
+texture = ExtResource("2")
+
+[node name="Arms" type="Sprite2D" parent="Body"]
+position = Vector2(45.3333, 617.333)
+texture = ExtResource("3")
+
+[node name="Chest" type="Sprite2D" parent="Body"]
+position = Vector2(46.6666, 608)
+scale = Vector2(0.99, 0.99)
+texture = ExtResource("4")
+
+[node name="Scarf" type="Sprite2D" parent="Body"]
+position = Vector2(46.6666, 472)
+texture = ExtResource("5")
+
+[node name="Neckless" type="Sprite2D" parent="Body"]
+position = Vector2(48, 406.667)
+texture = ExtResource("6")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Hair_Bottom" type="Sprite2D" parent="Head"]
+position = Vector2(42.8333, 202)
+texture = ExtResource("7")
+
+[node name="Hat" type="Sprite2D" parent="Head"]
+position = Vector2(-1.33337, -189.333)
+texture = ExtResource("8")
+
+[node name="Face" type="Sprite2D" parent="Head"]
+position = Vector2(53.3333, 108)
+texture = ExtResource("9")
+
+[node name="Squared_Face" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(57.3333, 124)
+rotation = 0.0101462
+texture = ExtResource("10")
+
+[node name="Tripo" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(49.3333, 224)
+texture = ExtResource("11")
+
+[node name="Hair_Top" type="Sprite2D" parent="Head"]
+position = Vector2(41.3333, -45.3333)
+texture = ExtResource("12")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="Head"]
+position = Vector2(50.667, 230)
+sprite_frames = SubResource("1")
+animation = &"CLOSE"
+
+[node name="Mouth_Teeth" type="AnimatedSprite2D" parent="Head"]
+visible = false
+position = Vector2(50.6666, 229.333)
+sprite_frames = SubResource("2")
+animation = &"CLOSE"
+frame_progress = 0.949474
+
+[node name="Mole" type="Sprite2D" parent="Head"]
+position = Vector2(245.333, 178.667)
+texture = ExtResource("28")
+
+[node name="Hair_Long" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(38.6666, -2.66666)
+texture = ExtResource("29")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("6")
+}
+
+[node name="Talk" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("9")
+}
+
+[node name="Voice_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30")
+pitch_scale = 1.8
+
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31")
+pitch_scale = 1.8
+
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("32")
+pitch_scale = 1.8
+
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("33")
+pitch_scale = 1.8
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34")
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("35")
+pitch_scale = 1.5
+
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36")
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37")
+pitch_scale = 1.5
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("38")
+pitch_scale = 2.0
+
+[connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_02" to="." method="_on_voice_02_finished"]
+[connection signal="finished" from="Voice_03" to="." method="_on_voice_03_finished"]
+[connection signal="finished" from="Voice_04" to="." method="_on_voice_04_finished"]
+[connection signal="finished" from="Voice_05" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_06" to="." method="_on_voice_02_finished"]
+[connection signal="finished" from="Voice_07" to="." method="_on_voice_03_finished"]
+[connection signal="finished" from="Voice_08" to="." method="_on_voice_04_finished"]

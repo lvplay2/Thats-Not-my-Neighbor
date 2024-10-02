@@ -1,0 +1,752 @@
+[gd_scene load_steps=84 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Tutorial.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="2"]
+[ext_resource type="Texture2D" uid="uid://besqet2oxwhav" path="res://Assets/Graphics/White_noise_video.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://nm6qk4wx2mtl" path="res://Assets/Graphics/White_video.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bxebdv3fle28" path="res://Assets/Graphics/Filter_video.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://buc0nw6ub7fd1" path="res://Assets/Graphics/Darkness_video.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bmey5toqatqp" path="res://Assets/Graphics/Noise_01_video.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dnhryjm21fqg" path="res://Assets/Graphics/Noise_02_video.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://b5sqkiayvadqd" path="res://Assets/Graphics/Noise_03_video.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://ds2bc7is2ly38" path="res://Assets/Graphics/Noise_04_video.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://fgvtkeyspwkw" path="res://Assets/Graphics/Marks_video.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dyih8l3a36vpc" path="res://Assets/Graphics/Crux_video.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://3t4ovlk454if" path="res://Assets/Graphics/2_video.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bjugc26as50nc" path="res://Assets/Graphics/3_video.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dsdap823jftjf" path="res://Assets/Graphics/4_video.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://c4347nqghq53r" path="res://Assets/Graphics/5_video.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://b2ud3abagjrf5" path="res://Assets/Graphics/Letters_video.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dkcta0au8ms51" path="res://Assets/Graphics/Line_01_video.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bjimw8hhpvysc" path="res://Assets/Graphics/Line_02_video.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bxxxcoxfsoso7" path="res://Assets/Graphics/Line_03_video.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://b3u2ps6grke1t" path="res://Assets/Graphics/Line_04_video.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://fd42max2j802" path="res://Assets/Graphics/Line_05_video.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bcgcwf0apin2c" path="res://Assets/Graphics/Line_06_video.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://blx2ut43llps3" path="res://Assets/Graphics/Line_07_video.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://dhilt7puqpixp" path="res://Assets/Graphics/Line_08_video.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://cgh6tahmse3my" path="res://Assets/Graphics/Line_09_video.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://bv5ylh55n27pe" path="res://Assets/Graphics/Line_10_video.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://boh77ek04xri2" path="res://Assets/Graphics/Line_11_video.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://d2xpqd8nckejw" path="res://Assets/Graphics/Line_12_video.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://dcxj737v8fnie" path="res://Assets/Graphics/Line_13_video.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://bbmwiakyrj1xe" path="res://Assets/Graphics/Line_14_video.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://swlqvm1s867f" path="res://Assets/Graphics/Line_15_video.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://clhterwdoixmk" path="res://Assets/Graphics/Line_16_video.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://c7w8uixu3cryw" path="res://Assets/Graphics/D_D_D_English.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://uiet54g218km" path="res://Assets/Graphics/D_D_D_Spanish.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://b73msnotk561x" path="res://Assets/Graphics/Tripo_bottom.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://0uoheetm7683" path="res://Assets/Graphics/Tripo_eye.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://f3ip4mmwxbfx" path="res://Assets/Graphics/Tripo_top.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://creb4ijo7iauy" path="res://Assets/Graphics/Tripo_noise.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://cqmxhel8us5yw" path="res://Assets/Graphics/Text_border.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://c7j7slt7u5rc1" path="res://Assets/Graphics/Be_like_Henry_video_Chinese.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://wene22ae2e3v" path="res://Assets/Graphics/Be_like_Henry_video.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://b1jvtgj1s0rfa" path="res://Assets/Graphics/Se_como_Henry_video.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://c565ubxoe2plr" path="res://Assets/Graphics/But_better_video_chinese.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://c6p4lbxyeedep" path="res://Assets/Graphics/But_better_video.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://jr78rlt7h0of" path="res://Assets/Graphics/Pero_mejor_video.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://c3hoxj5f7r6fo" path="res://Assets/Graphics/Human_video.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://clh15slbbucjy" path="res://Assets/Graphics/Doppel_video.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://b878kxi7b6l7f" path="res://Assets/Graphics/Building_video.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://jiw4k7ym307t" path="res://Assets/Graphics/Blood_video.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://yya3oopdvf1u" path="res://Assets/Graphics/Henry_video.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://kshml55vwflx" path="res://Assets/Graphics/Arrow_video.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://ctoieb5t4oaiq" path="res://Assets/Graphics/Office_video.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://cv8fmpxb7ucrt" path="res://Assets/Graphics/Office_window_video.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://cdc8a5wiuglsm" path="res://Assets/Graphics/Office_folders_video.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://d38yc3up57b0y" path="res://Assets/Graphics/Office_panic_button_video.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://dxn3bje3c5ra2" path="res://Assets/Graphics/Office_mail_video.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://c1unheh85t5r2" path="res://Assets/Graphics/Office_phone_video.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://ctejvwrwo3x5g" path="res://Assets/Graphics/Office_microphone_video.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://by1u620cs8hvd" path="res://Assets/Graphics/Office_door_buttons_video.png" id="60"]
+[ext_resource type="AudioStream" uid="uid://dq2opcunboupj" path="res://Assets/SFX-Music/SFX_Select.wav" id="61"]
+[ext_resource type="AudioStream" uid="uid://dalcaapplmsmw" path="res://Assets/SFX-Music/SFX_Accept.wav" id="62"]
+[ext_resource type="AudioStream" uid="uid://d2jr0beopw63d" path="res://Assets/SFX-Music/SFX_Interference.wav" id="63"]
+[ext_resource type="AudioStream" uid="uid://diwjql25d54oi" path="res://Assets/SFX-Music/SFX_Film_Noise.ogg" id="64"]
+[ext_resource type="AudioStream" uid="uid://bogykxuv76rip" path="res://Assets/SFX-Music/SFX_Countdown.wav" id="65"]
+[ext_resource type="AudioStream" uid="uid://ccslgaldvflkc" path="res://Assets/SFX-Music/SFX_Trypophobia.wav" id="66"]
+[ext_resource type="AudioStream" uid="uid://b7cwkpu1fivjx" path="res://Assets/SFX-Music/Music_Tutorial.wav" id="67"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="68"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="69"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="70"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="71"]
+
+[sub_resource type="StyleBoxEmpty" id="1"]
+script = null
+
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41")
+}],
+"loop": true,
+"name": &"Chinese",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42")
+}],
+"loop": true,
+"name": &"English",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43")
+}],
+"loop": true,
+"name": &"Spanish",
+"speed": 5.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44")
+}],
+"loop": true,
+"name": &"Chinese",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45")
+}],
+"loop": true,
+"name": &"English",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46")
+}],
+"loop": true,
+"name": &"Spanish",
+"speed": 5.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("54")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="9"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("57")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="10"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="11"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="12"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+script = null
+
+[node name="Tutorial" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Skip" type="Button" parent="."]
+offset_left = 1556.0
+offset_top = 14.0
+offset_right = 1885.0
+offset_bottom = 143.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("1")
+action_mode = 0
+text = "Skip"
+flat = true
+
+[node name="White_Noise" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.403922)
+texture = ExtResource("3")
+centered = false
+
+[node name="White_Background" type="Sprite2D" parent="."]
+z_index = -10
+texture = ExtResource("4")
+centered = false
+
+[node name="Filter_Background" type="Sprite2D" parent="."]
+z_index = -5
+texture = ExtResource("5")
+centered = false
+
+[node name="Filter_Top" type="Sprite2D" parent="."]
+z_index = -5
+texture = ExtResource("5")
+centered = false
+
+[node name="Dark_Edges" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("6")
+centered = false
+
+[node name="Noise" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.666667)
+z_index = -1
+sprite_frames = SubResource("2")
+frame_progress = 0.290791
+centered = false
+
+[node name="Mark" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.533333)
+z_index = -1
+texture = ExtResource("11")
+centered = false
+
+[node name="Countdown" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Crux" type="Sprite2D" parent="Countdown"]
+texture = ExtResource("12")
+centered = false
+
+[node name="Number_2" type="Sprite2D" parent="Countdown"]
+visible = false
+texture = ExtResource("13")
+centered = false
+
+[node name="Number_3" type="Sprite2D" parent="Countdown"]
+visible = false
+texture = ExtResource("14")
+centered = false
+
+[node name="Number_4" type="Sprite2D" parent="Countdown"]
+visible = false
+texture = ExtResource("15")
+centered = false
+
+[node name="Number_5" type="Sprite2D" parent="Countdown"]
+texture = ExtResource("16")
+centered = false
+
+[node name="Letters" type="Sprite2D" parent="Countdown"]
+visible = false
+texture = ExtResource("17")
+centered = false
+
+[node name="Count" type="AnimatedSprite2D" parent="Countdown"]
+z_index = -1
+sprite_frames = SubResource("3")
+frame_progress = 0.848853
+centered = false
+
+[node name="DDD" type="Node2D" parent="."]
+z_index = -1
+
+[node name="DDD_logo_English" type="Sprite2D" parent="DDD"]
+visible = false
+position = Vector2(200, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("34")
+centered = false
+
+[node name="DDD_logo_Spanish" type="Sprite2D" parent="DDD"]
+visible = false
+position = Vector2(200, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("35")
+centered = false
+
+[node name="Trypo" type="Node2D" parent="."]
+visible = false
+
+[node name="Bottom" type="Sprite2D" parent="Trypo"]
+texture = ExtResource("36")
+centered = false
+
+[node name="Eye" type="Sprite2D" parent="Trypo"]
+position = Vector2(166, 152)
+texture = ExtResource("37")
+
+[node name="Eye2" type="Sprite2D" parent="Trypo"]
+position = Vector2(667, 309)
+rotation = -1.70054
+texture = ExtResource("37")
+
+[node name="Eye3" type="Sprite2D" parent="Trypo"]
+position = Vector2(437, 677)
+texture = ExtResource("37")
+
+[node name="Eye4" type="Sprite2D" parent="Trypo"]
+position = Vector2(35, 644)
+rotation = -1.113
+texture = ExtResource("37")
+
+[node name="Eye5" type="Sprite2D" parent="Trypo"]
+position = Vector2(335, 967)
+rotation = 4.05904
+texture = ExtResource("37")
+
+[node name="Eye6" type="Sprite2D" parent="Trypo"]
+position = Vector2(701, 1032)
+rotation = -0.611192
+texture = ExtResource("37")
+
+[node name="Eye7" type="Sprite2D" parent="Trypo"]
+position = Vector2(959, 763)
+rotation = -0.747931
+texture = ExtResource("37")
+
+[node name="Eye8" type="Sprite2D" parent="Trypo"]
+position = Vector2(950, 226)
+rotation = 0.512263
+texture = ExtResource("37")
+
+[node name="Eye9" type="Sprite2D" parent="Trypo"]
+position = Vector2(1363, 499)
+rotation = -1.04091
+texture = ExtResource("37")
+
+[node name="Eye10" type="Sprite2D" parent="Trypo"]
+position = Vector2(1426, 902)
+rotation = -0.750191
+texture = ExtResource("37")
+
+[node name="Eye11" type="Sprite2D" parent="Trypo"]
+position = Vector2(1841, 982)
+rotation = -2.30152
+texture = ExtResource("37")
+
+[node name="Eye12" type="Sprite2D" parent="Trypo"]
+position = Vector2(1753, 506)
+texture = ExtResource("37")
+
+[node name="Eye13" type="Sprite2D" parent="Trypo"]
+position = Vector2(1524, 91)
+texture = ExtResource("37")
+
+[node name="Eye14" type="Sprite2D" parent="Trypo"]
+position = Vector2(1900, 135)
+rotation = -0.780861
+texture = ExtResource("37")
+
+[node name="Eye15" type="Sprite2D" parent="Trypo"]
+position = Vector2(1249, 1118)
+rotation = -0.780861
+texture = ExtResource("37")
+
+[node name="Top" type="Sprite2D" parent="Trypo"]
+texture = ExtResource("38")
+centered = false
+
+[node name="Noise" type="Sprite2D" parent="Trypo"]
+texture = ExtResource("39")
+centered = false
+
+[node name="Noise2" type="Sprite2D" parent="Trypo"]
+texture = ExtResource("39")
+centered = false
+
+[node name="Noise3" type="Sprite2D" parent="Trypo"]
+visible = false
+texture = ExtResource("39")
+centered = false
+
+[node name="Text" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 946.0
+offset_top = 849.0
+offset_right = 986.0
+offset_bottom = 889.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Text"]
+modulate = Color(1, 1, 1, 0.862745)
+layout_mode = 0
+offset_left = -778.0
+offset_top = -100.0
+offset_right = -732.0
+offset_bottom = -60.0
+scale = Vector2(34.28, 7.24)
+
+[node name="Label" type="Label" parent="Text"]
+layout_mode = 0
+offset_left = -762.0
+offset_top = -75.0
+offset_right = 789.0
+offset_bottom = 175.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 80
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="Border" type="Sprite2D" parent="Text"]
+position = Vector2(15, 50)
+scale = Vector2(1.8, 1.7)
+texture = ExtResource("40")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+
+[node name="Timer_between_text" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="Timer_white_noise" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Timer_Tripo" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="Timer_Tripo_Noise" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Timer_Tripo_Noise_ON" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Be_like_Henry" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(1300, 300)
+sprite_frames = SubResource("4")
+animation = &"Chinese"
+
+[node name="But_Better" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(1265, 550)
+sprite_frames = SubResource("5")
+animation = &"Chinese"
+
+[node name="Logos" type="Node2D" parent="."]
+z_index = -2
+
+[node name="Human" type="Sprite2D" parent="Logos"]
+position = Vector2(970, -235)
+texture = ExtResource("47")
+
+[node name="Human_window" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(940, 550)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("47")
+
+[node name="Human2" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(570, 400)
+texture = ExtResource("47")
+
+[node name="Doppelganger" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(1370, 390)
+texture = ExtResource("48")
+
+[node name="Building" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(1370, 309)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("49")
+
+[node name="Blood" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(914, 544)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("50")
+
+[node name="Henry" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(391, 425)
+texture = ExtResource("51")
+
+[node name="Arrow" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(967, 416)
+texture = ExtResource("52")
+
+[node name="Office" type="Sprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 540)
+texture = ExtResource("53")
+
+[node name="Window" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("6")
+frame_progress = 0.00437656
+
+[node name="Folders" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("7")
+frame_progress = 0.524447
+
+[node name="Emergency" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("8")
+frame_progress = 0.487591
+
+[node name="Hatch" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("9")
+frame_progress = 0.884176
+
+[node name="Phone" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("10")
+
+[node name="Micro" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(893, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("11")
+frame_progress = 0.325073
+
+[node name="Buttons" type="AnimatedSprite2D" parent="Logos"]
+visible = false
+position = Vector2(960, 397)
+scale = Vector2(0.775, 0.775)
+sprite_frames = SubResource("12")
+frame_progress = 0.037286
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("61")
+
+[node name="Accept" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("62")
+
+[node name="Interference" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("63")
+pitch_scale = 0.5
+
+[node name="Film_noise" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("64")
+
+[node name="Countdown_Pip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("65")
+
+[node name="Trypophobia" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("66")
+pitch_scale = 1.5
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("67")
+
+[node name="Voice_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("68")
+pitch_scale = 1.3
+
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("69")
+pitch_scale = 1.3
+
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("70")
+pitch_scale = 1.3
+
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("71")
+pitch_scale = 1.2
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("70")
+pitch_scale = 0.85
+
+[connection signal="mouse_entered" from="Skip" to="." method="_on_skip_mouse_entered"]
+[connection signal="mouse_exited" from="Skip" to="." method="_on_skip_mouse_exited"]
+[connection signal="pressed" from="Skip" to="." method="_on_skip_pressed"]
+[connection signal="animation_looped" from="Countdown/Count" to="." method="_on_count_animation_looped"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer_between_text" to="." method="_on_timer_between_text_timeout"]
+[connection signal="timeout" from="Timer_white_noise" to="." method="_on_timer_white_noise_timeout"]
+[connection signal="timeout" from="Timer_Tripo" to="." method="_on_timer_tripo_timeout"]
+[connection signal="timeout" from="Timer_Tripo_Noise" to="." method="_on_timer_tripo_noise_timeout"]
+[connection signal="timeout" from="Timer_Tripo_Noise_ON" to="." method="_on_timer_tripo_noise_on_timeout"]
+[connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_02" to="." method="_on_voice_02_finished"]
+[connection signal="finished" from="Voice_03" to="." method="_on_voice_03_finished"]
+[connection signal="finished" from="Voice_04" to="." method="_on_voice_04_finished"]

@@ -1,0 +1,379 @@
+[gd_scene load_steps=34 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Xezbet.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dxp8xu4debsv4" path="res://Assets/Graphics/Char_Xezbet_Body.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dyteuvf37y11f" path="res://Assets/Graphics/Char_Roman_Head.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://mh52rxvpjyxu" path="res://Assets/Graphics/Char_Xezbet_tatoo_02.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://biw2w2qpnfrq0" path="res://Assets/Graphics/Char_Xezbet_tatoo_02_doppel_01.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dre4c52xs8pho" path="res://Assets/Graphics/Char_Xezbet_tatoo_02_doppel_02.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dghainqis0i4j" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_01.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dqebsrpjie7dh" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_05.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://kfhsevcgt2px" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_03.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://kngl6s4flt45" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_02.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://8rbbu1737gmn" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_04.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://lq0wfjnf8pv8" path="res://Assets/Graphics/Clown_eyes_03.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://c1boujhovr1i2" path="res://Assets/Graphics/Char_Xezbet_nose.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dg6okkegyfeil" path="res://Assets/Graphics/Char_Xezbet_nose_doppel_01.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://bs4b0hr0ja48p" path="res://Assets/Graphics/Char_Xezbet_nose_doppel_02.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://uqj64hr0wowc" path="res://Assets/Graphics/Char_Afton_Doppel_Scar.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cn3xgw60y3eav" path="res://Assets/Graphics/Char_Xezbet_tatoo_01.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://boru880exe74q" path="res://Assets/Graphics/Char_Xezbet_tatoo_01_doppel_01.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://sggprjlw5gmm" path="res://Assets/Graphics/Char_Xezbet_tatoo_01_doppel_02.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://eokljgms5hth" path="res://Assets/Graphics/Char_Roman_Doppel_Scar.png" id="20"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="21"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="22"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="23"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="24"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="25"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
+"loop": true,
+"name": &"CLOSE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
+"loop": true,
+"name": &"TALK",
+"speed": 10.0
+}]
+script = null
+
+[sub_resource type="Animation" id="2"]
+resource_name = "IDLE"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.03, 1.03)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "WALK"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -30)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="5"]
+_data = {
+"IDLE": SubResource("2"),
+"RESET": SubResource("3"),
+"WALK": SubResource("4")
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="Animation" id="7"]
+resource_name = "TALK"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 1.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.015, 1.015)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="8"]
+_data = {
+"RESET": SubResource("6"),
+"TALK": SubResource("7")
+}
+script = null
+
+[node name="Xezbet" type="Node2D"]
+position = Vector2(998, 280)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1")
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Xezbet" type="Sprite2D" parent="Body"]
+self_modulate = Color(0.67451, 0.67451, 0.67451, 1)
+position = Vector2(-22.6667, 585.333)
+texture = ExtResource("2")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Xezbet" type="Node2D" parent="Head"]
+position = Vector2(13.3333, -34.6667)
+
+[node name="Head" type="Sprite2D" parent="Head/Xezbet"]
+self_modulate = Color(0.901961, 0.968627, 1, 1)
+position = Vector2(-17.3208, 84.9237)
+texture = ExtResource("3")
+
+[node name="Tatoo2" type="Sprite2D" parent="Head/Xezbet"]
+position = Vector2(-17.3333, 334.667)
+texture = ExtResource("4")
+
+[node name="Tatoo2_doppel_01" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-17.3333, 334.667)
+texture = ExtResource("5")
+
+[node name="Tatoo2_doppel_02" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-17.3333, 334.667)
+texture = ExtResource("6")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="Head/Xezbet"]
+self_modulate = Color(0.901961, 0.862745, 0.756863, 1)
+position = Vector2(-18.6667, 220.985)
+sprite_frames = SubResource("1")
+animation = &"CLOSE"
+frame_progress = 0.0465533
+
+[node name="Eyes" type="Sprite2D" parent="Head/Xezbet"]
+position = Vector2(-21.3333, 30.6667)
+texture = ExtResource("12")
+
+[node name="Nose" type="Sprite2D" parent="Head/Xezbet"]
+position = Vector2(-14.6667, 109.712)
+texture = ExtResource("13")
+
+[node name="Nosedoppel_01" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-14.6667, 109.712)
+texture = ExtResource("14")
+
+[node name="Nosedoppel_02" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-14.6667, 109.712)
+texture = ExtResource("15")
+
+[node name="Scar_Forehead" type="Sprite2D" parent="Head/Xezbet"]
+position = Vector2(-21.3333, -149.333)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("16")
+
+[node name="Scar_Forehead_doppel" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-21.3333, -149.333)
+scale = Vector2(0.84, 0.84)
+texture = ExtResource("16")
+
+[node name="Tatoo" type="Sprite2D" parent="Head/Xezbet"]
+position = Vector2(-142.667, 136)
+texture = ExtResource("17")
+
+[node name="Tatoo_doppel_01" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-142.667, 136)
+texture = ExtResource("18")
+
+[node name="Tatoo_doppel_02" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(-142.667, 136)
+texture = ExtResource("19")
+
+[node name="Scar" type="Sprite2D" parent="Head/Xezbet"]
+position = Vector2(108, 122.667)
+texture = ExtResource("20")
+
+[node name="Scar_doppel" type="Sprite2D" parent="Head/Xezbet"]
+visible = false
+position = Vector2(114.667, 128)
+rotation = 3.14159
+texture = ExtResource("20")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("5")
+}
+
+[node name="Talk" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("8")
+}
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21")
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22")
+pitch_scale = 1.5
+
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23")
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24")
+pitch_scale = 1.5
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25")
+pitch_scale = 2.0
+
+[connection signal="finished" from="Voice_05" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_06" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_07" to="." method="_on_voice_finished"]
+[connection signal="finished" from="Voice_08" to="." method="_on_voice_finished"]
