@@ -8,12 +8,8 @@ path="res://.godot/imported/SFX_Siren.ogg-df54ade22f3c4edbfb419a7f7b117e3e.oggvo
 [deps]
 
 source_file="res://Assets/SFX-Music/SFX_Siren.ogg"
-dest_files=["res://.godot/imported/SFX_Siren.ogg-df54ade22f3c4edbfb419a7f7b117e3e.oggvorbisstr"]
+dest_files=PackedStringArray("res://.godot/imported/SFX_Siren.ogg-df54ade22f3c4edbfb419a7f7b117e3e.oggvorbisstr")
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4
+dummy_value_ignore_me=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dvgiy5k1j7txi"]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://Scripts/loading_screen.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://bjukwrj7sry72" path="res://Assets/Fonts/NotoSansSC-VariableFont_wght.ttf" id="2"]
@@ -6,8 +6,9 @@
 [ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="4"]
 
 [sub_resource type="FontVariation" id="1"]
-fallbacks = Array[Font]([ExtResource("2"), ExtResource("3")])
+fallbacks = [ExtResource("2"), ExtResource("3")]
 base_font = ExtResource("4")
+script = null
 
 [node name="Loading_screen" type="Node2D"]
 script = ExtResource("1")

@@ -8,12 +8,8 @@ path="res://.godot/imported/SFX_Phone_Ring.ogg-86936e39709ad13a20074f888c3a5f29.
 [deps]
 
 source_file="res://Assets/SFX-Music/SFX_Phone_Ring.ogg"
-dest_files=["res://.godot/imported/SFX_Phone_Ring.ogg-86936e39709ad13a20074f888c3a5f29.oggvorbisstr"]
+dest_files=PackedStringArray("res://.godot/imported/SFX_Phone_Ring.ogg-86936e39709ad13a20074f888c3a5f29.oggvorbisstr")
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4
+dummy_value_ignore_me=0

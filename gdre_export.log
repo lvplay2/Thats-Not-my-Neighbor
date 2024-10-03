@@ -1,8 +1,8 @@
-GDRE Tools v0.6.2
+GDRE Tools v0.7.0-prerelease.1
 Windows 10.0.19045, NVIDIA GeForce GTX 1650 SUPER, opengl3
 Extracted 2989 files, no errors detected!
-USER WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
-   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:58)
+WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:65)
 Did not rewrite import metadata for res://icon.svg
 Saved project config project.godot.
 

@@ -8,12 +8,8 @@ path="res://.godot/imported/SFX_Film_Noise.ogg-cca617d66f2ef0fdfdff711bd376a70d.
 [deps]
 
 source_file="res://Assets/SFX-Music/SFX_Film_Noise.ogg"
-dest_files=["res://.godot/imported/SFX_Film_Noise.ogg-cca617d66f2ef0fdfdff711bd376a70d.oggvorbisstr"]
+dest_files=PackedStringArray("res://.godot/imported/SFX_Film_Noise.ogg-cca617d66f2ef0fdfdff711bd376a70d.oggvorbisstr")
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4
+dummy_value_ignore_me=0
