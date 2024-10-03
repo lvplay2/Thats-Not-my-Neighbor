@@ -50,7 +50,9 @@ const OPTIONS_FOLDER_FINAL_POS = Vector2(-850,0)
 const SIZE_960X540 = Vector2i(960, 540)
 const SIZE_1280X720 = Vector2i(1280, 720)
 const SIZE_1920X1080 = Vector2i(1920, 1080)
-const CREDITS_ENGLISH = "Developed by Ignacio Alvarado
+const CREDITS_ENGLISH = "Developed by Ignacio Alvarado and
+decompiled with gdsdecomp by
+Matías Ferreyra
 
 Engine: Godot 4
 
@@ -68,7 +70,9 @@ Experimental Abstract Ethno Latin style
 Guitar Slow Cinematic World Modern Music - 
 Mastered
 89bpm" 
-const CREDITS_SPANISH = "Desarrollado por Ignacio Alvarado
+const CREDITS_SPANISH = "Desarrollado por Ignacio Alvarado y
+decompilado con gdsdecomp por
+Matías Ferreyra
 
 Motor: Godot 4
 
@@ -86,7 +90,8 @@ Experimental Abstract Ethno Latin style
 Guitar Slow Cinematic World Modern Music - 
 Mastered
 89bpm" 
-const CREDITS_CHINESE = "由Ignacio Alvarado开发
+const CREDITS_CHINESE = "由Ignacio Alvarado开发，由 Matías Ferreyra
+使用gdsdecomp 反编译
 
 引擎： Godot 4
 

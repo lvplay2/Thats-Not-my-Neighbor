@@ -10,7 +10,7 @@ extends Node
 # Experimental Abstract Ethno Latin style Guitar Slow Cinematic World Modern Music - Mastered
 # 89Bpm
 
-# Developed by Ignacio Alvarado 
+# Developed by Ignacio Alvarado and decompiled with gdsdecomp by Matías Ferreyra
 # Create on April 2023
 # Last update on May 21 2024
 
