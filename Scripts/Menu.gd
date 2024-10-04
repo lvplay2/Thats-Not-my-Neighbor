@@ -52,7 +52,7 @@ const OPTIONS_FOLDER_FINAL_POS = Vector2(-850, 0)
 const SIZE_960X540 = Vector2i(960, 540)
 const SIZE_1280X720 = Vector2i(1280, 720)
 const SIZE_1920X1080 = Vector2i(1920, 1080)
-const CREDITS_ENGLISH = "Developed by Ignacio Alvarado and\n\ndecompiled with gdsdecomp by\n\nMatías Ferreyra\n\nEngine: Godot 4\n\nTutorial music:\n\nMusic from #Uppbeat (free for Creators!):\n https://uppbeat.io/t/albert-behar/\ndixieland-strut\n License code: 2LNDEW2CZF12MRAY\n\nMenu music:\n\nszegvari\nExperimental Abstract Ethno Latin style \nGuitar Slow Cinematic World Modern Music - \nMastered\n89bpm"
+const CREDITS_ENGLISH = "Developed by Ignacio Alvarado and\ndecompiled with gdsdecomp by\nMatías Ferreyra\n\nEngine: Godot 4\n\nTutorial music:\n\nMusic from #Uppbeat (free for Creators!):\n https://uppbeat.io/t/albert-behar/\ndixieland-strut\n License code: 2LNDEW2CZF12MRAY\n\nMenu music:\n\nszegvari\nExperimental Abstract Ethno Latin style \nGuitar Slow Cinematic World Modern Music - \nMastered\n89bpm"
 
 
 
@@ -70,7 +70,7 @@ const CREDITS_ENGLISH = "Developed by Ignacio Alvarado and\n\ndecompiled with gd
 
 
 
-const CREDITS_SPANISH = "Desarrollado por Ignacio Alvarado y\n\ndecompilado con gdsdecomp por\n\nMatías Ferreyra\n\nMotor: Godot 4\n\nMúsica del tutorial:\n\nMusic from #Uppbeat (free for Creators!):\n https://uppbeat.io/t/albert-behar/\ndixieland-strut\n License code: 2LNDEW2CZF12MRAY\n\nMúsica del menú:\n\nszegvari\nExperimental Abstract Ethno Latin style \nGuitar Slow Cinematic World Modern Music - \nMastered\n89bpm"
+const CREDITS_SPANISH = "Desarrollado por Ignacio Alvarado y\ndecompilado con gdsdecomp por\nMatías Ferreyra\n\nMotor: Godot 4\n\nMúsica del tutorial:\n\nMusic from #Uppbeat (free for Creators!):\n https://uppbeat.io/t/albert-behar/\ndixieland-strut\n License code: 2LNDEW2CZF12MRAY\n\nMúsica del menú:\n\nszegvari\nExperimental Abstract Ethno Latin style \nGuitar Slow Cinematic World Modern Music - \nMastered\n89bpm"
 
 
 
@@ -88,7 +88,7 @@ const CREDITS_SPANISH = "Desarrollado por Ignacio Alvarado y\n\ndecompilado con 
 
 
 
-const CREDITS_CHINESE = "由Ignacio Alvarado开发，由 Matías Ferreyra\n\n使用gdsdecomp 反编译\n\n引擎： Godot 4\n\n教程音乐：\n\nMusic from #Uppbeat (free for Creators!):\n https://uppbeat.io/t/albert-behar/\ndixieland-strut\n License code: 2LNDEW2CZF12MRAY\n\n菜单音乐：\n\nszegvari\nExperimental Abstract Ethno Latin style \nGuitar Slow Cinematic World Modern Music - \nMastered\n89bpm"
+const CREDITS_CHINESE = "由Ignacio Alvarado开发，由 Matías Ferreyra\n使用gdsdecomp 反编译\n引擎： Godot 4\n\n教程音乐：\n\nMusic from #Uppbeat (free for Creators!):\n https://uppbeat.io/t/albert-behar/\ndixieland-strut\n License code: 2LNDEW2CZF12MRAY\n\n菜单音乐：\n\nszegvari\nExperimental Abstract Ethno Latin style \nGuitar Slow Cinematic World Modern Music - \nMastered\n89bpm"
 
 
 
