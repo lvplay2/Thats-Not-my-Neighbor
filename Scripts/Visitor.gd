@@ -4,9 +4,9 @@ const ENGLISH_VALUE = 0
 const SPANISH_VALUE = 1
 const CHINESE_VALUE = 2
 const VISIBLE_RATIO = 1.0
-const CHAR_AT_SPAWN_POS = Vector2(100,265)
-const CHAR_AT_CENTER_WINDOW_POS = Vector2(990,265)
-const CHAR_AT_DELETE_POS = Vector2(1900,265)
+const CHAR_AT_SPAWN_POS = Vector2(100, 265)
+const CHAR_AT_CENTER_WINDOW_POS = Vector2(990, 265)
+const CHAR_AT_DELETE_POS = Vector2(1900, 265)
 const TIME_ON_TWEEN = 1.5
 const SFX_ADJUTS_LEVEL = 10
 
@@ -17,19 +17,19 @@ const SFX_ADJUTS_LEVEL = 10
 @onready var sfx_voice_03 = $Voice_07
 @onready var sfx_voice_04 = $Voice_08
 @onready var sfx_footsteps = $Footsteps
-@onready var roman_42_body = $Body/Roman42
-@onready var peach_body = $Body/Robertsky
-@onready var nurse_body = $Body/Nurse
-@onready var roman_42_head = $Head/Roman42
-@onready var peach_head = $Head/Robertsky
-@onready var nurse_head = $Head/Nurse
-@onready var mouth_nurse = $Head/Nurse/Mouth
-@onready var mouth_peach = $Head/Robertsky/Mouth
+@onready var roman_42_body = $Body / Roman42
+@onready var peach_body = $Body / Robertsky
+@onready var nurse_body = $Body / Nurse
+@onready var roman_42_head = $Head / Roman42
+@onready var peach_head = $Head / Robertsky
+@onready var nurse_head = $Head / Nurse
+@onready var mouth_nurse = $Head / Nurse / Mouth
+@onready var mouth_peach = $Head / Robertsky / Mouth
 
 var current_text = []
 var checklist_values = []
 var is_42 = false
-var is_peach = false 
+var is_peach = false
 var id_photo
 var entry_photo
 var speak_flag = true
@@ -49,25 +49,25 @@ var apart_number
 var dont_show_id
 var dont_show_entry_request
 
-func _ready() -> void:
+func _ready()->void :
 	randomize()
 	set_sfx_volume()
 	var tween = create_tween()
-	tween.tween_property(self,"position",CHAR_AT_CENTER_WINDOW_POS,TIME_ON_TWEEN)
+	tween.tween_property(self, "position", CHAR_AT_CENTER_WINDOW_POS, TIME_ON_TWEEN)
 	animation.play("WALK")
 	_play_sfx(4)
 	await get_tree().create_timer(TIME_ON_TWEEN).timeout
 	if Global.is_door_locked:
 		animation.play("IDLE")
 
-func _process(_delta) -> void:
+func _process(_delta)->void :
 	if self.position == CHAR_AT_CENTER_WINDOW_POS:
 		if !Global.is_door_locked:
 			delete()
 		elif speak_flag:
 			_first_words()
 
-func select_visitor() -> void:
+func select_visitor()->void :
 	if is_42:
 		roman_42_head.visible = true
 		roman_42_body.visible = true
@@ -79,7 +79,7 @@ func select_visitor() -> void:
 		id_exp_date = "42"
 		entry_request_reason = "1+1+1+1+1+1+1+1+1+1+1+1+\n1+1+1+1+1+1+1+1+1+1+1+1+\n1+1+1+1+1+1+1+1+1+1+1+1+\n1+1+1+1+1+1."
 		hello_text = ["42 ....."]
-		id_text = ["42 ....."] 
+		id_text = ["42 ....."]
 		entry_text = ["42 ....."]
 		appearance_text = ["42 ....."]
 		today_list_text = ["42 ....."]
@@ -104,7 +104,7 @@ func select_visitor() -> void:
 		exit_text = ["Pe pe pe peach peach peach peach."]
 		repeat_question = ["Peach pe pe peach peach pe peach."]
 		apart_number = "Peach"
-	else:
+	else :
 		nurse_head.visible = true
 		nurse_body.visible = true
 		id_photo = load("res://Assets/Graphics/Char_nurse_Small_Photo.png")
@@ -115,18 +115,18 @@ func select_visitor() -> void:
 		id_exp_date = "XLCIVI"
 		entry_request_reason = "Vir serpentem Sole obtulit et salutem deprecatus est.\nMulier arundinem Sole obtulit et gaudium petivit.\nCompassione motus tristitia quae terram domabat, Deus ex illis duabus personis natus est."
 		hello_text = ["Salve, mortalis."]
-		id_text = ["Initio, homines nihil habebant.","Corpora eorum dolebant, et corda eorum odio plena erant."]
-		entry_text = ["Certabant incessanter, sed mors numquam adveniebat.","Desperati sunt, immobiliter in aeternum incedentes."]
-		appearance_text = ["Vir serpentem Sole obtulit et salutem deprecatus est.","Mulier arundinem Sole obtulit et gaudium petivit."]
+		id_text = ["Initio, homines nihil habebant.", "Corpora eorum dolebant, et corda eorum odio plena erant."]
+		entry_text = ["Certabant incessanter, sed mors numquam adveniebat.", "Desperati sunt, immobiliter in aeternum incedentes."]
+		appearance_text = ["Vir serpentem Sole obtulit et salutem deprecatus est.", "Mulier arundinem Sole obtulit et gaudium petivit."]
 		today_list_text = ["Compassione motus tristitia quae terram domabat, Deus ex illis duabus personis natus est."]
-		exit_text = ["Sed tunc Deo defecerunt vires, et Ipsa concidit.","Ipsa rediit ad pulverem, promittens iterum revenire."]
+		exit_text = ["Sed tunc Deo defecerunt vires, et Ipsa concidit.", "Ipsa rediit ad pulverem, promittens iterum revenire."]
 		repeat_question = ["Ea redibit."]
 		apart_number = "DCLXVI"
 
-func _first_words() -> void:
+func _first_words()->void :
 	speak_flag = false
-	get_parent().get_parent().set_id(name_char,last_name_char,number_id,id_exp_date,id_photo)
-	get_parent().get_parent().set_entry_request(name_char,last_name_char,apart_number,entry_request_reason,entry_photo)
+	get_parent().get_parent().set_id(name_char, last_name_char, number_id, id_exp_date, id_photo)
+	get_parent().get_parent().set_entry_request(name_char, last_name_char, apart_number, entry_request_reason, entry_photo)
 	if is_42 and Global.achievements_2["42"] == 0:
 		Global.achievements_2["42"] = 1
 		get_parent().get_parent()._show_unlock_achievement()
@@ -140,32 +140,32 @@ func _first_words() -> void:
 	change_current_text(0)
 	get_parent().get_parent().text_selection()
 
-func change_current_text(n:int) -> void:
+func change_current_text(n: int)->void :
 	match n:
 		0:
 			current_text = hello_text
 		1:
 			if Global.is_id_wrong_answer:
 				current_text = repeat_question
-			else:
+			else :
 				current_text += id_text
 			Global.is_id_wrong_answer = true
 		2:
 			if Global.is_appearance_wrong_answer:
 				current_text = repeat_question
-			else:
+			else :
 				current_text += appearance_text
 			Global.is_appearance_wrong_answer = true
 		3:
 			if Global.is_entry_request_wrong_answer:
 				current_text = repeat_question
-			else:
+			else :
 				current_text += entry_text
 			Global.is_entry_request_wrong_answer = true
 		4:
 			if Global.is_today_list_wrong_answer:
 				current_text = repeat_question
-			else:
+			else :
 				current_text += today_list_text
 			Global.is_today_list_wrong_answer = true
 		5:
@@ -175,14 +175,14 @@ func change_current_text(n:int) -> void:
 		_:
 			current_text = []
 
-func set_sfx_volume() -> void:
+func set_sfx_volume()->void :
 	sfx_voice_01.volume_db = Global.sound_level
 	sfx_voice_02.volume_db = Global.sound_level
 	sfx_voice_03.volume_db = Global.sound_level
 	sfx_voice_04.volume_db = Global.sound_level
 	sfx_footsteps.volume_db = Global.sound_level - SFX_ADJUTS_LEVEL
 
-func talk() -> void:
+func talk()->void :
 	talking.play("TALK")
 	if is_peach:
 		mouth_peach.play("TALK")
@@ -192,48 +192,48 @@ func talk() -> void:
 func get_text():
 	return current_text.duplicate()
 
-func _play_sfx(n:int) -> void:
+func _play_sfx(n: int)->void :
 	match n:
-		0: 
+		0:
 			sfx_voice_01.play()
-		1: 
+		1:
 			sfx_voice_02.play()
-		2: 
+		2:
 			sfx_voice_03.play()
-		3: 
+		3:
 			sfx_voice_04.play()
 		4:
 			sfx_footsteps.play()
 
-func play_random_sfx() -> void:
+func play_random_sfx()->void :
 	var check = get_parent().get_parent().text_label.visible_ratio
 	if check != VISIBLE_RATIO:
-		_play_sfx(randi_range(0,3))
+		_play_sfx(randi_range(0, 3))
 		talk()
-	else:
+	else :
 		talking.stop()
 		if is_peach:
 			mouth_peach.play("CLOSE")
 		elif !is_42:
 			mouth_nurse.play("CLOSE")
 
-func _on_voice_finished() -> void:
+func _on_voice_finished()->void :
 	play_random_sfx()
 
-func _record_update() -> void:
+func _record_update()->void :
 	if Global.is_3312_active:
 		Global.chars_killed_level += 1
 		if is_42:
 			Global.neighbors_killed_info += "*42"
 		elif is_peach:
 			Global.neighbors_killed_info += "*Peach"
-		else:
+		else :
 			Global.neighbors_killed_info += "*Nurse"
 		Global.entity_spawn = true
 
-func delete() -> void:
+func delete()->void :
 	var tween = create_tween()
-	tween.tween_property(self,"position",CHAR_AT_DELETE_POS,TIME_ON_TWEEN)
+	tween.tween_property(self, "position", CHAR_AT_DELETE_POS, TIME_ON_TWEEN)
 	animation.play("WALK")
 	_play_sfx(4)
 	get_parent().get_parent().on_neighbor_gone()
@@ -241,6 +241,6 @@ func delete() -> void:
 	get_parent().get_parent().start_time_between_char()
 	delete_free()
 
-func delete_free() -> void:
+func delete_free()->void :
 	_record_update()
 	call_deferred("queue_free")

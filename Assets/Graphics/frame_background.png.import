@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bgf7x8h3selga"
+path="res://.godot/imported/frame_background.png-064f8c89fde3afad23bab31b48fe6eca.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/frame_background.png"
+dest_files=PackedStringArray("res://.godot/imported/frame_background.png-064f8c89fde3afad23bab31b48fe6eca.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

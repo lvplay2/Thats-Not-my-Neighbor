@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3]
+[gd_scene load_steps=47 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Steven.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://b3is7x5tyhka6" path="res://Assets/Graphics/Char_Steven_body.png" id="2"]
@@ -21,18 +21,19 @@
 [ext_resource type="Texture2D" uid="uid://bvvqip0tw4mjp" path="res://Assets/Graphics/Char_Steven_eyebrows.png" id="19"]
 [ext_resource type="Texture2D" uid="uid://bx7ej7a11obcu" path="res://Assets/Graphics/Char_Steven_Glasses.png" id="20"]
 [ext_resource type="Texture2D" uid="uid://dxkvyxn5adsbe" path="res://Assets/Graphics/Char_Roman_Doppel_Nose.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://bg1blg2m3oudk" path="res://Assets/Graphics/Char_Alf_Nose.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://cgjb0e4ebxk1m" path="res://Assets/Graphics/Char_Elenois_Selenne_Mole.png" id="23"]
-[ext_resource type="Texture2D" uid="uid://csoepq2s2aoma" path="res://Assets/Graphics/Char_Steven_doppel_paper.png" id="24"]
-[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="25"]
-[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="26"]
-[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="27"]
-[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="28"]
-[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="29"]
-[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="30"]
-[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="31"]
-[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="32"]
-[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="33"]
+[ext_resource type="Texture2D" uid="uid://32w3cedheatl" path="res://Assets/Graphics/Char_Mclooy_Nose_Doppel.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bg1blg2m3oudk" path="res://Assets/Graphics/Char_Alf_Nose.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cgjb0e4ebxk1m" path="res://Assets/Graphics/Char_Elenois_Selenne_Mole.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://csoepq2s2aoma" path="res://Assets/Graphics/Char_Steven_doppel_paper.png" id="25"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="26"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="27"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="28"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="29"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="30"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="31"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="32"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="33"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="34"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Moving"
@@ -637,22 +638,27 @@ position = Vector2(-21.1667, 1.33333)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("21")
 
+[node name="Nose_Doppel" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-21.1667, 1.33333)
+texture = ExtResource("22")
+
 [node name="Doppel_Nose" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-23.8333, 1.33333)
 scale = Vector2(0.73, 0.73)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Mole" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(32.1667, 180)
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Paper" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-45.1667, 6.66667)
-texture = ExtResource("24")
+texture = ExtResource("25")
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
@@ -665,37 +671,37 @@ libraries = {
 }
 
 [node name="Voice_01" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("25")
-pitch_scale = 1.3
-
-[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("26")
 pitch_scale = 1.3
 
-[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("27")
 pitch_scale = 1.3
 
-[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("28")
 pitch_scale = 1.3
 
-[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("29")
+pitch_scale = 1.3
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30")
 
 [node name="Voice_05" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("30")
+stream = ExtResource("31")
 pitch_scale = 1.5
 
 [node name="Voice_06" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("31")
+stream = ExtResource("32")
 
 [node name="Voice_07" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("32")
+stream = ExtResource("33")
 pitch_scale = 1.5
 
 [node name="Voice_08" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("33")
+stream = ExtResource("34")
 pitch_scale = 2.0
 
 [connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]

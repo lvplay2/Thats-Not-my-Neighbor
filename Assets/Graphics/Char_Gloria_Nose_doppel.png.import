@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b4k1cfgmcm7ph"
+path="res://.godot/imported/Char_Gloria_Nose_doppel.png-27a542934930c25ca6423f5ecd55dd99.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Gloria_Nose_doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Gloria_Nose_doppel.png-27a542934930c25ca6423f5ecd55dd99.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

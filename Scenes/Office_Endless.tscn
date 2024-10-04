@@ -1,0 +1,3894 @@
+[gd_scene load_steps=201 format=4]
+
+[ext_resource type="Script" path="res://Scripts/Office_Endless.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cqmxhel8us5yw" path="res://Assets/Graphics/Text_border.png" id="2"]
+[ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="3"]
+[ext_resource type="Texture2D" uid="uid://7eb2pef2f15" path="res://Assets/Graphics/Paper.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bpj1f8kkd0p0s" path="res://Assets/Graphics/Blood_table.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bsmqbtsrpaduh" path="res://Assets/Graphics/Folder_button_exit.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cvxpib0018mvr" path="res://Assets/Graphics/Folder_button_exit_hover.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cvky0rsqjcdql" path="res://Assets/Graphics/DDD_logo.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cu3o0k3re38hj" path="res://Assets/Graphics/DDD_logo_fake.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bxki7klh24jy8" path="res://Assets/Graphics/DDD_logo_fake_02.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dw6anb47e433d" path="res://Assets/Graphics/DDD_logo_fake_03.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://fubejfotc6qc" path="res://Assets/Graphics/Frame_photo.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://bg2jwonm3rd3y" path="res://Assets/Graphics/Char_Roman_Long_Photo.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://c24oae16ypu4i" path="res://Assets/Graphics/Border.png" id="14"]
+[ext_resource type="FontFile" uid="uid://bjukwrj7sry72" path="res://Assets/Fonts/NotoSansSC-VariableFont_wght.ttf" id="15"]
+[ext_resource type="FontFile" uid="uid://i182chxafyqm" path="res://Assets/Fonts/NotoSansTC-VariableFont_wght.ttf" id="16"]
+[ext_resource type="FontFile" uid="uid://d2lr6x8obuyag" path="res://Assets/Fonts/Funny.ttf" id="17"]
+[ext_resource type="FontFile" uid="uid://3lgclirb633g" path="res://Assets/Fonts/Slasher.ttf" id="18"]
+[ext_resource type="Texture2D" uid="uid://dcw4mg5f5lmlk" path="res://Assets/Graphics/ID.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://btccfyrd83vmj" path="res://Assets/Graphics/Char_Roman_Small_Photo.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://disvidnncncs1" path="res://Assets/Graphics/Todays_list.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://daguxdcokbeu8" path="res://Assets/Graphics/No_photo_frame.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://dhq6a78k2rvhh" path="res://Assets/Graphics/Folder_options_check.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://bchtr0swsyd7s" path="res://Assets/Graphics/Check_frame.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://4fw5cpj6m34m" path="res://Assets/Graphics/Folder_button_minimize.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://lvmym0b0qmao" path="res://Assets/Graphics/Folder_button_minimize_hover.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://buhd2plmahjhe" path="res://Assets/Graphics/Folder_floors.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://cgghojgdyeavt" path="res://Assets/Graphics/Folder_floors_paper.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://ijr0sussbi3f" path="res://Assets/Graphics/Folder_floors_divider_01.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://b42fe2hxaar2h" path="res://Assets/Graphics/Folder_floors_divider_02.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://dq32f12jtlt46" path="res://Assets/Graphics/Folder_floors_divider_03.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://bxvmnmsrd67de" path="res://Assets/Graphics/Folder_floors_divider_04.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://di8nb5rts5rbl" path="res://Assets/Graphics/Char_Roman_Smallest_Photo.png" id="33"]
+[ext_resource type="Script" path="res://Scripts/Pause.gd" id="34"]
+[ext_resource type="Texture2D" uid="uid://gqqjwoy8fkxs" path="res://Assets/Graphics/Papers.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://bsdx6tdxwb4w4" path="res://Assets/Graphics/Folder_options_sound_music.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://dkcmxto3f0eqh" path="res://Assets/Graphics/Folder_options_size.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://b2bs70mknw5dl" path="res://Assets/Graphics/Folder_accessibility_option.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://bgud3tah3oqhs" path="res://Assets/Graphics/Folder_options_slider.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://bjqo52axit228" path="res://Assets/Graphics/Folder_options_slider_circle.png" id="40"]
+[ext_resource type="AudioStream" uid="uid://dalcaapplmsmw" path="res://Assets/SFX-Music/SFX_Accept.wav" id="41"]
+[ext_resource type="AudioStream" uid="uid://dq2opcunboupj" path="res://Assets/SFX-Music/SFX_Select.wav" id="42"]
+[ext_resource type="AudioStream" uid="uid://dpe74d30ei1jc" path="res://Assets/SFX-Music/SFX_Write.wav" id="43"]
+[ext_resource type="AudioStream" uid="uid://dfu8mr0j8a1nf" path="res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav" id="44"]
+[ext_resource type="Texture2D" uid="uid://dj2113gxa2fq2" path="res://Assets/Graphics/Pause_button.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://pl7ul0awuwf2" path="res://Assets/Graphics/Button_pressed.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://brleo6ak0ryd8" path="res://Assets/Graphics/Pause_button_hover.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://ctvd1tonxi0bp" path="res://Assets/Graphics/Doppel_Left_Hand.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://2jykqmu3dawr" path="res://Assets/Graphics/Doppel_Right_Hand.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://nm6qk4wx2mtl" path="res://Assets/Graphics/White_video.png" id="50"]
+[ext_resource type="PackedScene" uid="uid://4mtma7rrk5eo" path="res://Scenes/Trophie.tscn" id="51"]
+[ext_resource type="Texture2D" uid="uid://bctkv86sviuj8" path="res://Assets/Graphics/Entity_Dead.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://bfl7qf27ikol6" path="res://Assets/Graphics/Particle.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://d13euwrd2a27d" path="res://Assets/Graphics/Filter.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://clewettbvigxd" path="res://Assets/Graphics/Light_from_alarm.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://ia5gdsha87mi" path="res://Assets/Graphics/Alarm_light.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://dibu21fq5js5" path="res://Assets/Graphics/Alarm_light_02.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://cl5dg1n5qo2vi" path="res://Assets/Graphics/Alarm_light_03.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://dde541i40amdq" path="res://Assets/Graphics/Alarm_light_04.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://cdde8qiebolhj" path="res://Assets/Graphics/Alarm_emitting_light.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://bt8b1c30nfivh" path="res://Assets/Graphics/Wall_Nightmare.png" id="61"]
+[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="62"]
+[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="63"]
+[ext_resource type="Texture2D" uid="uid://crec1s0arog0s" path="res://Assets/Graphics/Panic_window.png" id="64"]
+[ext_resource type="Texture2D" uid="uid://c4c3pq2ynl2a1" path="res://Assets/Graphics/Background_Nightmare.png" id="65"]
+[ext_resource type="Texture2D" uid="uid://cdmfxcs5aodpo" path="res://Assets/Graphics/Entity_01.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://w2fqb2ygh4iw" path="res://Assets/Graphics/Entity_03.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://cjtddrr6dtyp6" path="res://Assets/Graphics/Entity_02.png" id="68"]
+[ext_resource type="Texture2D" uid="uid://baqfwe5s2g4h4" path="res://Assets/Graphics/Entity_04.png" id="69"]
+[ext_resource type="Texture2D" uid="uid://d36c76co3b36t" path="res://Assets/Graphics/Entity_05.png" id="70"]
+[ext_resource type="Texture2D" uid="uid://mkajkqb1nnyt" path="res://Assets/Graphics/Entity_06.png" id="71"]
+[ext_resource type="Texture2D" uid="uid://c081gu04ajx6w" path="res://Assets/Graphics/Panic_button.png" id="72"]
+[ext_resource type="Texture2D" uid="uid://cm66lyvgnpa7y" path="res://Assets/Graphics/Panic_button_pressed.png" id="73"]
+[ext_resource type="Texture2D" uid="uid://cqckyv81d56ej" path="res://Assets/Graphics/Panic_button_hover.png" id="74"]
+[ext_resource type="Texture2D" uid="uid://cmh8g7u0lw3ha" path="res://Assets/Graphics/Panic_glass_close.png" id="75"]
+[ext_resource type="Texture2D" uid="uid://dep7h5dvfcrm5" path="res://Assets/Graphics/Panic_glass_close_hover.png" id="76"]
+[ext_resource type="Texture2D" uid="uid://c6cdlt2583gn1" path="res://Assets/Graphics/Panic_glass_open.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://croh4p1s5jek1" path="res://Assets/Graphics/Table.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://dtf8ri8i2tsf7" path="res://Assets/Graphics/Phone_back.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://cd7kuffhg76o1" path="res://Assets/Graphics/Phone_top.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://crk31ryj1dvvj" path="res://Assets/Graphics/Phone_base.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://dwj1jc1p7ku4i" path="res://Assets/Graphics/Phone_button.png" id="82"]
+[ext_resource type="Texture2D" uid="uid://c33y7qximau12" path="res://Assets/Graphics/Phone_button_hover.png" id="83"]
+[ext_resource type="Texture2D" uid="uid://dqpgnxo4tysue" path="res://Assets/Graphics/Door_control.png" id="84"]
+[ext_resource type="Texture2D" uid="uid://cvkmjenbn26u7" path="res://Assets/Graphics/Door_button_unlock_active.png" id="85"]
+[ext_resource type="Texture2D" uid="uid://ca3wyg42pknra" path="res://Assets/Graphics/Door_button_unlock_active_pressed.png" id="86"]
+[ext_resource type="Texture2D" uid="uid://b0hmo0t2cmphc" path="res://Assets/Graphics/Door_button_unlock_active_hover.png" id="87"]
+[ext_resource type="Texture2D" uid="uid://snaqnl7m5jg2" path="res://Assets/Graphics/Door_button_lock_active.png" id="88"]
+[ext_resource type="Texture2D" uid="uid://dse36sims5cgn" path="res://Assets/Graphics/Door_button_lock_pressed.png" id="89"]
+[ext_resource type="Texture2D" uid="uid://cjo1foow24ywx" path="res://Assets/Graphics/Door_button_lock_active_hover.png" id="90"]
+[ext_resource type="Texture2D" uid="uid://dovtqhs52dppi" path="res://Assets/Graphics/Door_button_unlock.png" id="91"]
+[ext_resource type="Texture2D" uid="uid://perjrqr6a5hq" path="res://Assets/Graphics/Door_button_lock.png" id="92"]
+[ext_resource type="Texture2D" uid="uid://bwf3q3067nyld" path="res://Assets/Graphics/Checklist_table.png" id="93"]
+[ext_resource type="Texture2D" uid="uid://dbeygs5uc7glr" path="res://Assets/Graphics/Checklist_table_hover.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://dq1018aaesxhl" path="res://Assets/Graphics/Entry_request_button.png" id="95"]
+[ext_resource type="Texture2D" uid="uid://doxdsdbtthaam" path="res://Assets/Graphics/Entry_request_button_hover.png" id="96"]
+[ext_resource type="Texture2D" uid="uid://bsu7tt2opukfi" path="res://Assets/Graphics/ID_button.png" id="97"]
+[ext_resource type="Texture2D" uid="uid://b8k36uemrlib6" path="res://Assets/Graphics/ID_button_hover.png" id="98"]
+[ext_resource type="Texture2D" uid="uid://drfdqgfijwwgb" path="res://Assets/Graphics/Today_list_button.png" id="99"]
+[ext_resource type="Texture2D" uid="uid://dr7mibumled4k" path="res://Assets/Graphics/Today_list_button_hover.png" id="100"]
+[ext_resource type="Texture2D" uid="uid://1mjx13aqftxl" path="res://Assets/Graphics/Gloves.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://bfdsxffd11ne" path="res://Assets/Graphics/Phone_numbers.png" id="102"]
+[ext_resource type="Texture2D" uid="uid://bao11i0jpyr3g" path="res://Assets/Graphics/Phone_Roulette.png" id="103"]
+[ext_resource type="Texture2D" uid="uid://c2ultwyeoi4qw" path="res://Assets/Graphics/Cursor.png" id="104"]
+[ext_resource type="Texture2D" uid="uid://cn6khrfg02fgs" path="res://Assets/Graphics/Phone_limit.png" id="105"]
+[ext_resource type="Texture2D" uid="uid://c784c1gugksww" path="res://Assets/Graphics/Folder_1.png" id="106"]
+[ext_resource type="Texture2D" uid="uid://pblo7cayielk" path="res://Assets/Graphics/Folder_1_spanish.png" id="107"]
+[ext_resource type="Texture2D" uid="uid://bpjkwavxie55c" path="res://Assets/Graphics/Folder_2.png" id="108"]
+[ext_resource type="Texture2D" uid="uid://cp075wj2qmlur" path="res://Assets/Graphics/Folder_2_spanish.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://2vjg4atswmvv" path="res://Assets/Graphics/Evil_Chester_Medal.png" id="110"]
+[ext_resource type="Texture2D" uid="uid://dfboeg847af0j" path="res://Assets/Graphics/Chester_Medal_Shadow.png" id="111"]
+[ext_resource type="Texture2D" uid="uid://d2is7hh0b8od5" path="res://Assets/Graphics/Shine_Particles.png" id="112"]
+[ext_resource type="Texture2D" uid="uid://b2146n2qwws1d" path="res://Assets/Graphics/Folder_1_hover.png" id="113"]
+[ext_resource type="Texture2D" uid="uid://b4blcsmyenmvm" path="res://Assets/Graphics/Folder_2_hover.png" id="114"]
+[ext_resource type="Texture2D" uid="uid://cqdbdp4wcst6p" path="res://Assets/Graphics/Folder_3.png" id="115"]
+[ext_resource type="Texture2D" uid="uid://csvf4liypkj34" path="res://Assets/Graphics/Folder_3_hover.png" id="116"]
+[ext_resource type="PackedScene" uid="uid://78trxfovoyrl" path="res://Scenes/DDD_Agent.tscn" id="117"]
+[ext_resource type="AudioStream" uid="uid://kq6ja33cx463" path="res://Assets/SFX-Music/SFX_Button.wav" id="118"]
+[ext_resource type="AudioStream" uid="uid://62atqdehmc00" path="res://Assets/SFX-Music/SFX_Open_Door.wav" id="119"]
+[ext_resource type="AudioStream" uid="uid://c6x4iqwfgqdey" path="res://Assets/SFX-Music/SFX_Close_Door.wav" id="120"]
+[ext_resource type="AudioStream" uid="uid://bu3gdymnq2kuj" path="res://Assets/SFX-Music/SFX_Put_Back_Folder.wav" id="121"]
+[ext_resource type="AudioStream" uid="uid://b3bypujsw5sil" path="res://Assets/SFX-Music/SFX_Pick_Up_Phone.wav" id="122"]
+[ext_resource type="AudioStream" uid="uid://c70t31037oh0j" path="res://Assets/SFX-Music/SFX_Hang_Down_Phone.wav" id="123"]
+[ext_resource type="AudioStream" uid="uid://dh60tcr61furm" path="res://Assets/SFX-Music/SFX_Window.wav" id="124"]
+[ext_resource type="AudioStream" uid="uid://cuxnlnchahinu" path="res://Assets/SFX-Music/Music_Dark.ogg" id="125"]
+[ext_resource type="AudioStream" uid="uid://0errlihsuj4r" path="res://Assets/SFX-Music/SFX_Siren.ogg" id="126"]
+[ext_resource type="AudioStream" uid="uid://4ho6e4whn8va" path="res://Assets/SFX-Music/SFX_Dial_1.wav" id="127"]
+[ext_resource type="AudioStream" uid="uid://bsulwtqs0vkji" path="res://Assets/SFX-Music/SFX_Dial_2.wav" id="128"]
+[ext_resource type="AudioStream" uid="uid://dnxjeeits004f" path="res://Assets/SFX-Music/SFX_Dial_3.wav" id="129"]
+[ext_resource type="AudioStream" uid="uid://cs2fcs4e33fmd" path="res://Assets/SFX-Music/SFX_Dial_4.wav" id="130"]
+[ext_resource type="AudioStream" uid="uid://b23pf52g7o6ss" path="res://Assets/SFX-Music/SFX_Dial_5.wav" id="131"]
+[ext_resource type="AudioStream" uid="uid://qt2kr75f222g" path="res://Assets/SFX-Music/SFX_Dial_6.wav" id="132"]
+[ext_resource type="AudioStream" uid="uid://j0qfqtst4h7" path="res://Assets/SFX-Music/SFX_Dial_7.wav" id="133"]
+[ext_resource type="AudioStream" uid="uid://bcd4hmly7jcbj" path="res://Assets/SFX-Music/SFX_Dial_8.wav" id="134"]
+[ext_resource type="AudioStream" uid="uid://dc756ti3vflm0" path="res://Assets/SFX-Music/SFX_Dial_9.wav" id="135"]
+[ext_resource type="AudioStream" uid="uid://djwyv0bfl222a" path="res://Assets/SFX-Music/SFX_Release_1.wav" id="136"]
+[ext_resource type="AudioStream" uid="uid://b0pdvisjgo60y" path="res://Assets/SFX-Music/SFX_Release_2.wav" id="137"]
+[ext_resource type="AudioStream" uid="uid://c87c6p8m0q0p8" path="res://Assets/SFX-Music/SFX_Release_3.wav" id="138"]
+[ext_resource type="AudioStream" uid="uid://di4pr7jvs4hug" path="res://Assets/SFX-Music/SFX_Release_4.wav" id="139"]
+[ext_resource type="AudioStream" uid="uid://cd2tha457rkbf" path="res://Assets/SFX-Music/SFX_Release_5.wav" id="140"]
+[ext_resource type="AudioStream" uid="uid://dpmokq64rf8e4" path="res://Assets/SFX-Music/SFX_Release_6.wav" id="141"]
+[ext_resource type="AudioStream" uid="uid://b8bhj50ih5ixq" path="res://Assets/SFX-Music/SFX_Release_7.wav" id="142"]
+[ext_resource type="AudioStream" uid="uid://bkofgulhsvytf" path="res://Assets/SFX-Music/SFX_Release_8.wav" id="143"]
+[ext_resource type="AudioStream" uid="uid://b1xgbirgwbway" path="res://Assets/SFX-Music/SFX_Release_9.wav" id="144"]
+[ext_resource type="AudioStream" uid="uid://drhrv3iy0obi3" path="res://Assets/SFX-Music/SFX_Calling_Tone.wav" id="145"]
+[ext_resource type="AudioStream" uid="uid://6p1fxrh64jm1" path="res://Assets/SFX-Music/SFX_Dial_Tone.ogg" id="146"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="147"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="148"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="149"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="150"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="151"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="152"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="153"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="154"]
+[ext_resource type="AudioStream" uid="uid://ckjft8dloxlkt" path="res://Assets/SFX-Music/SFX_Bite.wav" id="155"]
+[ext_resource type="AudioStream" uid="uid://cgcybseunb8s1" path="res://Assets/SFX-Music/SFX_Badge.wav" id="156"]
+[ext_resource type="AudioStream" uid="uid://b4kii7ysdr5kn" path="res://Assets/SFX-Music/SFX_Magic_Dust.wav" id="157"]
+[ext_resource type="AudioStream" uid="uid://bfcgh3r5o344r" path="res://Assets/SFX-Music/SFX_Pickup.wav" id="158"]
+[ext_resource type="AudioStream" uid="uid://8pvwfdewarg3" path="res://Assets/SFX-Music/SFX_Entity.wav" id="159"]
+[ext_resource type="AudioStream" uid="uid://dsi8je00j77uo" path="res://Assets/SFX-Music/SFX_Squishy.wav" id="160"]
+[ext_resource type="AudioStream" uid="uid://dyve0mfmjta3x" path="res://Assets/SFX-Music/SFX_Window_Break.wav" id="161"]
+
+[sub_resource type="FontVariation" id="1"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="2"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="3"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="4"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="5"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="RectangleShape2D" id="6"]
+size = Vector2(825.556, 1122.22)
+script = null
+
+[sub_resource type="RectangleShape2D" id="7"]
+size = Vector2(698, 460)
+script = null
+
+[sub_resource type="RectangleShape2D" id="8"]
+size = Vector2(825.556, 1121.11)
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="9"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="10"]
+script = null
+
+[sub_resource type="FontVariation" id="11"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="12"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="13"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="14"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="15"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="FontVariation" id="16"]
+fallbacks = [ExtResource("15"), ExtResource("16")]
+base_font = ExtResource("17")
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="17"]
+script = null
+
+[sub_resource type="RectangleShape2D" id="18"]
+size = Vector2(825.556, 1117.78)
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="19"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="20"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="21"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="22"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="23"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="24"]
+script = null
+
+[sub_resource type="Gradient" id="25"]
+offsets = PackedFloat32Array(0, 0.518519, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.101961, 0.101961, 0.117647, 0.623529, 0, 0, 0, 0)
+script = null
+
+[sub_resource type="GradientTexture1D" id="26"]
+gradient = SubResource("25")
+script = null
+
+[sub_resource type="ParticleProcessMaterial" id="27"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1200, 800, 1)
+direction = Vector3(0, 0, 0)
+spread = 180.0
+initial_velocity_min = 0.05
+initial_velocity_max = 1.0
+angular_velocity_min = 0.05
+angular_velocity_max = 1.0
+orbit_velocity_min = 0.01
+orbit_velocity_max = 0.05
+gravity = Vector3(-6, -5, 0)
+radial_accel_min = 0.01
+radial_accel_max = 0.05
+scale_min = 0.01
+scale_max = 0.4
+color_ramp = SubResource("26")
+script = null
+
+[sub_resource type="SpriteFrames" id="28"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+script = null
+
+[sub_resource type="SpriteFrames" id="29"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+script = null
+
+[sub_resource type="OccluderPolygon2D" id="30"]
+polygon = PackedVector2Array(1547, -66, 1547, 786, 1564, 787, 1569, -66)
+script = null
+
+[sub_resource type="Animation" id="31"]
+resource_name = "Moving"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Iris:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7, 1.8, 2.2, 3.6, 4.2, 5.2, 5.6, 6.5, 6.9, 7.3, 7.6, 9.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-124, 16), Vector2(-124, 16), Vector2(-128, 26.6667), Vector2(-128, 26.6667), Vector2(-138.667, 14.6667), Vector2(-138.667, 14.6667), Vector2(-124, 14.6667), Vector2(-124, 14.6667), Vector2(-112, 13.3333), Vector2(-112, 13.3333), Vector2(-124, 1.33334), Vector2(-124, 1.33334), Vector2(-114.667, 20), Vector2(-114.667, 20)]
+}
+script = null
+
+[sub_resource type="Animation" id="32"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Iris:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-124, 16)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="33"]
+_data = {
+"Moving": SubResource("31"),
+"RESET": SubResource("32")
+}
+script = null
+
+[sub_resource type="SpriteFrames" id="34"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}],
+"loop": true,
+"name": &"EVOLUTION",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71")
+}],
+"loop": true,
+"name": &"MAX",
+"speed": 5.0
+}]
+script = null
+
+[sub_resource type="OccluderPolygon2D" id="35"]
+polygon = PackedVector2Array(234, 809, 225, 812, 215, 825, 211, 838, 211, 857, 216, 873, 225, 885, 233, 898, 230, 912, 222, 923, 211, 931, 198, 937, 182, 945, 167, 956, 160, 964, 156, 982, 154, 999, 154, 1019, 153, 1028, 153, 1047, 156, 1065, 170, 1075, 199, 1081, 231, 1087, 277, 1091, 319, 1090, 369, 1088, 419, 1083, 461, 1075, 467, 1069, 469, 1020, 470, 976, 465, 958, 454, 947, 440, 941, 422, 935, 409, 929, 400, 920, 397, 909, 399, 897, 409, 887, 412, 880, 416, 863, 417, 844, 415, 830, 409, 819, 404, 812, 395, 809, 386, 812, 378, 821, 374, 835, 374, 850, 373, 862, 366, 869, 350, 873, 331, 874, 313, 875, 292, 875, 279, 875, 265, 872, 256, 860, 252, 847, 251, 838, 250, 822, 242, 811)
+script = null
+
+[sub_resource type="OccluderPolygon2D" id="36"]
+polygon = PackedVector2Array(57.5, -82.4999, 57.5, 56.6667, 72.5, 57.5001, 74.1667, -70.8333)
+script = null
+
+[sub_resource type="CircleShape2D" id="37"]
+script = null
+
+[sub_resource type="StyleBoxEmpty" id="38"]
+script = null
+
+[sub_resource type="SpriteFrames" id="39"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 8.0
+}]
+script = null
+
+[node name="Office_Endless" type="Node2D"]
+position = Vector2(138, 52)
+script = ExtResource("1")
+
+[node name="Camera" type="Camera2D" parent="."]
+z_index = 51
+position = Vector2(960, 540)
+
+[node name="Accessibility_Panel" type="Control" parent="Camera"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -775.0
+offset_top = -1032.0
+offset_right = -735.0
+offset_bottom = -992.0
+scale = Vector2(0.8, 0.8)
+
+[node name="Border" type="Sprite2D" parent="Camera/Accessibility_Panel"]
+position = Vector2(994, 809)
+scale = Vector2(1.15, 1.15)
+texture = ExtResource("2")
+
+[node name="Panel" type="Panel" parent="Camera/Accessibility_Panel"]
+modulate = Color(1, 1, 1, 0.862745)
+layout_mode = 0
+offset_left = 488.0
+offset_top = 709.0
+offset_right = 534.0
+offset_bottom = 749.0
+scale = Vector2(21.96, 5.23146)
+
+[node name="Label" type="Label" parent="Camera/Accessibility_Panel"]
+visible = false
+layout_mode = 0
+offset_left = 498.0
+offset_top = 721.0
+offset_right = 2049.0
+offset_bottom = 971.0
+scale = Vector2(0.637838, 0.72)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 130
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="Entry_Request" type="Node2D" parent="Camera"]
+visible = false
+position = Vector2(-213, 2)
+scale = Vector2(0.9, 0.9)
+
+[node name="Paper" type="Sprite2D" parent="Camera/Entry_Request"]
+texture = ExtResource("4")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Entry_Request/Paper"]
+self_modulate = Color(0.12549, 0.0117647, 0.0313726, 0.419608)
+position = Vector2(156.667, -438.889)
+scale = Vector2(0.269527, 0.295054)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Entry_Request/Paper"]
+self_modulate = Color(0.12549, 0.0196078, 0.0313726, 0.270588)
+position = Vector2(-177.778, 335.556)
+rotation = -0.882996
+scale = Vector2(0.232188, 0.554706)
+texture = ExtResource("5")
+
+[node name="Exit" type="TextureButton" parent="Camera/Entry_Request"]
+offset_left = 274.444
+offset_top = -543.333
+offset_right = 388.444
+offset_bottom = -455.333
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="DDD_Logo" type="Sprite2D" parent="Camera/Entry_Request"]
+position = Vector2(178.889, 430)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8")
+
+[node name="DDD_Logo2" type="Sprite2D" parent="Camera/Entry_Request"]
+visible = false
+position = Vector2(178.889, 430)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("9")
+
+[node name="DDD_Logo3" type="Sprite2D" parent="Camera/Entry_Request"]
+visible = false
+position = Vector2(178.889, 430)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("10")
+
+[node name="DDD_Logo4" type="Sprite2D" parent="Camera/Entry_Request"]
+visible = false
+position = Vector2(178.889, 430)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11")
+
+[node name="Photo_Space" type="Sprite2D" parent="Camera/Entry_Request"]
+position = Vector2(256.667, -271.111)
+texture = ExtResource("12")
+
+[node name="Photo" type="Sprite2D" parent="Camera/Entry_Request"]
+visible = false
+position = Vector2(253.333, -266.667)
+scale = Vector2(0.26, 0.26)
+texture = ExtResource("13")
+
+[node name="Border" type="Sprite2D" parent="Camera/Entry_Request"]
+position = Vector2(0, -5.55554)
+texture = ExtResource("14")
+
+[node name="Title" type="Label" parent="Camera/Entry_Request"]
+offset_left = -376.667
+offset_top = -534.444
+offset_right = 153.333
+offset_bottom = -451.444
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 75
+text = "Entry Request"
+
+[node name="Name" type="Label" parent="Camera/Entry_Request"]
+offset_left = -374.444
+offset_top = -387.0
+offset_right = 155.556
+offset_bottom = -304.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 45
+text = "Name:"
+
+[node name="Name_Space" type="Label" parent="Camera/Entry_Request"]
+offset_left = -225.0
+offset_top = -390.0
+offset_right = 22.0
+offset_bottom = -307.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18")
+theme_override_font_sizes/font_size = 45
+text = "Test name"
+
+[node name="Last_Name" type="Label" parent="Camera/Entry_Request"]
+offset_left = -374.444
+offset_top = -300.0
+offset_right = 155.556
+offset_bottom = -217.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("3")
+theme_override_font_sizes/font_size = 45
+text = "Last Name:"
+
+[node name="Last_Name_Space" type="Label" parent="Camera/Entry_Request"]
+offset_left = -120.0
+offset_top = -300.0
+offset_right = 410.0
+offset_bottom = -217.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18")
+theme_override_font_sizes/font_size = 45
+text = "Test name"
+
+[node name="Apartment" type="Label" parent="Camera/Entry_Request"]
+offset_left = -374.444
+offset_top = -210.0
+offset_right = 155.556
+offset_bottom = -127.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("4")
+theme_override_font_sizes/font_size = 45
+text = "Apartment:"
+
+[node name="Apartment_Space" type="Label" parent="Camera/Entry_Request"]
+offset_left = -92.0
+offset_top = -211.0
+offset_right = 120.0
+offset_bottom = -128.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18")
+theme_override_font_sizes/font_size = 45
+text = "Test ##"
+horizontal_alignment = 1
+
+[node name="Reason" type="Label" parent="Camera/Entry_Request"]
+offset_left = -374.444
+offset_top = -100.0
+offset_right = 155.556
+offset_bottom = -17.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("5")
+theme_override_font_sizes/font_size = 45
+text = "Reason:"
+
+[node name="Reason_Space" type="Label" parent="Camera/Entry_Request"]
+offset_left = -374.444
+offset_top = -31.1111
+offset_right = 375.556
+offset_bottom = 318.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18")
+theme_override_font_sizes/font_size = 45
+text = "Test test test test test test 
+Test test test test test test
+Test test test test test test
+Test test test test test test
+Test test test test test test
+Test test test test test test
+Test test test test test test"
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Area2D_Entry" type="Area2D" parent="Camera/Entry_Request"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Camera/Entry_Request/Area2D_Entry"]
+polygon = PackedVector2Array(420, -582.222, 425.556, 737.778, 1620, 735.556, 1613.33, -685.556, -1095.56, -672.222, -1111.11, 745.556, 420, 735.556, 417.778, 564.445, -426.667, 564.445, -426.667, -576.667)
+
+[node name="Area2D_On_Entry" type="Area2D" parent="Camera/Entry_Request"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/Entry_Request/Area2D_On_Entry"]
+position = Vector2(-1.66669, -7.77771)
+shape = SubResource("6")
+
+[node name="ID" type="Node2D" parent="Camera"]
+visible = false
+position = Vector2(-67, 72)
+
+[node name="ID_Sprite" type="Sprite2D" parent="Camera/ID"]
+texture = ExtResource("19")
+
+[node name="Blood" type="Sprite2D" parent="Camera/ID/ID_Sprite"]
+self_modulate = Color(0.12549, 0.0117647, 0.0313726, 0.368627)
+position = Vector2(59, 5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5")
+
+[node name="Photo" type="Sprite2D" parent="Camera/ID"]
+visible = false
+position = Vector2(218, -26)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("20")
+
+[node name="Name" type="Label" parent="Camera/ID"]
+offset_left = -322.0
+offset_top = -180.0
+offset_right = 208.0
+offset_bottom = -97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 45
+text = "Test Name"
+
+[node name="Last Name" type="Label" parent="Camera/ID"]
+offset_left = -322.0
+offset_top = -100.0
+offset_right = 208.0
+offset_bottom = -17.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 45
+text = "Test Last Name"
+
+[node name="Number" type="Label" parent="Camera/ID"]
+offset_left = -322.0
+offset_top = -12.0
+offset_right = 208.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 45
+text = "123456789ABC"
+
+[node name="Date" type="Label" parent="Camera/ID"]
+offset_left = 115.0
+offset_top = 137.0
+offset_right = 332.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 45
+text = "XX/19XX"
+
+[node name="ID_Exit" type="TextureButton" parent="Camera/ID"]
+offset_left = 262.0
+offset_top = -231.0
+offset_right = 376.0
+offset_bottom = -143.0
+scale = Vector2(0.7, 0.7)
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="Area2D_Exit_ID" type="Area2D" parent="Camera/ID"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/ID/Area2D_Exit_ID"]
+polygon = PackedVector2Array(356, -245, 353, 593, 1290, 587, 1242, -700, -1177, -680, -1194, 624, 348, 590, 352, 239, -362, 242, -361, -244, 341, -244)
+
+[node name="Area2D_On_ID" type="Area2D" parent="Camera/ID"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/ID/Area2D_On_ID"]
+position = Vector2(0, -1)
+shape = SubResource("7")
+
+[node name="DDD" type="Sprite2D" parent="Camera/ID"]
+position = Vector2(-168, 146)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("8")
+
+[node name="DDD2" type="Sprite2D" parent="Camera/ID"]
+visible = false
+position = Vector2(-168, 146)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("9")
+
+[node name="DDD3" type="Sprite2D" parent="Camera/ID"]
+visible = false
+position = Vector2(-168, 146)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("10")
+
+[node name="DDD4" type="Sprite2D" parent="Camera/ID"]
+visible = false
+position = Vector2(-168, 146)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("11")
+
+[node name="Today_list" type="Node2D" parent="Camera"]
+visible = false
+position = Vector2(-150, 0)
+scale = Vector2(0.9, 0.9)
+
+[node name="Paper" type="Sprite2D" parent="Camera/Today_list"]
+texture = ExtResource("21")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Today_list/Paper"]
+self_modulate = Color(0.12549, 0.0117647, 0.0941176, 0.431373)
+position = Vector2(-52.2222, 194.444)
+rotation = -0.030157
+scale = Vector2(-0.4, 0.82)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Today_list/Paper"]
+self_modulate = Color(0.12549, 0.0117647, 0.0941176, 0.403922)
+position = Vector2(258.889, -370)
+rotation = -0.030157
+scale = Vector2(0.2, -0.41)
+texture = ExtResource("5")
+
+[node name="Names" type="Node2D" parent="Camera/Today_list"]
+
+[node name="01" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(-20, -5)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/01"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/01"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="02" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(200, -5)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/02"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/02"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="03" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(420, -5)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/03"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/03"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="04" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(-20, 335)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/04"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/04"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="05" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(200, 335)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/05"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/05"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="06" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(420, 335)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/06"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/06"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="07" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(-20, 675)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/07"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/07"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="08" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(200, 675)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/08"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/08"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="09" type="Node2D" parent="Camera/Today_list/Names"]
+visible = false
+position = Vector2(420, 675)
+
+[node name="Photo" type="Sprite2D" parent="Camera/Today_list/Names/09"]
+position = Vector2(-171.111, -351.111)
+texture = ExtResource("22")
+
+[node name="Info" type="Label" parent="Camera/Today_list/Names/09"]
+offset_left = -251.111
+offset_top = -228.889
+offset_right = -91.1111
+offset_bottom = -145.889
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 30
+text = "Test Name
+Is Neighbor
+Test ###
+"
+horizontal_alignment = 1
+
+[node name="Today_Exit" type="TextureButton" parent="Camera/Today_list"]
+offset_left = 302.222
+offset_top = -554.444
+offset_right = 416.222
+offset_bottom = -466.444
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="Area2D_Exit_Today" type="Area2D" parent="Camera/Today_list"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Today_list/Area2D_Exit_Today"]
+polygon = PackedVector2Array(416.667, 752.222, 424.444, -572.222, -423.333, -567.778, -424.444, 572.222, 414.444, 572.222, 406.667, 742.222, -1148.89, 744.444, -1192.22, -691.111, 1554.44, -694.445, 1501.11, 758.889)
+
+[node name="Area2D_On_Today" type="Area2D" parent="Camera/Today_list"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/Today_list/Area2D_On_Today"]
+position = Vector2(0.555542, -0.555481)
+shape = SubResource("8")
+
+[node name="Checklist" type="Node2D" parent="Camera"]
+visible = false
+z_index = 4
+position = Vector2(-30, 2)
+scale = Vector2(0.9, 0.9)
+
+[node name="Paper" type="Sprite2D" parent="Camera/Checklist"]
+texture = ExtResource("4")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Checklist/Paper"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-2.22225, -57.7778)
+rotation = 2.92738
+scale = Vector2(-0.579414, 1.0463)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Checklist/Paper"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-226.667, 406.667)
+rotation = 5.43159
+scale = Vector2(-0.303907, 0.3)
+texture = ExtResource("5")
+
+[node name="Check" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(198.889, -272.222)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("23")
+
+[node name="Cross" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(330, -265.555)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("6")
+
+[node name="Checkbox_01" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(195, -155)
+texture = ExtResource("24")
+
+[node name="Checkbox_02" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(330, -155)
+texture = ExtResource("24")
+
+[node name="Checkbox_03" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(195, -10)
+texture = ExtResource("24")
+
+[node name="Checkbox_04" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(330, -10)
+texture = ExtResource("24")
+
+[node name="Checkbox_05" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(195, 135)
+texture = ExtResource("24")
+
+[node name="Checkbox_06" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(330, 135)
+texture = ExtResource("24")
+
+[node name="Checkbox_07" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(195, 280)
+texture = ExtResource("24")
+
+[node name="Checkbox_08" type="Sprite2D" parent="Camera/Checklist"]
+position = Vector2(330, 280)
+texture = ExtResource("24")
+
+[node name="Check_01" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+z_index = 1
+position = Vector2(212.222, -180)
+texture = ExtResource("23")
+
+[node name="Check_02" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+z_index = 1
+position = Vector2(213.333, -36.6666)
+texture = ExtResource("23")
+
+[node name="Check_03" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+z_index = 1
+position = Vector2(213.333, 108.889)
+texture = ExtResource("23")
+
+[node name="Check_04" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+z_index = 1
+position = Vector2(214.444, 254.444)
+texture = ExtResource("23")
+
+[node name="Cross_01" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+position = Vector2(331.111, -157.778)
+texture = ExtResource("6")
+
+[node name="Cross_02" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+position = Vector2(331.111, -11.1111)
+texture = ExtResource("6")
+
+[node name="Cross_03" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+position = Vector2(330, 132.222)
+texture = ExtResource("6")
+
+[node name="Cross_04" type="Sprite2D" parent="Camera/Checklist"]
+visible = false
+position = Vector2(331.111, 280)
+texture = ExtResource("6")
+
+[node name="Check_bt_01" type="Button" parent="Camera/Checklist"]
+offset_left = 151.111
+offset_top = -202.222
+offset_right = 201.111
+offset_bottom = -152.222
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("9")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Check_bt_02" type="Button" parent="Camera/Checklist"]
+offset_left = 152.222
+offset_top = -57.7778
+offset_right = 202.222
+offset_bottom = -7.7778
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("9")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Check_bt_03" type="Button" parent="Camera/Checklist"]
+offset_left = 151.111
+offset_top = 86.6667
+offset_right = 201.111
+offset_bottom = 136.667
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("10")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Check_bt_04" type="Button" parent="Camera/Checklist"]
+offset_left = 151.111
+offset_top = 232.222
+offset_right = 201.111
+offset_bottom = 282.222
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("10")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Cross_bt_01" type="Button" parent="Camera/Checklist"]
+offset_left = 285.556
+offset_top = -202.222
+offset_right = 335.556
+offset_bottom = -152.222
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("10")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Cross_bt_02" type="Button" parent="Camera/Checklist"]
+offset_left = 286.667
+offset_top = -57.7778
+offset_right = 336.667
+offset_bottom = -7.7778
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("10")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Cross_bt_03" type="Button" parent="Camera/Checklist"]
+offset_left = 284.444
+offset_top = 87.7778
+offset_right = 334.444
+offset_bottom = 137.778
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("10")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Cross_bt_04" type="Button" parent="Camera/Checklist"]
+offset_left = 286.667
+offset_top = 233.333
+offset_right = 336.667
+offset_bottom = 283.333
+scale = Vector2(1.8, 1.93333)
+theme_override_styles/focus = SubResource("10")
+toggle_mode = true
+action_mode = 0
+flat = true
+
+[node name="Minimize_Max" type="TextureButton" parent="Camera/Checklist"]
+offset_left = 170.0
+offset_top = -562.222
+offset_right = 296.0
+offset_bottom = -462.222
+action_mode = 0
+texture_normal = ExtResource("25")
+texture_hover = ExtResource("26")
+
+[node name="Exit" type="TextureButton" parent="Camera/Checklist"]
+offset_left = 300.0
+offset_top = -562.222
+offset_right = 414.0
+offset_bottom = -474.222
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="Title" type="Label" parent="Camera/Checklist"]
+offset_left = -395.556
+offset_top = -553.333
+offset_right = -22.5555
+offset_bottom = -470.333
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("11")
+theme_override_font_sizes/font_size = 75
+text = "Checklist"
+
+[node name="Instructions" type="Label" parent="Camera/Checklist"]
+offset_left = -403.333
+offset_top = -512.222
+offset_right = 396.667
+offset_bottom = -247.222
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("12")
+theme_override_font_sizes/font_size = 45
+text = "Check each option on the list and mark as appropriate"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ID" type="Label" parent="Camera/Checklist"]
+offset_left = -400.0
+offset_top = -180.0
+offset_right = -27.0
+offset_bottom = -97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("13")
+theme_override_font_sizes/font_size = 50
+text = "* ID"
+
+[node name="Appearance" type="Label" parent="Camera/Checklist"]
+offset_left = -400.0
+offset_top = -40.0
+offset_right = -27.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("14")
+theme_override_font_sizes/font_size = 50
+text = "* Appearance"
+
+[node name="Entry_request" type="Label" parent="Camera/Checklist"]
+offset_left = -400.0
+offset_top = 110.0
+offset_right = 128.0
+offset_bottom = 163.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("15")
+theme_override_font_sizes/font_size = 50
+text = "* Entry request"
+
+[node name="Today_list" type="Label" parent="Camera/Checklist"]
+offset_left = -400.0
+offset_top = 250.0
+offset_right = 130.0
+offset_bottom = 356.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("16")
+theme_override_font_sizes/font_size = 50
+text = "* Is on the today list?"
+autowrap_mode = 3
+
+[node name="Complete" type="Button" parent="Camera/Checklist"]
+visible = false
+offset_left = -370.0
+offset_top = 411.0
+offset_right = 372.0
+offset_bottom = 491.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("17")
+action_mode = 0
+text = "Complete checklist"
+flat = true
+
+[node name="Area2D_On_Checklist" type="Area2D" parent="Camera/Checklist"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/Checklist/Area2D_On_Checklist"]
+position = Vector2(0.555664, -6.6665)
+shape = SubResource("18")
+
+[node name="Area2D_Exit_Checklist" type="Area2D" parent="Camera/Checklist"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Checklist/Area2D_Exit_Checklist"]
+polygon = PackedVector2Array(416.667, 772.222, 423.333, -578.889, -428.889, -574.444, -425.556, 564.445, 415.556, 566.667, 401.111, 780, -1328.89, 813.333, -1363.33, -730, 1428.89, -704.445, 1414.44, 824.444)
+
+[node name="Folder_A" type="Node2D" parent="Camera"]
+visible = false
+z_index = 4
+position = Vector2(170, -10)
+
+[node name="Folder" type="Sprite2D" parent="Camera/Folder_A"]
+light_mask = 0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("27")
+
+[node name="Paper" type="Sprite2D" parent="Camera/Folder_A"]
+position = Vector2(0, 62)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("28")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Folder_A/Paper"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-2.22225, -57.7778)
+rotation = 4.47386
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Folder_A/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(122.222, 13.3333)
+rotation = 5.09204
+scale = Vector2(-0.750356, 1.63858)
+texture = ExtResource("5")
+
+[node name="Blood3" type="Sprite2D" parent="Camera/Folder_A/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-132.222, 122.222)
+rotation = 7.21656
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood4" type="Sprite2D" parent="Camera/Folder_A/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(166.667, -30)
+rotation = 4.61225
+scale = Vector2(-0.582356, -1.13864)
+texture = ExtResource("5")
+
+[node name="Divider_01" type="Sprite2D" parent="Camera/Folder_A"]
+visible = false
+position = Vector2(-539, -262)
+scale = Vector2(1.2, 0.9)
+texture = ExtResource("29")
+
+[node name="Divider_02" type="Sprite2D" parent="Camera/Folder_A"]
+position = Vector2(-174, -262)
+scale = Vector2(1.175, 0.9)
+texture = ExtResource("30")
+
+[node name="Divider_03" type="Sprite2D" parent="Camera/Folder_A"]
+position = Vector2(187, -262)
+scale = Vector2(1.09, 0.9)
+texture = ExtResource("31")
+
+[node name="Divider_04" type="Sprite2D" parent="Camera/Folder_A"]
+position = Vector2(545, -262)
+scale = Vector2(1.12, 0.9)
+texture = ExtResource("32")
+
+[node name="Exit" type="TextureButton" parent="Camera/Folder_A"]
+offset_left = -506.0
+offset_top = -509.0
+offset_right = -392.0
+offset_bottom = -421.0
+scale = Vector2(0.9, 0.9)
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="Minimize_Max" type="TextureButton" parent="Camera/Folder_A"]
+offset_left = -637.0
+offset_top = -507.0
+offset_right = -511.0
+offset_bottom = -407.0
+scale = Vector2(0.9, 0.9)
+action_mode = 0
+texture_normal = ExtResource("25")
+texture_hover = ExtResource("26")
+
+[node name="Name" type="Label" parent="Camera/Folder_A"]
+offset_left = -721.0
+offset_top = -503.0
+offset_right = -656.0
+offset_bottom = -425.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 75
+text = "1°"
+
+[node name="Room01" type="Button" parent="Camera/Folder_A"]
+offset_left = -657.0
+offset_top = -347.0
+offset_right = -448.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("19")
+action_mode = 0
+text = "F01-01"
+flat = true
+
+[node name="Room02" type="Button" parent="Camera/Folder_A"]
+offset_left = -295.0
+offset_top = -347.0
+offset_right = -71.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("19")
+action_mode = 0
+text = "F01-02"
+flat = true
+
+[node name="Room03" type="Button" parent="Camera/Folder_A"]
+offset_left = 63.0
+offset_top = -347.0
+offset_right = 289.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("19")
+action_mode = 0
+text = "F01-03"
+flat = true
+
+[node name="Room04" type="Button" parent="Camera/Folder_A"]
+offset_left = 428.0
+offset_top = -347.0
+offset_right = 657.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("19")
+action_mode = 0
+text = "F01-04"
+flat = true
+
+[node name="Phone_Number_Label" type="Label" parent="Camera/Folder_A"]
+offset_left = -705.0
+offset_top = -239.0
+offset_right = 22.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Apartment phone number: "
+
+[node name="Phone_Number" type="Label" parent="Camera/Folder_A"]
+offset_left = -42.0
+offset_top = -239.0
+offset_right = 158.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "1152"
+
+[node name="Name_01" type="Label" parent="Camera/Folder_A"]
+offset_left = -500.0
+offset_top = -150.0
+offset_bottom = -72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Roman Stinlsky"
+
+[node name="Name_02" type="Label" parent="Camera/Folder_A"]
+offset_left = 200.0
+offset_top = -150.0
+offset_right = 700.0
+offset_bottom = -72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Lois Stinlsky"
+
+[node name="ID_01" type="Label" parent="Camera/Folder_A"]
+offset_left = -500.0
+offset_top = -70.0
+offset_right = 4.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "ID Number:
+483924059684"
+
+[node name="ID_02" type="Label" parent="Camera/Folder_A"]
+offset_left = 205.0
+offset_top = -70.0
+offset_right = 709.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "ID Number:
+123456789ABC"
+
+[node name="Occupation_01" type="Label" parent="Camera/Folder_A"]
+offset_left = -500.0
+offset_top = 60.0
+offset_right = 4.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Test occupation"
+
+[node name="Occupation_02" type="Label" parent="Camera/Folder_A"]
+offset_left = 205.0
+offset_top = 60.0
+offset_right = 709.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Test occupation"
+
+[node name="Appearence_01" type="Label" parent="Camera/Folder_A"]
+offset_left = -700.0
+offset_top = 140.0
+offset_right = -60.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Appearence:
+* Big nose
+*Scar on right chin
+* Long face
+* One eyebrow
+* Wear a hat"
+
+[node name="Appearence_02" type="Label" parent="Camera/Folder_A"]
+offset_left = 15.0
+offset_top = 140.0
+offset_right = 655.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Appearence:
+* Test
+* Test
+* Test
+* Test
+* Test"
+
+[node name="Photo_01" type="Sprite2D" parent="Camera/Folder_A"]
+position = Vector2(-609, -22)
+texture = ExtResource("33")
+
+[node name="Photo_02" type="Sprite2D" parent="Camera/Folder_A"]
+position = Vector2(103, -22)
+texture = ExtResource("22")
+
+[node name="Area2D_On_Folder_A" type="Area2D" parent="Camera/Folder_A"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Folder_A/Area2D_On_Folder_A"]
+polygon = PackedVector2Array(-741, -508, -741, 512, 739, 516, 742, -423, -405, -429, -407, -513)
+
+[node name="Area2D_Exit_Folder_A" type="Area2D" parent="Camera/Folder_A"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Folder_A/Area2D_Exit_Folder_A"]
+polygon = PackedVector2Array(-744, -612, -745, -517, -402, -518, -400, -434, 749, -434, 749, 524, -750, 519, -748, -628, -1814, -628, -1832, 756, 1103, 771, 1099, -622)
+
+[node name="Folder_B" type="Node2D" parent="Camera"]
+visible = false
+z_index = 4
+position = Vector2(170, -10)
+
+[node name="Folder" type="Sprite2D" parent="Camera/Folder_B"]
+light_mask = 0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("27")
+
+[node name="Exit" type="TextureButton" parent="Camera/Folder_B"]
+offset_left = -506.0
+offset_top = -509.0
+offset_right = -392.0
+offset_bottom = -421.0
+scale = Vector2(0.9, 0.9)
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="Minimize_Max" type="TextureButton" parent="Camera/Folder_B"]
+offset_left = -637.0
+offset_top = -507.0
+offset_right = -511.0
+offset_bottom = -407.0
+scale = Vector2(0.9, 0.9)
+action_mode = 0
+texture_normal = ExtResource("25")
+texture_hover = ExtResource("26")
+
+[node name="Name" type="Label" parent="Camera/Folder_B"]
+offset_left = -721.0
+offset_top = -503.0
+offset_right = -656.0
+offset_bottom = -425.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 75
+text = "2°"
+
+[node name="Paper" type="Sprite2D" parent="Camera/Folder_B"]
+position = Vector2(0, 62)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("28")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Folder_B/Paper"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-132.222, 122.222)
+rotation = 7.21656
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Folder_B/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-2.22225, -57.7778)
+rotation = 4.47386
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood3" type="Sprite2D" parent="Camera/Folder_B/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(122.222, 13.3333)
+rotation = 5.09204
+scale = Vector2(-0.750356, 1.63858)
+texture = ExtResource("5")
+
+[node name="Blood4" type="Sprite2D" parent="Camera/Folder_B/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-260, -110)
+rotation = 4.61225
+scale = Vector2(-0.582356, -1.13864)
+texture = ExtResource("5")
+
+[node name="Divider_01" type="Sprite2D" parent="Camera/Folder_B"]
+visible = false
+position = Vector2(-539, -262)
+scale = Vector2(1.2, 0.9)
+texture = ExtResource("29")
+
+[node name="Divider_02" type="Sprite2D" parent="Camera/Folder_B"]
+position = Vector2(-174, -262)
+scale = Vector2(1.175, 0.9)
+texture = ExtResource("30")
+
+[node name="Divider_03" type="Sprite2D" parent="Camera/Folder_B"]
+position = Vector2(187, -262)
+scale = Vector2(1.09, 0.9)
+texture = ExtResource("31")
+
+[node name="Divider_04" type="Sprite2D" parent="Camera/Folder_B"]
+position = Vector2(545, -262)
+scale = Vector2(1.12, 0.9)
+texture = ExtResource("32")
+
+[node name="Room01" type="Button" parent="Camera/Folder_B"]
+offset_left = -657.0
+offset_top = -347.0
+offset_right = -433.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("20")
+action_mode = 0
+text = "F02-01"
+flat = true
+
+[node name="Room02" type="Button" parent="Camera/Folder_B"]
+offset_left = -295.0
+offset_top = -349.0
+offset_right = -56.0
+offset_bottom = -281.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("20")
+action_mode = 0
+text = "F02-02"
+flat = true
+
+[node name="Room03" type="Button" parent="Camera/Folder_B"]
+offset_left = 63.0
+offset_top = -347.0
+offset_right = 304.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("20")
+action_mode = 0
+text = "F02-03"
+flat = true
+
+[node name="Room04" type="Button" parent="Camera/Folder_B"]
+offset_left = 428.0
+offset_top = -347.0
+offset_right = 672.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("20")
+action_mode = 0
+text = "F02-04"
+flat = true
+
+[node name="Phone_Number_Label" type="Label" parent="Camera/Folder_B"]
+offset_left = -705.0
+offset_top = -239.0
+offset_right = 22.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Apartment phone number: "
+
+[node name="Phone_Number" type="Label" parent="Camera/Folder_B"]
+offset_left = -42.0
+offset_top = -239.0
+offset_right = 158.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "####"
+
+[node name="Name_01" type="Label" parent="Camera/Folder_B"]
+offset_left = -500.0
+offset_top = -150.0
+offset_bottom = -72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="Name_02" type="Label" parent="Camera/Folder_B"]
+offset_left = 205.0
+offset_top = -150.0
+offset_right = 705.0
+offset_bottom = -72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="ID_01" type="Label" parent="Camera/Folder_B"]
+offset_left = -500.0
+offset_top = -70.0
+offset_right = 4.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "ID Number:
+############"
+
+[node name="ID_02" type="Label" parent="Camera/Folder_B"]
+offset_left = 205.0
+offset_top = -70.0
+offset_right = 709.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "ID Number:
+############"
+
+[node name="Occupation_01" type="Label" parent="Camera/Folder_B"]
+offset_left = -500.0
+offset_top = 60.0
+offset_right = 4.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="Occupation_02" type="Label" parent="Camera/Folder_B"]
+offset_left = 205.0
+offset_top = 60.0
+offset_right = 709.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="Appearence_01" type="Label" parent="Camera/Folder_B"]
+offset_left = -700.0
+offset_top = 140.0
+offset_right = -60.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Appearence:
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo"
+
+[node name="Appearence_02" type="Label" parent="Camera/Folder_B"]
+offset_left = 15.0
+offset_top = 140.0
+offset_right = 655.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Appearence:
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo"
+
+[node name="Photo_01" type="Sprite2D" parent="Camera/Folder_B"]
+position = Vector2(-609, -22)
+texture = ExtResource("22")
+
+[node name="Photo_02" type="Sprite2D" parent="Camera/Folder_B"]
+position = Vector2(103, -22)
+texture = ExtResource("22")
+
+[node name="Area2D_On_Folder_B" type="Area2D" parent="Camera/Folder_B"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Folder_B/Area2D_On_Folder_B"]
+polygon = PackedVector2Array(-738, -508, -740, 512, 738, 514, 743, -425, -413, -424, -408, -510)
+
+[node name="Area2D_Exit_Folder_B" type="Area2D" parent="Camera/Folder_B"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Folder_B/Area2D_Exit_Folder_B"]
+polygon = PackedVector2Array(-741, -635, -743, -518, -402, -518, -401, -437, 747, -434, 747, 520, -753, 520, -746, -638, -1850, -646, -1919, 750, 1155, 716, 1069, -653)
+
+[node name="Folder_C" type="Node2D" parent="Camera"]
+visible = false
+z_index = 4
+position = Vector2(170, -10)
+
+[node name="Folder" type="Sprite2D" parent="Camera/Folder_C"]
+light_mask = 0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("27")
+
+[node name="Exit" type="TextureButton" parent="Camera/Folder_C"]
+offset_left = -506.0
+offset_top = -509.0
+offset_right = -392.0
+offset_bottom = -421.0
+scale = Vector2(0.9, 0.9)
+action_mode = 0
+texture_normal = ExtResource("6")
+texture_hover = ExtResource("7")
+
+[node name="Minimize_Max" type="TextureButton" parent="Camera/Folder_C"]
+offset_left = -637.0
+offset_top = -507.0
+offset_right = -511.0
+offset_bottom = -407.0
+scale = Vector2(0.9, 0.9)
+action_mode = 0
+texture_normal = ExtResource("25")
+texture_hover = ExtResource("26")
+
+[node name="Name" type="Label" parent="Camera/Folder_C"]
+offset_left = -721.0
+offset_top = -503.0
+offset_right = -656.0
+offset_bottom = -425.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 75
+text = "3°"
+
+[node name="Paper" type="Sprite2D" parent="Camera/Folder_C"]
+position = Vector2(0, 62)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("28")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Folder_C/Paper"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(122.222, 13.3333)
+rotation = 5.09204
+scale = Vector2(-0.750356, 1.63858)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Folder_C/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-2.22225, -57.7778)
+rotation = 4.47386
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood3" type="Sprite2D" parent="Camera/Folder_C/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-132.222, 122.222)
+rotation = 7.21656
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood4" type="Sprite2D" parent="Camera/Folder_C/Paper"]
+visible = false
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-142.222, 42.2222)
+rotation = 1.23652
+scale = Vector2(-0.582356, -1.13864)
+texture = ExtResource("5")
+
+[node name="Divider_01" type="Sprite2D" parent="Camera/Folder_C"]
+visible = false
+position = Vector2(-539, -262)
+scale = Vector2(1.2, 0.9)
+texture = ExtResource("29")
+
+[node name="Divider_02" type="Sprite2D" parent="Camera/Folder_C"]
+position = Vector2(-174, -262)
+scale = Vector2(1.175, 0.9)
+texture = ExtResource("30")
+
+[node name="Divider_03" type="Sprite2D" parent="Camera/Folder_C"]
+position = Vector2(187, -262)
+scale = Vector2(1.09, 0.9)
+texture = ExtResource("31")
+
+[node name="Divider_04" type="Sprite2D" parent="Camera/Folder_C"]
+position = Vector2(545, -262)
+scale = Vector2(1.12, 0.9)
+texture = ExtResource("32")
+
+[node name="Room01" type="Button" parent="Camera/Folder_C"]
+offset_left = -657.0
+offset_top = -347.0
+offset_right = -431.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("21")
+action_mode = 0
+text = "F03-01"
+flat = true
+
+[node name="Room02" type="Button" parent="Camera/Folder_C"]
+offset_left = -295.0
+offset_top = -347.0
+offset_right = -54.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("21")
+action_mode = 0
+text = "F03-02"
+flat = true
+
+[node name="Room03" type="Button" parent="Camera/Folder_C"]
+offset_left = 63.0
+offset_top = -347.0
+offset_right = 306.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("21")
+action_mode = 0
+text = "F03-03"
+flat = true
+
+[node name="Room04" type="Button" parent="Camera/Folder_C"]
+offset_left = 428.0
+offset_top = -347.0
+offset_right = 674.0
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("21")
+action_mode = 0
+text = "F03-04"
+flat = true
+
+[node name="Phone_Number_Label" type="Label" parent="Camera/Folder_C"]
+offset_left = -705.0
+offset_top = -239.0
+offset_right = 22.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Apartment phone number: "
+
+[node name="Phone_Number" type="Label" parent="Camera/Folder_C"]
+offset_left = -42.0
+offset_top = -239.0
+offset_right = 158.0
+offset_bottom = -161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "####"
+
+[node name="Name_01" type="Label" parent="Camera/Folder_C"]
+offset_left = -500.0
+offset_top = -150.0
+offset_bottom = -72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="Name_02" type="Label" parent="Camera/Folder_C"]
+offset_left = 205.0
+offset_top = -150.0
+offset_right = 705.0
+offset_bottom = -72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="ID_01" type="Label" parent="Camera/Folder_C"]
+offset_left = -500.0
+offset_top = -70.0
+offset_right = 4.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "ID Number:
+############"
+
+[node name="ID_02" type="Label" parent="Camera/Folder_C"]
+offset_left = 205.0
+offset_top = -70.0
+offset_right = 709.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "ID Number:
+############"
+
+[node name="Occupation_01" type="Label" parent="Camera/Folder_C"]
+offset_left = -500.0
+offset_top = 60.0
+offset_right = 4.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="Occupation_02" type="Label" parent="Camera/Folder_C"]
+offset_left = 205.0
+offset_top = 60.0
+offset_right = 709.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Not available in demo"
+
+[node name="Appearence_01" type="Label" parent="Camera/Folder_C"]
+offset_left = -700.0
+offset_top = 140.0
+offset_right = -60.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Appearence:
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo"
+
+[node name="Appearence_02" type="Label" parent="Camera/Folder_C"]
+offset_left = 15.0
+offset_top = 140.0
+offset_right = 655.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 50
+text = "Appearence:
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo
+* Not available in demo"
+
+[node name="Photo_01" type="Sprite2D" parent="Camera/Folder_C"]
+position = Vector2(-609, -22)
+texture = ExtResource("22")
+
+[node name="Photo_02" type="Sprite2D" parent="Camera/Folder_C"]
+position = Vector2(103, -22)
+texture = ExtResource("22")
+
+[node name="Area2D_On_Folder_C" type="Area2D" parent="Camera/Folder_C"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Folder_C/Area2D_On_Folder_C"]
+polygon = PackedVector2Array(-410, -512, -741, -510, -743, 512, 740, 516, 743, -425, -406, -431)
+
+[node name="Area2D_Exit_Folder_C" type="Area2D" parent="Camera/Folder_C"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/Folder_C/Area2D_Exit_Folder_C"]
+polygon = PackedVector2Array(-740, -609, -745, -515, -402, -516, -402, -436, 750, -434, 753, 521, -753, 520, -744, -620, -1940, -670, -1988, 717, 1133, 695, 1063, -647)
+
+[node name="Text" type="Control" parent="Camera"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -15.0
+offset_top = 333.0
+offset_right = 25.0
+offset_bottom = 373.0
+
+[node name="Panel" type="Panel" parent="Camera/Text"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = -775.0
+offset_top = -148.0
+offset_right = -729.0
+offset_bottom = -108.0
+scale = Vector2(34.28, 8)
+
+[node name="Label" type="Label" parent="Camera/Text"]
+layout_mode = 0
+offset_left = -756.0
+offset_top = -122.0
+offset_right = 788.0
+offset_bottom = 158.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 80
+text = "
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="Border" type="Sprite2D" parent="Camera/Text"]
+position = Vector2(20, 15)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("2")
+
+[node name="Time_Between_Text" type="Timer" parent="Camera/Text"]
+wait_time = 0.5
+
+[node name="Time_Between_Text_Call" type="Timer" parent="Camera/Text"]
+wait_time = 0.5
+
+[node name="Skip" type="Button" parent="Camera/Text"]
+visible = false
+layout_mode = 0
+offset_left = 525.0
+offset_top = 55.0
+offset_right = 854.0
+offset_bottom = 184.0
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("22")
+action_mode = 0
+text = "Skip"
+flat = true
+
+[node name="Pause" type="Control" parent="Camera"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("34")
+
+[node name="Menu" type="Node2D" parent="Camera/Pause"]
+z_index = 100
+position = Vector2(-1350, -970)
+rotation = 3.14159
+scale = Vector2(0.9, 0.9)
+
+[node name="Folder" type="Sprite2D" parent="Camera/Pause/Menu"]
+texture = ExtResource("27")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Pause/Menu/Folder"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(459.999, 214.446)
+rotation = 4.47386
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Camera/Pause/Menu/Folder"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(-354.444, -218.89)
+rotation = 4.47386
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Blood3" type="Sprite2D" parent="Camera/Pause/Menu/Folder"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.294118)
+position = Vector2(400.001, -348.888)
+rotation = 4.47386
+scale = Vector2(-0.750356, -1.43931)
+texture = ExtResource("5")
+
+[node name="Label" type="Label" parent="Camera/Pause/Menu"]
+offset_left = -472.222
+offset_top = -474.444
+offset_right = -172.222
+offset_bottom = -374.444
+rotation = 3.14159
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 70
+text = "Pause"
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Folder_Content" type="Node2D" parent="Camera/Pause/Menu"]
+
+[node name="Papers" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("35")
+
+[node name="Blood" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content/Papers"]
+self_modulate = Color(0.172549, 0.0705882, 0.0156863, 0.14902)
+z_index = 5
+position = Vector2(-2.22225, -57.7778)
+rotation = 4.47386
+scale = Vector2(-1.02528, 1.76005)
+texture = ExtResource("5")
+
+[node name="Title" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -799.999
+offset_top = -410.002
+offset_right = 0.00134277
+offset_bottom = -310.002
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 70
+text = "Pause Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Postick_02" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(384.046, -260.311)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("36")
+
+[node name="Checkboxes" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(126.268, 225.245)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("37")
+
+[node name="Checkbox_Accessibility" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(-479.411, 57.4771)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("38")
+
+[node name="Checkbox_Accessibility2" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(-479.412, 201.922)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("38")
+
+[node name="Checkbox_Accessibility3" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(-481.112, 328.888)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("38")
+
+[node name="Checkbox_Accessibility4" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(-483.334, 448.888)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("38")
+
+[node name="Continue" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -597.777
+offset_top = -293.335
+offset_right = -97.7775
+offset_bottom = -164.335
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("23")
+action_mode = 0
+text = "Continue"
+flat = true
+
+[node name="Menu" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -567.777
+offset_top = -193.335
+offset_right = -131.777
+offset_bottom = -64.3347
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("23")
+action_mode = 0
+text = "Menu"
+flat = true
+
+[node name="Quit" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -484.444
+offset_top = -87.779
+offset_right = -268.444
+offset_bottom = 41.221
+scale = Vector2(0.75, 0.75)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("23")
+action_mode = 0
+text = "Quit"
+flat = true
+
+[node name="Label_Sound" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 225.823
+offset_top = -420.311
+offset_right = 583.823
+offset_bottom = -296.311
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 100
+text = "Sound"
+
+[node name="Label_Music" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 232.489
+offset_top = -201.422
+offset_right = 542.489
+offset_bottom = -77.4216
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 100
+text = "Music"
+
+[node name="Label_960X540" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 160.712
+offset_top = 26.3556
+offset_right = 652.712
+offset_bottom = 150.356
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "960 x 540"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_1280X720" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 162.934
+offset_top = 125.245
+offset_right = 654.934
+offset_bottom = 249.245
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "1280 x 720"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_1920X1080" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 164.046
+offset_top = 227.467
+offset_right = 656.046
+offset_bottom = 351.467
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "1920 x 1080"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Fullscreen" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 165.157
+offset_top = 331.912
+offset_right = 681.157
+offset_bottom = 455.912
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 55
+text = "Fullscreen"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Sound_Text" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -473.333
+offset_top = 23.3321
+offset_right = 89.6662
+offset_bottom = 212.332
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "Text for
+important 
+sounds"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Sound_Text2" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -480.0
+offset_top = 165.554
+offset_right = 82.9999
+offset_bottom = 354.554
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "Text for
+important 
+colors"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Camera_Text" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -463.334
+offset_top = 276.666
+offset_right = 99.6663
+offset_bottom = 465.666
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "Fixed Camera"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_Dialog_Text" type="Label" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -442.223
+offset_top = 383.332
+offset_right = 120.777
+offset_bottom = 572.332
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 60
+text = "Small dialog text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slider_01" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(371.823, -269.2)
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("39")
+
+[node name="Slider_02" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(368.49, -49.1999)
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("39")
+
+[node name="Circle_Slider_01" type="HSlider" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 181.823
+offset_top = -306.977
+offset_right = 656.823
+offset_bottom = -215.977
+scale = Vector2(0.8, 0.8)
+theme_override_icons/grabber = ExtResource("40")
+theme_override_icons/grabber_highlight = ExtResource("40")
+theme_override_icons/grabber_disabled = ExtResource("40")
+
+[node name="Circle_Slider_02" type="HSlider" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 180.712
+offset_top = -88.0889
+offset_right = 655.712
+offset_bottom = 2.91106
+scale = Vector2(0.8, 0.8)
+theme_override_icons/grabber = ExtResource("40")
+theme_override_icons/grabber_highlight = ExtResource("40")
+theme_override_icons/grabber_disabled = ExtResource("40")
+
+[node name="Check_01" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(-462.222, 37.7766)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_02" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(146.667, 53.3337)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_03" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(146.666, 155.556)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_04" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+position = Vector2(145.157, 256.356)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_05" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(144.444, 358.889)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_06" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(-463.334, 182.221)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_07" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(-466.667, 307.777)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_08" type="Sprite2D" parent="Camera/Pause/Menu/Folder_Content"]
+visible = false
+position = Vector2(-466.668, 431.11)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("23")
+
+[node name="Check_Button_01" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 97.3787
+offset_top = 28.5778
+offset_right = 187.379
+offset_bottom = 157.579
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+disabled = true
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_02" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 98.4897
+offset_top = 134.133
+offset_right = 188.49
+offset_bottom = 263.133
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+disabled = true
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_03" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 98.4897
+offset_top = 235.245
+offset_right = 188.49
+offset_bottom = 364.245
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+disabled = true
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_04" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = 98.4889
+offset_top = 331.911
+offset_right = 188.489
+offset_bottom = 460.911
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+disabled = true
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_05" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -510.522
+offset_top = 11.9211
+offset_right = -420.522
+offset_bottom = 140.921
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_06" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -510.0
+offset_top = 156.665
+offset_right = -420.0
+offset_bottom = 285.665
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_07" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -512.223
+offset_top = 282.221
+offset_right = -422.223
+offset_bottom = 411.221
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Check_Button_08" type="Button" parent="Camera/Pause/Menu/Folder_Content"]
+offset_left = -514.445
+offset_top = 404.443
+offset_right = -424.445
+offset_bottom = 533.443
+scale = Vector2(0.7, 0.7)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("24")
+action_mode = 0
+text = "
+"
+flat = true
+
+[node name="Accept" type="AudioStreamPlayer" parent="Camera/Pause"]
+stream = ExtResource("41")
+
+[node name="Select" type="AudioStreamPlayer" parent="Camera/Pause"]
+stream = ExtResource("42")
+
+[node name="Check_Write" type="AudioStreamPlayer" parent="Camera/Pause"]
+stream = ExtResource("43")
+pitch_scale = 0.85
+
+[node name="Pick_Up_Folder" type="AudioStreamPlayer" parent="Camera/Pause"]
+stream = ExtResource("44")
+
+[node name="Pause_Button" type="TextureButton" parent="Camera"]
+z_index = 100
+offset_left = -687.0
+offset_top = -542.0
+offset_right = -619.0
+offset_bottom = -458.0
+action_mode = 0
+texture_normal = ExtResource("45")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("47")
+texture_disabled = ExtResource("46")
+
+[node name="Game_Over" type="Node2D" parent="Camera"]
+visible = false
+scale = Vector2(0.5, 0.5)
+
+[node name="Left_Hand" type="Sprite2D" parent="Camera/Game_Over"]
+position = Vector2(-3580, 1680)
+texture = ExtResource("48")
+
+[node name="Right_Hand" type="Sprite2D" parent="Camera/Game_Over"]
+position = Vector2(3580, 1680)
+texture = ExtResource("49")
+
+[node name="Black" type="Sprite2D" parent="Camera/Game_Over"]
+visible = false
+modulate = Color(0, 0, 0, 1)
+z_index = 500
+scale = Vector2(8, 4)
+texture = ExtResource("50")
+
+[node name="Trophie" parent="Camera" instance=ExtResource("51")]
+visible = false
+z_index = 501
+position = Vector2(788, 396)
+scale = Vector2(0.01, 0.01)
+
+[node name="Entity" type="Node2D" parent="Camera"]
+position = Vector2(18, -206)
+
+[node name="Face" type="Sprite2D" parent="Camera/Entity"]
+visible = false
+position = Vector2(30, -21)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("52")
+
+[node name="Particles" type="GPUParticles2D" parent="."]
+z_index = 50
+position = Vector2(953, 661)
+amount = 120
+process_material = SubResource("27")
+texture = ExtResource("53")
+lifetime = 15.0
+preprocess = 10.0
+speed_scale = 0.2
+randomness = 1.0
+
+[node name="Background" type="Node2D" parent="."]
+z_index = -50
+
+[node name="Filter" type="Sprite2D" parent="Background"]
+z_index = 100
+position = Vector2(974, 578)
+scale = Vector2(0.472185, 0.495695)
+texture = ExtResource("54")
+
+[node name="Light" type="PointLight2D" parent="Background"]
+visible = false
+z_index = -2
+position = Vector2(122, 562)
+color = Color(0.564706, 0, 0.0470588, 1)
+energy = 2.0
+shadow_enabled = true
+texture = ExtResource("55")
+texture_scale = 10.0
+
+[node name="Alarm_Light" type="AnimatedSprite2D" parent="Background"]
+visible = false
+z_index = 1
+position = Vector2(121, 564)
+scale = Vector2(0.405, 0.405)
+sprite_frames = SubResource("28")
+
+[node name="Alarm_Emitting_Light" type="AnimatedSprite2D" parent="Background"]
+visible = false
+z_index = 1
+position = Vector2(121, 564)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("29")
+frame_progress = 0.339445
+
+[node name="Shadow" type="LightOccluder2D" parent="Background"]
+occluder = SubResource("30")
+
+[node name="Wall" type="Sprite2D" parent="Background"]
+position = Vector2(962, 538)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("61")
+
+[node name="Tripo_hide" type="Sprite2D" parent="Background"]
+visible = false
+self_modulate = Color(0.137255, 0, 0, 1)
+position = Vector2(1807, 985)
+texture = ExtResource("5")
+
+[node name="Eyes" type="Node2D" parent="Background"]
+
+[node name="Eye" type="Node2D" parent="Background/Eyes"]
+position = Vector2(579, -26)
+scale = Vector2(0.8, 0.8)
+
+[node name="Eye" type="Sprite2D" parent="Background/Eyes/Eye"]
+position = Vector2(-124, 18.6667)
+texture = ExtResource("62")
+
+[node name="Iris" type="Sprite2D" parent="Background/Eyes/Eye"]
+position = Vector2(-124, 16)
+texture = ExtResource("63")
+
+[node name="Animation" type="AnimationPlayer" parent="Background/Eyes/Eye"]
+libraries = {
+"": SubResource("33")
+}
+
+[node name="Eye2" type="Node2D" parent="Background/Eyes"]
+position = Vector2(370, 748)
+rotation = -3.1153
+scale = Vector2(0.88, 0.88)
+
+[node name="Eye" type="Sprite2D" parent="Background/Eyes/Eye2"]
+position = Vector2(-124, 18.6667)
+texture = ExtResource("62")
+
+[node name="Iris" type="Sprite2D" parent="Background/Eyes/Eye2"]
+position = Vector2(-124, 16)
+texture = ExtResource("63")
+
+[node name="Animation" type="AnimationPlayer" parent="Background/Eyes/Eye2"]
+libraries = {
+"": SubResource("33")
+}
+
+[node name="Eye3" type="Node2D" parent="Background/Eyes"]
+position = Vector2(1543, -106)
+rotation = -0.977924
+scale = Vector2(0.8, 0.8)
+
+[node name="Eye" type="Sprite2D" parent="Background/Eyes/Eye3"]
+position = Vector2(-124, 18.6667)
+texture = ExtResource("62")
+
+[node name="Iris" type="Sprite2D" parent="Background/Eyes/Eye3"]
+position = Vector2(-124, 16)
+texture = ExtResource("63")
+
+[node name="Animation" type="AnimationPlayer" parent="Background/Eyes/Eye3"]
+libraries = {
+"": SubResource("33")
+}
+
+[node name="Eye4" type="Node2D" parent="Background/Eyes"]
+position = Vector2(1542, 831)
+rotation = 1.29756
+scale = Vector2(0.88, 0.88)
+
+[node name="Eye" type="Sprite2D" parent="Background/Eyes/Eye4"]
+position = Vector2(-124, 18.6667)
+texture = ExtResource("62")
+
+[node name="Iris" type="Sprite2D" parent="Background/Eyes/Eye4"]
+position = Vector2(-124, 16)
+texture = ExtResource("63")
+
+[node name="Animation" type="AnimationPlayer" parent="Background/Eyes/Eye4"]
+libraries = {
+"": SubResource("33")
+}
+
+[node name="Window" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(982, 400)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("64")
+
+[node name="Blood" type="Sprite2D" parent="Background/Window"]
+self_modulate = Color(0.0745098, 0.00784314, 0.0313726, 0.607843)
+position = Vector2(78, -264)
+scale = Vector2(-2.33854, 2.31557)
+texture = ExtResource("5")
+
+[node name="Back" type="Sprite2D" parent="Background"]
+z_index = -50
+position = Vector2(950, 560)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("65")
+
+[node name="Tripo_hide2" type="Sprite2D" parent="Background/Back"]
+self_modulate = Color(0.137255, 0.0823529, 0, 0.513726)
+position = Vector2(-1220, 48)
+scale = Vector2(2, 2)
+texture = ExtResource("5")
+
+[node name="Tripo_hide4" type="Sprite2D" parent="Background/Back"]
+self_modulate = Color(0.137255, 0.0823529, 0, 0.662745)
+position = Vector2(978, 42)
+rotation = -1.02948
+scale = Vector2(2, 2)
+texture = ExtResource("5")
+
+[node name="Tripo_hide3" type="Sprite2D" parent="Background/Back"]
+self_modulate = Color(0.141176, 0.0901961, 0.0313726, 0.454902)
+position = Vector2(838, -1324)
+scale = Vector2(2, 2)
+texture = ExtResource("5")
+
+[node name="Entity" type="AnimatedSprite2D" parent="Background/Back"]
+visible = false
+position = Vector2(106, -448)
+sprite_frames = SubResource("34")
+animation = &"EVOLUTION"
+
+[node name="Danger" type="Node2D" parent="Background"]
+
+[node name="Button_Danger" type="TextureButton" parent="Background/Danger"]
+offset_left = 154.0
+offset_top = 691.0
+offset_right = 354.0
+offset_bottom = 891.0
+scale = Vector2(0.5, 0.5)
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("72")
+texture_pressed = ExtResource("73")
+texture_hover = ExtResource("74")
+texture_disabled = ExtResource("73")
+ignore_texture_size = true
+
+[node name="Case_Close" type="TextureButton" parent="Background/Danger"]
+offset_left = 122.0
+offset_top = 657.0
+offset_right = 447.0
+offset_bottom = 982.0
+scale = Vector2(0.5, 0.5)
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("75")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("76")
+ignore_texture_size = true
+
+[node name="Case_Open" type="Sprite2D" parent="Background/Danger"]
+visible = false
+position = Vector2(204, 804)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("77")
+
+[node name="Work_Area" type="Node2D" parent="Background"]
+
+[node name="Table" type="Sprite2D" parent="Background/Work_Area"]
+z_index = 5
+position = Vector2(1008, 1034)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("78")
+
+[node name="Blood" type="Sprite2D" parent="Background/Work_Area"]
+self_modulate = Color(0.12549, 0.0117647, 0.0313726, 0.815686)
+z_index = 5
+position = Vector2(269, 1081)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("5")
+
+[node name="Blood2" type="Sprite2D" parent="Background/Work_Area"]
+self_modulate = Color(0.105882, 0.0235294, 0.0117647, 0.658824)
+z_index = 5
+position = Vector2(1393, 1060)
+rotation = -3.02555
+scale = Vector2(1.23, 0.55)
+texture = ExtResource("5")
+
+[node name="Phone" type="Node2D" parent="Background/Work_Area"]
+z_index = 10
+position = Vector2(186, 979)
+
+[node name="Shadow" type="LightOccluder2D" parent="Background/Work_Area/Phone"]
+position = Vector2(-186, -979)
+occluder = SubResource("35")
+
+[node name="Phone_Back" type="Sprite2D" parent="Background/Work_Area/Phone"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("79")
+
+[node name="Phone_Top" type="Sprite2D" parent="Background/Work_Area/Phone"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("80")
+
+[node name="Phone_Base" type="Sprite2D" parent="Background/Work_Area/Phone"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("81")
+
+[node name="Call_button" type="TextureButton" parent="Background/Work_Area/Phone"]
+offset_left = 39.0
+offset_top = -98.0
+offset_right = 392.0
+offset_bottom = 230.0
+scale = Vector2(0.5, 0.5)
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("82")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("83")
+texture_disabled = ExtResource("46")
+ignore_texture_size = true
+
+[node name="Door_Access" type="Node2D" parent="Background/Work_Area"]
+z_index = 9
+position = Vector2(1697, 897)
+scale = Vector2(1.2, 1.2)
+
+[node name="Shadow" type="LightOccluder2D" parent="Background/Work_Area/Door_Access"]
+occluder = SubResource("36")
+
+[node name="Buttons" type="Sprite2D" parent="Background/Work_Area/Door_Access"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("84")
+
+[node name="Unlock" type="TextureButton" parent="Background/Work_Area/Door_Access"]
+offset_left = -207.0
+offset_top = -64.0
+offset_right = 3.0
+offset_bottom = 136.0
+scale = Vector2(0.5, 0.5)
+disabled = true
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("85")
+texture_pressed = ExtResource("86")
+texture_hover = ExtResource("87")
+texture_disabled = ExtResource("86")
+ignore_texture_size = true
+
+[node name="Lock" type="TextureButton" parent="Background/Work_Area/Door_Access"]
+offset_left = -73.0
+offset_top = -63.0
+offset_right = 137.0
+offset_bottom = 137.0
+scale = Vector2(0.5, 0.5)
+disabled = true
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("88")
+texture_pressed = ExtResource("89")
+texture_hover = ExtResource("90")
+texture_disabled = ExtResource("89")
+ignore_texture_size = true
+
+[node name="Disabled" type="Sprite2D" parent="Background/Work_Area/Door_Access"]
+position = Vector2(-151.3, -14)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("91")
+
+[node name="Disabled2" type="Sprite2D" parent="Background/Work_Area/Door_Access"]
+visible = false
+position = Vector2(-16.6666, -13.3334)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("92")
+
+[node name="Checklists" type="Node2D" parent="Background/Work_Area"]
+z_index = 10
+position = Vector2(1139, 883)
+scale = Vector2(0.5, 0.5)
+
+[node name="Paper_sprite" type="Sprite2D" parent="Background/Work_Area/Checklists"]
+position = Vector2(302, 266)
+texture = ExtResource("93")
+
+[node name="Paper" type="TextureButton" parent="Background/Work_Area/Checklists"]
+offset_top = -18.0
+offset_right = 605.0
+offset_bottom = 549.0
+disabled = true
+action_mode = 0
+texture_normal = ExtResource("93")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("94")
+texture_disabled = ExtResource("46")
+ignore_texture_size = true
+
+[node name="Entry_Request" type="Node2D" parent="Background/Work_Area"]
+visible = false
+z_index = 5
+position = Vector2(27, -20)
+
+[node name="Paper" type="Sprite2D" parent="Background/Work_Area/Entry_Request"]
+position = Vector2(1021, 923)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("95")
+
+[node name="Button" type="TextureButton" parent="Background/Work_Area/Entry_Request"]
+offset_left = 916.0
+offset_top = 824.0
+offset_right = 1383.0
+offset_bottom = 1264.0
+scale = Vector2(0.45, 0.45)
+disabled = true
+action_mode = 0
+texture_normal = ExtResource("95")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("96")
+texture_disabled = ExtResource("46")
+
+[node name="ID" type="Node2D" parent="Background/Work_Area"]
+visible = false
+z_index = 5
+position = Vector2(868, 853)
+scale = Vector2(0.45, 0.45)
+
+[node name="ID_Sprite" type="Sprite2D" parent="Background/Work_Area/ID"]
+texture = ExtResource("97")
+
+[node name="ID_Button" type="TextureButton" parent="Background/Work_Area/ID"]
+offset_left = -172.0
+offset_top = -108.889
+offset_right = 172.0
+offset_bottom = 109.111
+disabled = true
+action_mode = 0
+texture_normal = ExtResource("97")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("98")
+texture_disabled = ExtResource("46")
+
+[node name="Today_list" type="Node2D" parent="Background/Work_Area"]
+visible = false
+position = Vector2(317, 534)
+scale = Vector2(0.45, 0.45)
+
+[node name="Today_List_Sprite" type="Sprite2D" parent="Background/Work_Area/Today_list"]
+visible = false
+texture = ExtResource("99")
+
+[node name="Today_List_Button" type="TextureButton" parent="Background/Work_Area/Today_list"]
+offset_left = -217.0
+offset_top = -292.5
+offset_right = 217.0
+offset_bottom = 292.5
+action_mode = 0
+texture_normal = ExtResource("99")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("100")
+texture_disabled = ExtResource("46")
+
+[node name="Phone" type="Node2D" parent="Background"]
+visible = false
+z_index = 25
+position = Vector2(-56, -40)
+
+[node name="Gloves" type="Sprite2D" parent="Background/Phone"]
+light_mask = 0
+z_index = 1
+position = Vector2(1637, 421)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("101")
+
+[node name="Numbers" type="Sprite2D" parent="Background/Phone"]
+light_mask = 0
+position = Vector2(764, 656)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("102")
+
+[node name="Blood" type="Sprite2D" parent="Background/Phone/Numbers"]
+self_modulate = Color(0.172549, 0, 0, 0.34902)
+position = Vector2(390, -3.99997)
+rotation = 7.21656
+scale = Vector2(1.28054, -2.09646)
+texture = ExtResource("5")
+
+[node name="Roulette" type="Sprite2D" parent="Background/Phone"]
+light_mask = 0
+position = Vector2(936, 635)
+scale = Vector2(0.47, 0.48)
+texture = ExtResource("103")
+
+[node name="Button_01" type="Area2D" parent="Background/Phone/Roulette"]
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_01"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_02" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-359.574, -322.917)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_02"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_03" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-848.936, -389.583)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_03"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_04" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-1291.49, -177.083)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_04"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_05" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-1538.3, 241.667)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_05"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_06" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-1493.62, 716.667)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_06"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_07" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-1187.23, 1095.83)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_07"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_08" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-717.021, 1233.33)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_08"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Button_09" type="Area2D" parent="Background/Phone/Roulette"]
+position = Vector2(-251.064, 1104.17)
+
+[node name="Collision" type="CollisionShape2D" parent="Background/Phone/Roulette/Button_09"]
+position = Vector2(727.659, -422.917)
+scale = Vector2(20, 20)
+shape = SubResource("37")
+disabled = true
+
+[node name="Cursor" type="Sprite2D" parent="Background/Phone/Roulette"]
+visible = false
+position = Vector2(-834.042, -212.5)
+scale = Vector2(3, 3)
+texture = ExtResource("104")
+centered = false
+
+[node name="Limit" type="Sprite2D" parent="Background/Phone"]
+light_mask = 0
+position = Vector2(1335, 883)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("105")
+
+[node name="Go_Back_Button" type="Button" parent="Background/Phone"]
+offset_left = 709.0
+offset_top = 454.0
+offset_right = 1239.0
+offset_bottom = 799.0
+scale = Vector2(0.88, 1)
+theme_override_styles/focus = SubResource("38")
+disabled = true
+action_mode = 0
+flat = true
+
+[node name="Folder_A_Sprite" type="Sprite2D" parent="Background"]
+visible = false
+position = Vector2(1845, 150)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("106")
+
+[node name="Folder_A_Sprite_Spanish" type="Sprite2D" parent="Background"]
+visible = false
+position = Vector2(1845, 150)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("107")
+
+[node name="Folder_B_Sprite" type="Sprite2D" parent="Background"]
+visible = false
+position = Vector2(1845, 396)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("108")
+
+[node name="Folder_B_Sprite_Spanish" type="Sprite2D" parent="Background"]
+visible = false
+position = Vector2(1845, 396)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("109")
+
+[node name="Badge" type="Sprite2D" parent="Background"]
+visible = false
+z_index = 5
+position = Vector2(-43, 566)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("110")
+
+[node name="Shadow" type="Sprite2D" parent="Background/Badge"]
+z_index = -1
+position = Vector2(5.00001, 10)
+texture = ExtResource("111")
+
+[node name="Shine" type="AnimatedSprite2D" parent="Background/Badge"]
+position = Vector2(-290, -300)
+sprite_frames = SubResource("39")
+animation = &"IDLE"
+frame_progress = 0.544725
+
+[node name="Folder_A" type="TextureButton" parent="Background"]
+offset_left = 1686.0
+offset_top = 29.0
+offset_right = 2361.0
+offset_bottom = 554.0
+scale = Vector2(0.45, 0.45)
+action_mode = 0
+texture_normal = ExtResource("106")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("113")
+texture_disabled = ExtResource("106")
+ignore_texture_size = true
+
+[node name="Folder_B" type="TextureButton" parent="Background"]
+offset_left = 1690.0
+offset_top = 278.0
+offset_right = 2365.0
+offset_bottom = 803.0
+scale = Vector2(0.45, 0.45)
+action_mode = 0
+texture_normal = ExtResource("108")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("114")
+texture_disabled = ExtResource("108")
+ignore_texture_size = true
+
+[node name="Folder_C" type="TextureButton" parent="Background"]
+offset_left = 1695.0
+offset_top = 522.0
+offset_right = 2370.0
+offset_bottom = 1047.0
+scale = Vector2(0.45, 0.45)
+action_mode = 0
+texture_normal = ExtResource("115")
+texture_pressed = ExtResource("46")
+texture_hover = ExtResource("116")
+texture_disabled = ExtResource("115")
+ignore_texture_size = true
+
+[node name="Time_Between_Light" type="Timer" parent="Background"]
+wait_time = 0.5
+
+[node name="Characters" type="Node2D" parent="."]
+z_index = -52
+position = Vector2(5, 5)
+
+[node name="DDD_Agent" parent="Characters" instance=ExtResource("117")]
+position = Vector2(980, 280)
+
+[node name="Waiting_3312" type="Timer" parent="."]
+wait_time = 6.0
+
+[node name="Between_chars" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="Buttons_Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("118")
+pitch_scale = 2.0
+
+[node name="Open_Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("119")
+
+[node name="Close_Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("120")
+
+[node name="Button_Micro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("118")
+pitch_scale = 2.5
+
+[node name="Button_Emergency" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("118")
+pitch_scale = 1.5
+
+[node name="Case_Emergency" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("118")
+pitch_scale = 4.0
+
+[node name="Pick_Up_Folder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("44")
+
+[node name="Put_Back_Folder" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("121")
+
+[node name="Pick_Up_Phone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("122")
+
+[node name="Hang_Down_Phone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("123")
+
+[node name="Window_SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("124")
+
+[node name="Background_SFX" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("125")
+volume_db = -12.0
+pitch_scale = 0.5
+
+[node name="Siren" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("126")
+
+[node name="Dial_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("127")
+
+[node name="Dial_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("128")
+
+[node name="Dial_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("129")
+
+[node name="Dial_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("130")
+
+[node name="Dial_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("131")
+
+[node name="Dial_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("132")
+
+[node name="Dial_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("133")
+
+[node name="Dial_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("134")
+
+[node name="Dial_09" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("135")
+
+[node name="Release_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("136")
+
+[node name="Release_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("137")
+
+[node name="Release_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("138")
+
+[node name="Release_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("139")
+
+[node name="Release_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("140")
+
+[node name="Release_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("141")
+
+[node name="Release_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("142")
+
+[node name="Release_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("143")
+
+[node name="Release_09" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("144")
+
+[node name="Release_Not_Dial_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("136")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("137")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("138")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("139")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("140")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("141")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("142")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("143")
+pitch_scale = 2.0
+
+[node name="Release_Not_Dial_09" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("144")
+pitch_scale = 2.0
+
+[node name="Calling_Tone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("145")
+
+[node name="Dial_Tone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("146")
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("42")
+
+[node name="Accept" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("41")
+
+[node name="Check_Write" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("43")
+pitch_scale = 0.85
+
+[node name="Voice_01" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("147")
+pitch_scale = 2.5
+
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("148")
+pitch_scale = 2.5
+
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("149")
+pitch_scale = 2.5
+
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("150")
+pitch_scale = 2.5
+
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("151")
+
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("152")
+pitch_scale = 0.6
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("153")
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("154")
+pitch_scale = 3.0
+
+[node name="Bite" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("155")
+
+[node name="Badge" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("156")
+
+[node name="Magic_Dust" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("157")
+
+[node name="Pickup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("158")
+pitch_scale = 0.45
+
+[node name="Entity" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("159")
+pitch_scale = 0.5
+
+[node name="Squishy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("160")
+pitch_scale = 0.5
+
+[node name="Window_break" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("161")
+
+[connection signal="pressed" from="Camera/Entry_Request/Exit" to="." method="_on_exit_Entry_pressed"]
+[connection signal="mouse_entered" from="Camera/Entry_Request/Area2D_Entry" to="." method="_on_area_2d_entry_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Entry_Request/Area2D_Entry" to="." method="_on_area_2d_entry_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Entry_Request/Area2D_On_Entry" to="." method="_on_area_2d_on_entry_mouse_entered"]
+[connection signal="pressed" from="Camera/ID/ID_Exit" to="." method="_on_id_exit_pressed"]
+[connection signal="mouse_entered" from="Camera/ID/Area2D_Exit_ID" to="." method="_on_area_2d_exit_id_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/ID/Area2D_Exit_ID" to="." method="_on_area_2d_exit_id_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/ID/Area2D_On_ID" to="." method="_on_area_2d_on_id_mouse_entered"]
+[connection signal="pressed" from="Camera/Today_list/Today_Exit" to="." method="_on_today_exit_pressed"]
+[connection signal="mouse_entered" from="Camera/Today_list/Area2D_Exit_Today" to="." method="_on_area_2d_exit_today_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Today_list/Area2D_Exit_Today" to="." method="_on_area_2d_exit_today_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Today_list/Area2D_On_Today" to="." method="_on_area_2d_on_today_mouse_entered"]
+[connection signal="pressed" from="Camera/Checklist/Check_bt_01" to="." method="_on_check_bt_01_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Check_bt_02" to="." method="_on_check_bt_02_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Check_bt_03" to="." method="_on_check_bt_03_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Check_bt_04" to="." method="_on_check_bt_04_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Cross_bt_01" to="." method="_on_cross_bt_01_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Cross_bt_02" to="." method="_on_cross_bt_02_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Cross_bt_03" to="." method="_on_cross_bt_03_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Cross_bt_04" to="." method="_on_cross_bt_04_pressed"]
+[connection signal="mouse_entered" from="Camera/Checklist/Minimize_Max" to="." method="_on_minimize_max_mouse_entered"]
+[connection signal="pressed" from="Camera/Checklist/Minimize_Max" to="." method="_on_minimize_max_pressed"]
+[connection signal="mouse_entered" from="Camera/Checklist/Exit" to="." method="_on_minimize_max_mouse_entered"]
+[connection signal="pressed" from="Camera/Checklist/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Camera/Checklist/Complete" to="." method="_on_complete_pressed"]
+[connection signal="mouse_entered" from="Camera/Checklist/Area2D_On_Checklist" to="." method="_on_area_2d_on_checklist_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Checklist/Area2D_On_Checklist" to="." method="_on_area_2d_on_checklist_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Checklist/Area2D_Exit_Checklist" to="." method="_on_area_2d_exit_checklist_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Checklist/Area2D_Exit_Checklist" to="." method="_on_area_2d_exit_checklist_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Folder_A/Exit" to="." method="_on_minimize_max_Folder_A_mouse_entered"]
+[connection signal="pressed" from="Camera/Folder_A/Exit" to="." method="_on_exit_A_pressed"]
+[connection signal="mouse_entered" from="Camera/Folder_A/Minimize_Max" to="." method="_on_minimize_max_Folder_A_mouse_entered"]
+[connection signal="pressed" from="Camera/Folder_A/Minimize_Max" to="." method="_on_minimize_max_A_pressed"]
+[connection signal="pressed" from="Camera/Folder_A/Room01" to="." method="_on_Folder_A_room_01_pressed"]
+[connection signal="pressed" from="Camera/Folder_A/Room02" to="." method="_on_Folder_A_room_02_pressed"]
+[connection signal="pressed" from="Camera/Folder_A/Room03" to="." method="_on_Folder_A_room_03_pressed"]
+[connection signal="pressed" from="Camera/Folder_A/Room04" to="." method="_on_Folder_A_room_04_pressed"]
+[connection signal="mouse_entered" from="Camera/Folder_A/Area2D_On_Folder_A" to="." method="_on_area_2d_on_folder_a_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Folder_A/Area2D_On_Folder_A" to="." method="_on_area_2d_on_folder_a_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Folder_A/Area2D_Exit_Folder_A" to="." method="_on_area_2d_exit_folder_a_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Folder_A/Area2D_Exit_Folder_A" to="." method="_on_area_2d_exit_folder_a_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Folder_B/Exit" to="." method="_on_exit_B_mouse_entered"]
+[connection signal="pressed" from="Camera/Folder_B/Exit" to="." method="_on_exit_B_pressed"]
+[connection signal="mouse_entered" from="Camera/Folder_B/Minimize_Max" to="." method="_on_minimize_max_Folder_B_mouse_entered"]
+[connection signal="pressed" from="Camera/Folder_B/Minimize_Max" to="." method="_on_minimize_max_B_pressed"]
+[connection signal="pressed" from="Camera/Folder_B/Room01" to="." method="_on_Folder_B_room_01_pressed"]
+[connection signal="pressed" from="Camera/Folder_B/Room02" to="." method="_on_Folder_B_room_02_pressed"]
+[connection signal="pressed" from="Camera/Folder_B/Room03" to="." method="_on_Folder_B_room_03_pressed"]
+[connection signal="pressed" from="Camera/Folder_B/Room04" to="." method="_on_Folder_B_room_04_pressed"]
+[connection signal="mouse_entered" from="Camera/Folder_B/Area2D_On_Folder_B" to="." method="_on_area_2d_on_folder_b_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Folder_B/Area2D_On_Folder_B" to="." method="_on_area_2d_on_folder_b_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Folder_B/Area2D_Exit_Folder_B" to="." method="_on_area_2d_exit_folder_b_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Folder_B/Area2D_Exit_Folder_B" to="." method="_on_area_2d_exit_folder_b_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Folder_C/Exit" to="." method="_on_exit_mouse_Folder_C_entered"]
+[connection signal="pressed" from="Camera/Folder_C/Exit" to="." method="_on_exit_C_pressed"]
+[connection signal="mouse_entered" from="Camera/Folder_C/Minimize_Max" to="." method="_on_exit_mouse_Folder_C_entered"]
+[connection signal="pressed" from="Camera/Folder_C/Minimize_Max" to="." method="_on_minimize_max_C_pressed"]
+[connection signal="pressed" from="Camera/Folder_C/Room01" to="." method="_on_Folder_C_room_01_pressed"]
+[connection signal="pressed" from="Camera/Folder_C/Room02" to="." method="_on_Folder_C_room_02_pressed"]
+[connection signal="pressed" from="Camera/Folder_C/Room03" to="." method="_on_Folder_C_room_03_pressed"]
+[connection signal="pressed" from="Camera/Folder_C/Room04" to="." method="_on_Folder_C_room_04_pressed"]
+[connection signal="mouse_entered" from="Camera/Folder_C/Area2D_On_Folder_C" to="." method="_on_area_2d_on_folder_c_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Folder_C/Area2D_On_Folder_C" to="." method="_on_area_2d_on_folder_c_mouse_exited"]
+[connection signal="mouse_entered" from="Camera/Folder_C/Area2D_Exit_Folder_C" to="." method="_on_area_2d_exit_folder_c_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Folder_C/Area2D_Exit_Folder_C" to="." method="_on_area_2d_exit_folder_c_mouse_exited"]
+[connection signal="timeout" from="Camera/Text/Time_Between_Text" to="." method="_on_time_between_text_timeout"]
+[connection signal="timeout" from="Camera/Text/Time_Between_Text_Call" to="." method="_on_time_between_text_call_timeout"]
+[connection signal="mouse_entered" from="Camera/Text/Skip" to="." method="_on_skip_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Text/Skip" to="." method="_on_skip_mouse_exited"]
+[connection signal="pressed" from="Camera/Text/Skip" to="." method="_on_skip_pressed"]
+[connection signal="mouse_entered" from="Camera/Pause/Menu/Folder_Content/Continue" to="Camera/Pause" method="_on_continue_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Pause/Menu/Folder_Content/Continue" to="Camera/Pause" method="_on_continue_mouse_exited"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Continue" to="Camera/Pause" method="_on_continue_pressed"]
+[connection signal="mouse_entered" from="Camera/Pause/Menu/Folder_Content/Menu" to="Camera/Pause" method="_on_menu_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Pause/Menu/Folder_Content/Menu" to="Camera/Pause" method="_on_menu_mouse_exited"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Menu" to="Camera/Pause" method="_on_menu_pressed"]
+[connection signal="mouse_entered" from="Camera/Pause/Menu/Folder_Content/Quit" to="Camera/Pause" method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="Camera/Pause/Menu/Folder_Content/Quit" to="Camera/Pause" method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Quit" to="Camera/Pause" method="_on_quit_pressed"]
+[connection signal="drag_ended" from="Camera/Pause/Menu/Folder_Content/Circle_Slider_01" to="Camera/Pause" method="_on_circle_slider_01_drag_ended"]
+[connection signal="value_changed" from="Camera/Pause/Menu/Folder_Content/Circle_Slider_01" to="Camera/Pause" method="_on_circle_slider_01_value_changed"]
+[connection signal="drag_ended" from="Camera/Pause/Menu/Folder_Content/Circle_Slider_02" to="Camera/Pause" method="_on_circle_slider_02_drag_ended"]
+[connection signal="value_changed" from="Camera/Pause/Menu/Folder_Content/Circle_Slider_02" to="Camera/Pause" method="_on_circle_slider_02_value_changed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_01" to="Camera/Pause" method="_on_check_button_01_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_02" to="Camera/Pause" method="_on_check_button_02_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_03" to="Camera/Pause" method="_on_check_button_03_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_04" to="Camera/Pause" method="_on_check_button_04_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_05" to="Camera/Pause" method="_on_check_button_05_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_06" to="Camera/Pause" method="_on_check_button_06_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_07" to="Camera/Pause" method="_on_check_button_07_pressed"]
+[connection signal="pressed" from="Camera/Pause/Menu/Folder_Content/Check_Button_08" to="Camera/Pause" method="_on_check_button_08_pressed"]
+[connection signal="pressed" from="Camera/Pause_Button" to="Camera/Pause" method="on_pause_button_pressed"]
+[connection signal="pressed" from="Background/Danger/Button_Danger" to="." method="_on_button_danger_pressed"]
+[connection signal="pressed" from="Background/Danger/Case_Close" to="." method="_on_case_close_pressed"]
+[connection signal="pressed" from="Background/Work_Area/Phone/Call_button" to="." method="_on_call_button_pressed"]
+[connection signal="pressed" from="Background/Work_Area/Door_Access/Unlock" to="." method="_on_unlock_pressed"]
+[connection signal="pressed" from="Background/Work_Area/Door_Access/Lock" to="." method="_on_lock_pressed"]
+[connection signal="pressed" from="Background/Work_Area/Checklists/Paper" to="." method="_on_paper_pressed"]
+[connection signal="pressed" from="Background/Work_Area/Entry_Request/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Background/Work_Area/ID/ID_Button" to="." method="_on_id_button_pressed"]
+[connection signal="pressed" from="Background/Work_Area/Today_list/Today_List_Button" to="." method="_on_today_list_button_pressed"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_01" to="." method="_on_button_01_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_02" to="." method="_on_button_02_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_03" to="." method="_on_button_03_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_04" to="." method="_on_button_04_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_05" to="." method="_on_button_05_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_06" to="." method="_on_button_06_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_07" to="." method="_on_button_07_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_08" to="." method="_on_button_08_input_event"]
+[connection signal="input_event" from="Background/Phone/Roulette/Button_09" to="." method="_on_button_09_input_event"]
+[connection signal="pressed" from="Background/Phone/Go_Back_Button" to="." method="_on_go_back_button_pressed"]
+[connection signal="pressed" from="Background/Folder_A" to="." method="_on_folder_a_pressed"]
+[connection signal="pressed" from="Background/Folder_B" to="." method="_on_folder_b_pressed"]
+[connection signal="pressed" from="Background/Folder_C" to="." method="_on_folder_c_pressed"]
+[connection signal="timeout" from="Background/Time_Between_Light" to="." method="_on_time_between_light_timeout"]
+[connection signal="timeout" from="Waiting_3312" to="." method="_on_waiting_3312_timeout"]
+[connection signal="timeout" from="Between_chars" to="." method="_on_between_chars_timeout"]
+[connection signal="finished" from="Calling_Tone" to="." method="_on_calling_tone_finished"]
+[connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]
+[connection signal="finished" from="Voice_02" to="." method="_on_voice_02_finished"]
+[connection signal="finished" from="Voice_03" to="." method="_on_voice_03_finished"]
+[connection signal="finished" from="Voice_04" to="." method="_on_voice_04_finished"]
+[connection signal="finished" from="Squishy" to="." method="_on_squishy_finished"]

@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="That's not my neighbor"
+config/description="Work as a doorman in a building infested with doppelgangers."
+config/version="1.2.0.0"
 run/main_scene="res://Scenes/Loading_screen.tscn"
-config/features=PackedStringArray("4.2", "Mobile")
+config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Assets/Graphics/Officer.png"
+boot_splash/fullsize=false
 config/icon="res://Assets/Graphics/ThatsNotMyNeighbor.png"
 config/windows_native_icon="res://Assets/Graphics/ThatsNotMyNeighbor.ico"
 
@@ -77,4 +82,5 @@ Enter={
 
 [rendering]
 
+textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)

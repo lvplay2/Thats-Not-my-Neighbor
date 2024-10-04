@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://7t2ceegmsno3"
+path="res://.godot/imported/Endless.png-8438b7806bdc0b4c87b80c420ea98520.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Endless.png"
+dest_files=PackedStringArray("res://.godot/imported/Endless.png-8438b7806bdc0b4c87b80c420ea98520.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

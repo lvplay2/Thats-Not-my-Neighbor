@@ -18,20 +18,25 @@ const SAVE_SETTINGS_PATH = "user://data_settings.save"
 const NIGTHMARE_SCENE_DIR = "res://Scenes/Office_Nightmare.tscn"
 const GAME_OVER_NIGHTMARE = "res://Scenes/Game_Over_Nightmare.tscn"
 const TUTORIAL_NIGHTMARE = "res://Scenes/Tutorial_Nightmare.tscn"
+const ENDLESS_SCENE_DIR = "res://Scenes/Office_Endless.tscn"
+const ENDLESS_SUMMARY_SCENE = "res://Scenes/Endless_Summary.tscn"
+const CAMPAIGN_SCENE = "res://Scenes/Office_Campaign.tscn"
+const CAMPAIGN_MENU = "res://Scenes/Campaign_Menu.tscn"
+const FINAL_SCENE = "res://Scenes/Final.tscn"
 
 @onready var text = $Text
 @onready var timer = $Timer
 
 var already_load = false
 
-func _ready() -> void:
+func _ready()->void :
 	if !already_load:
 		Global.load_settings()
 		already_load = true
 	_set_text()
-	timer.start() # Tiempo de seguridad para mostrar la página de carga
+	timer.start()
 
-func _change_scene(scene : int) -> void:
+func _change_scene(scene: int)->void :
 	match scene:
 		0:
 			get_tree().change_scene_to_file(LANGUAGE_SCENE_DIR)
@@ -53,16 +58,26 @@ func _change_scene(scene : int) -> void:
 			get_tree().change_scene_to_file(GAME_OVER_NIGHTMARE)
 		9:
 			get_tree().change_scene_to_file(TUTORIAL_NIGHTMARE)
+		10:
+			get_tree().change_scene_to_file(ENDLESS_SCENE_DIR)
+		11:
+			get_tree().change_scene_to_file(ENDLESS_SUMMARY_SCENE)
+		12:
+			get_tree().change_scene_to_file(CAMPAIGN_SCENE)
+		13:
+			get_tree().change_scene_to_file(CAMPAIGN_MENU)
+		14:
+			get_tree().change_scene_to_file(FINAL_SCENE)
 		_:
-			pass 
+			pass
 
-func _on_timer_timeout() -> void:
+func _on_timer_timeout()->void :
 	if Global.save_file_exist and Global.is_first_load:
 		Global.scene = WARNING_SCENE
 		Global.is_first_load = false
 	_change_scene(Global.scene)
 
-func _set_text() -> void:
+func _set_text()->void :
 	if Global.language == ENGLISH_VALUE:
 		text.text = TEXT_ENGLISH
 	elif Global.language == SPANISH_VALUE:

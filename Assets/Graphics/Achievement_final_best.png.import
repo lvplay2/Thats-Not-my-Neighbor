@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bxbeopo3r2rle"
+path="res://.godot/imported/Achievement_final_best.png-c60cf5f7c6c8137a61e88662a4e91148.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Achievement_final_best.png"
+dest_files=PackedStringArray("res://.godot/imported/Achievement_final_best.png-c60cf5f7c6c8137a61e88662a4e91148.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

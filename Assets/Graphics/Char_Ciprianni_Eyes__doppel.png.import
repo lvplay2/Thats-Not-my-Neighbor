@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://s3ow5qwq0bos"
+path="res://.godot/imported/Char_Ciprianni_Eyes__doppel.png-17c4f9ba7a3c92e1d8b2dd036c234e3c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Ciprianni_Eyes__doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Ciprianni_Eyes__doppel.png-17c4f9ba7a3c92e1d8b2dd036c234e3c.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

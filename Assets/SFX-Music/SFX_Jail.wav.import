@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c08ub35j0qwsm"
+path="res://.godot/imported/SFX_Jail.wav-c3fb80717bb1f229db3d48e6b6b9ac05.sample"
+
+[deps]
+
+source_file="res://Assets/SFX-Music/SFX_Jail.wav"
+dest_files=PackedStringArray("res://.godot/imported/SFX_Jail.wav-c3fb80717bb1f229db3d48e6b6b9ac05.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

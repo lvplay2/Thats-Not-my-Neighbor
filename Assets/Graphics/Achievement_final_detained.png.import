@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b5awkuxkkyqpe"
+path="res://.godot/imported/Achievement_final_detained.png-bc0fad5e3ec4633416813d5f090edb96.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Achievement_final_detained.png"
+dest_files=PackedStringArray("res://.godot/imported/Achievement_final_detained.png-bc0fad5e3ec4633416813d5f090edb96.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

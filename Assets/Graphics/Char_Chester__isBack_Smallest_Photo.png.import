@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dhdl5x6u5vmeo"
+path="res://.godot/imported/Char_Chester__isBack_Smallest_Photo.png-0315366487d361651146edd0c40b001e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Chester__isBack_Smallest_Photo.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Chester__isBack_Smallest_Photo.png-0315366487d361651146edd0c40b001e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

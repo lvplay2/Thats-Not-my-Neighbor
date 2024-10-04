@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3]
+[gd_scene load_steps=52 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Mia.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://b1i8oay5kxagb" path="res://Assets/Graphics/Char_Mia_Body.png" id="2"]
@@ -7,40 +7,42 @@
 [ext_resource type="Texture2D" uid="uid://f5le4bm04ohs" path="res://Assets/Graphics/Char_Mia_Freckles.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://ew862031lfpt" path="res://Assets/Graphics/Char_Elenois_Selenne_Nose.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://dr02qadepl7h4" path="res://Assets/Graphics/Char_Mia_Nose.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://wtgqgjfy7caw" path="res://Assets/Graphics/Char_Mia_Eyes.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://k525rvd8tnie" path="res://Assets/Graphics/Char_Rafttellyn_Eyes.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://dknermkj3othh" path="res://Assets/Graphics/Char_Roman_Doppel_02_Eyes.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://du4fmxf24us1l" path="res://Assets/Graphics/Char_Mia_Eyebrows.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://dukskodqwdkc4" path="res://Assets/Graphics/Char_Afton_Eyebrows.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://cttxrwdkfvcqu" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_01.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://bht42p42xxfmc" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_01.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://cleaj702qx8dt" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_02.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://coisbqar6yhdi" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_03.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://c3t3vccsopd6j" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_04.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://cqm0oef7pachf" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_05.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://bhfp158jsy6ln" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_02.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://c61s2jlaeewh1" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_03.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://bhv8a1hmchdsy" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_04.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://imp1hw3bja5w" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_05.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://canl6ovs4jckv" path="res://Assets/Graphics/Char_Mia_Top_Hair.png" id="23"]
-[ext_resource type="Texture2D" uid="uid://cjcybrhj7ga7o" path="res://Assets/Graphics/Char_Mia_Nail_Eyes.png" id="24"]
-[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="25"]
-[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="26"]
-[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="27"]
-[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="28"]
-[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="29"]
-[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="30"]
-[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="31"]
-[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="32"]
-[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="33"]
-[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="34"]
-[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="35"]
+[ext_resource type="Texture2D" uid="uid://c0s6nt7lpngq6" path="res://Assets/Graphics/Char_Mia_Nose_doppel.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://wtgqgjfy7caw" path="res://Assets/Graphics/Char_Mia_Eyes.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://k525rvd8tnie" path="res://Assets/Graphics/Char_Rafttellyn_Eyes.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dknermkj3othh" path="res://Assets/Graphics/Char_Roman_Doppel_02_Eyes.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://du4fmxf24us1l" path="res://Assets/Graphics/Char_Mia_Eyebrows.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://ckucvktxqrw4p" path="res://Assets/Graphics/Char_Yan_eyebrows_doppel.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dukskodqwdkc4" path="res://Assets/Graphics/Char_Afton_Eyebrows.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cttxrwdkfvcqu" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_01.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bht42p42xxfmc" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_01.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cleaj702qx8dt" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_02.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://coisbqar6yhdi" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_03.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://c3t3vccsopd6j" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_04.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cqm0oef7pachf" path="res://Assets/Graphics/Char_Lois__Doppel_02_Mouth_05.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://bhfp158jsy6ln" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_02.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://c61s2jlaeewh1" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_03.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bhv8a1hmchdsy" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_04.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://imp1hw3bja5w" path="res://Assets/Graphics/Char_Elenois_Selenne_Mouth_05.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://canl6ovs4jckv" path="res://Assets/Graphics/Char_Mia_Top_Hair.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://cjcybrhj7ga7o" path="res://Assets/Graphics/Char_Mia_Nail_Eyes.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="28"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="29"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="30"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="31"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="32"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="33"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="34"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="35"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="36"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="37"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13")
+"texture": ExtResource("15")
 }],
 "loop": true,
 "name": &"CLOSE",
@@ -48,19 +50,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14")
+"texture": ExtResource("16")
 }],
 "loop": true,
 "name": &"DOPPEL_CLOSE",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("14")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15")
-}, {
 "duration": 1.0,
 "texture": ExtResource("16")
 }, {
@@ -71,10 +67,16 @@ animations = [{
 "texture": ExtResource("18")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16")
+"texture": ExtResource("19")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15")
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
 }],
 "loop": true,
 "name": &"DOPPEL_TALK",
@@ -82,13 +84,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20")
+"texture": ExtResource("15")
 }, {
 "duration": 1.0,
 "texture": ExtResource("21")
@@ -97,10 +93,16 @@ animations = [{
 "texture": ExtResource("22")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20")
+"texture": ExtResource("23")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19")
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
 }],
 "loop": true,
 "name": &"TALK",
@@ -408,28 +410,38 @@ texture = ExtResource("6")
 position = Vector2(-1.33333, 82.6667)
 texture = ExtResource("7")
 
+[node name="Nose_Doppel" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(13.3333, 92)
+texture = ExtResource("8")
+
 [node name="Eyes" type="Sprite2D" parent="Head"]
 position = Vector2(-14.667, 25.333)
-texture = ExtResource("8")
+texture = ExtResource("9")
 
 [node name="Doppel_Eyes_01" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-9.33337, 70.6667)
-texture = ExtResource("9")
+texture = ExtResource("10")
 
 [node name="Doppel_Eyes" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-14.6667, 52)
-texture = ExtResource("10")
+texture = ExtResource("11")
 
 [node name="Eyebrows" type="Sprite2D" parent="Head"]
 position = Vector2(-8, -26.6667)
-texture = ExtResource("11")
+texture = ExtResource("12")
+
+[node name="Eyebrows_Doppel" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-9.33333, -25.3333)
+texture = ExtResource("13")
 
 [node name="Doppel_Eyebrows" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-8.00004, -40)
-texture = ExtResource("12")
+texture = ExtResource("14")
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 position = Vector2(-9.33333, 232)
@@ -438,14 +450,14 @@ animation = &"TALK"
 
 [node name="Top_Hair" type="Sprite2D" parent="Head"]
 position = Vector2(6.66667, -100)
-texture = ExtResource("23")
+texture = ExtResource("25")
 
 [node name="Snail" type="Node2D" parent="Head"]
 visible = false
 
 [node name="Snail" type="Sprite2D" parent="Head/Snail"]
 position = Vector2(-6.66675, -73.3333)
-texture = ExtResource("24")
+texture = ExtResource("26")
 
 [node name="third_Eye" type="Node2D" parent="Head/Snail"]
 position = Vector2(-180, -184)
@@ -453,11 +465,11 @@ scale = Vector2(0.75, 0.75)
 
 [node name="Eye" type="Sprite2D" parent="Head/Snail/third_Eye"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("25")
+texture = ExtResource("27")
 
 [node name="Iris" type="Sprite2D" parent="Head/Snail/third_Eye"]
 position = Vector2(-124, 16)
-texture = ExtResource("26")
+texture = ExtResource("28")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Snail/third_Eye"]
 libraries = {
@@ -471,11 +483,11 @@ scale = Vector2(0.75, 0.75)
 
 [node name="Eye" type="Sprite2D" parent="Head/Snail/fourth_Eye"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("25")
+texture = ExtResource("27")
 
 [node name="Iris" type="Sprite2D" parent="Head/Snail/fourth_Eye"]
 position = Vector2(-124, 16)
-texture = ExtResource("26")
+texture = ExtResource("28")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Snail/fourth_Eye"]
 libraries = {
@@ -498,37 +510,37 @@ libraries = {
 }
 
 [node name="Voice_01" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("27")
-pitch_scale = 1.8
-
-[node name="Voice_02" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("28")
-pitch_scale = 1.8
-
-[node name="Voice_03" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("29")
 pitch_scale = 1.8
 
-[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("30")
 pitch_scale = 1.8
 
-[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("31")
+pitch_scale = 1.8
 
-[node name="Voice_05" type="AudioStreamPlayer" parent="."]
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("32")
-pitch_scale = 1.5
+pitch_scale = 1.8
 
-[node name="Voice_06" type="AudioStreamPlayer" parent="."]
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("33")
 
-[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+[node name="Voice_05" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("34")
 pitch_scale = 1.5
 
-[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+[node name="Voice_06" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("35")
+
+[node name="Voice_07" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36")
+pitch_scale = 1.5
+
+[node name="Voice_08" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37")
 pitch_scale = 2.0
 
 [connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]

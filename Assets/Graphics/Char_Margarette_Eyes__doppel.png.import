@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bao4x8v2qjj15"
+path="res://.godot/imported/Char_Margarette_Eyes__doppel.png-24fa515f8f8027ef62497491f874454b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Margarette_Eyes__doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Margarette_Eyes__doppel.png-24fa515f8f8027ef62497491f874454b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

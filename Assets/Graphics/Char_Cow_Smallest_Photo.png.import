@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bdgy3a03gp6q"
+path="res://.godot/imported/Char_Cow_Smallest_Photo.png-c48784a0dc6da73392d6088a9d8c18fa.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Cow_Smallest_Photo.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Cow_Smallest_Photo.png-c48784a0dc6da73392d6088a9d8c18fa.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

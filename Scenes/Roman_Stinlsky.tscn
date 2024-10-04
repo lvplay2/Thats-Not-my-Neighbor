@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3]
+[gd_scene load_steps=45 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Roman_Stinlsky.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://csa0vs0us0ruh" path="res://Assets/Graphics/Char_Roman_Body.png" id="2"]
@@ -19,19 +19,20 @@
 [ext_resource type="Texture2D" uid="uid://cmdcpgvtkf438" path="res://Assets/Graphics/Char_Roman_Eyes.png" id="17"]
 [ext_resource type="Texture2D" uid="uid://omwu611pw40a" path="res://Assets/Graphics/Char_Roman_Scar.png" id="18"]
 [ext_resource type="Texture2D" uid="uid://eokljgms5hth" path="res://Assets/Graphics/Char_Roman_Doppel_Scar.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://d18h7glmtueih" path="res://Assets/Graphics/Char_Roman_Hat.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://c5urec5dwarcy" path="res://Assets/Graphics/Char_Roman_Doppel_Uzumaki_Face.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="23"]
-[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="24"]
-[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="25"]
-[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="26"]
-[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="27"]
-[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="28"]
-[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="29"]
-[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="30"]
-[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="31"]
-[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="32"]
+[ext_resource type="Texture2D" uid="uid://b4ptt72vg3mw0" path="res://Assets/Graphics/Char_Lois_Mole.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://d18h7glmtueih" path="res://Assets/Graphics/Char_Roman_Hat.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://c5urec5dwarcy" path="res://Assets/Graphics/Char_Roman_Doppel_Uzumaki_Face.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="24"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="25"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="26"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="27"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="28"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="29"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="30"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="31"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="32"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="33"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{
@@ -412,25 +413,31 @@ visible = false
 position = Vector2(85, 229.333)
 texture = ExtResource("19")
 
+[node name="Mole" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(161.333, -133.333)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("20")
+
 [node name="Hat" type="Sprite2D" parent="Head"]
 position = Vector2(-2.66663, -264)
-texture = ExtResource("20")
+texture = ExtResource("21")
 
 [node name="Uzumaki" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-1.33337, 76)
-texture = ExtResource("21")
+texture = ExtResource("22")
 
 [node name="third_Eye2" type="Node2D" parent="Head"]
 visible = false
 
 [node name="Eye" type="Sprite2D" parent="Head/third_Eye2"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Iris" type="Sprite2D" parent="Head/third_Eye2"]
 position = Vector2(-124, 16)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/third_Eye2"]
 libraries = {
@@ -446,11 +453,11 @@ rotation = 1.44861
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye2"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye2"]
 position = Vector2(-124, 16)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye2"]
 libraries = {
@@ -464,11 +471,11 @@ scale = Vector2(1.1, 1.1)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye3"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye3"]
 position = Vector2(-124, 16)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye3"]
 libraries = {
@@ -482,11 +489,11 @@ scale = Vector2(1.1, 1.1)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye6"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye6"]
 position = Vector2(-124, 16)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye6"]
 libraries = {
@@ -500,11 +507,11 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye4"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye4"]
 position = Vector2(-124, 16)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye4"]
 libraries = {
@@ -518,11 +525,11 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye5"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye5"]
 position = Vector2(-124, 16)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye5"]
 libraries = {
@@ -540,37 +547,37 @@ libraries = {
 }
 
 [node name="Voice_01" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("24")
-pitch_scale = 1.3
-
-[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("25")
 pitch_scale = 1.3
 
-[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("26")
 pitch_scale = 1.3
 
-[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("27")
 pitch_scale = 1.3
 
-[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("28")
+pitch_scale = 1.3
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29")
 
 [node name="Voice_05" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("29")
+stream = ExtResource("30")
 pitch_scale = 1.5
 
 [node name="Voice_06" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("30")
+stream = ExtResource("31")
 
 [node name="Voice_07" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("31")
+stream = ExtResource("32")
 pitch_scale = 1.5
 
 [node name="Voice_08" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("32")
+stream = ExtResource("33")
 pitch_scale = 2.0
 
 [connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]

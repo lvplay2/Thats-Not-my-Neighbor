@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cc4q2ftrrk8an"
+path="res://.godot/imported/Campaign_button.png-06be3339650ce2867be3d93c44878e75.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Campaign_button.png"
+dest_files=PackedStringArray("res://.godot/imported/Campaign_button.png-06be3339650ce2867be3d93c44878e75.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

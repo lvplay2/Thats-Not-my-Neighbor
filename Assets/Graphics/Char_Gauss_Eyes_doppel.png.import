@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://0fjljmrnq1ly"
+path="res://.godot/imported/Char_Gauss_Eyes_doppel.png-6aee1bdf8074c833f8dfcae52e571a1f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Gauss_Eyes_doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Gauss_Eyes_doppel.png-6aee1bdf8074c833f8dfcae52e571a1f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

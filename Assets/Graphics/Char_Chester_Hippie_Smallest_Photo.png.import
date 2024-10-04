@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://db8idk5ng8vn5"
+path="res://.godot/imported/Char_Chester_Hippie_Smallest_Photo.png-c8232277945dacf273e3ee7800be9d1b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Chester_Hippie_Smallest_Photo.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Chester_Hippie_Smallest_Photo.png-c8232277945dacf273e3ee7800be9d1b.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3]
+[gd_scene load_steps=41 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Nacha.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://g4wgnocy1ch3" path="res://Assets/Graphics/Char_Nacha_body.png" id="2"]
@@ -18,17 +18,18 @@
 [ext_resource type="Texture2D" uid="uid://c1qxrx8dfskjr" path="res://Assets/Graphics/Char_Nacha_doppel_eyes_02.png" id="16"]
 [ext_resource type="Texture2D" uid="uid://c6rj0wh8i53xo" path="res://Assets/Graphics/Char_Nacha_doppel_eyes_01.png" id="17"]
 [ext_resource type="Texture2D" uid="uid://cjl2ltcl13rv5" path="res://Assets/Graphics/Char_Nacha_eyebrows.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://bt85lmagxk4lg" path="res://Assets/Graphics/Char_Nacha_top_hair.png" id="19"]
-[ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="20"]
-[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="21"]
-[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="22"]
-[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="23"]
-[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="24"]
-[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="25"]
-[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="26"]
-[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="27"]
-[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="28"]
-[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="29"]
+[ext_resource type="Texture2D" uid="uid://eokljgms5hth" path="res://Assets/Graphics/Char_Roman_Doppel_Scar.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bt85lmagxk4lg" path="res://Assets/Graphics/Char_Nacha_top_hair.png" id="20"]
+[ext_resource type="FontFile" uid="uid://cmyjws0sa77a1" path="res://Assets/Fonts/Nacho.ttf" id="21"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="22"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="23"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="24"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="25"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="26"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="27"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="28"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="29"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="30"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{
@@ -329,9 +330,14 @@ texture = ExtResource("17")
 position = Vector2(-48, 1.33333)
 texture = ExtResource("18")
 
+[node name="Scar" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(30.6667, 17.3333)
+texture = ExtResource("19")
+
 [node name="Top_Hair" type="Sprite2D" parent="Head"]
 position = Vector2(-50.6667, -5.33333)
-texture = ExtResource("19")
+texture = ExtResource("20")
 
 [node name="Accesibility" type="Area2D" parent="."]
 visible = false
@@ -367,7 +373,7 @@ offset_right = 391.0
 offset_bottom = 193.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 12
-theme_override_fonts/font = ExtResource("20")
+theme_override_fonts/font = ExtResource("21")
 theme_override_font_sizes/font_size = 64
 text = "Left eye: Green
 
@@ -376,37 +382,37 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Voice_01" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("21")
-pitch_scale = 2.0
-
-[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("22")
 pitch_scale = 2.0
 
-[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("23")
 pitch_scale = 2.0
 
-[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("24")
 pitch_scale = 2.0
 
-[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("25")
+pitch_scale = 2.0
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26")
 
 [node name="Voice_05" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("26")
+stream = ExtResource("27")
 pitch_scale = 1.5
 
 [node name="Voice_06" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("27")
+stream = ExtResource("28")
 
 [node name="Voice_07" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("28")
+stream = ExtResource("29")
 pitch_scale = 1.5
 
 [node name="Voice_08" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("29")
+stream = ExtResource("30")
 pitch_scale = 2.0
 
 [connection signal="mouse_entered" from="Accesibility" to="." method="_on_accesibility_mouse_entered"]

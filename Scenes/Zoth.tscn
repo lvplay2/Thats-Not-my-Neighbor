@@ -1,21 +1,21 @@
 [gd_scene load_steps=30 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Zoth.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://dmr4t32nxqwi8" path="res://Assets/Graphics/Char_Zoth_body.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://dsvaetqnq4enp" path="res://Assets/Graphics/Char_Zoth_head.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://cbwjv2fhudkj3" path="res://Assets/Graphics/Char_Zoth_head_doppel.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://hu4ap3gf88ff" path="res://Assets/Graphics/Char_Roman_Doppel_Extra_Arms.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://buc357soi25ed" path="res://Assets/Graphics/Char_Zoth_nose.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://cxalfl6rdqpkp" path="res://Assets/Graphics/Char_Zoth_nose_doppel.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://clq714i5pbydh" path="res://Assets/Graphics/Char_Zoth_eyes.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://b61g7h3ggwxp6" path="res://Assets/Graphics/Char_Zoth_eyes_doppel.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://bii20xralwpmp" path="res://Assets/Graphics/Char_Zoth_eyebrows.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://v83j8wksx31s" path="res://Assets/Graphics/Char_Zoth_eyebrows_doppel.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://dghainqis0i4j" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_01.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://kfhsevcgt2px" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_03.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://8rbbu1737gmn" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_04.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://kngl6s4flt45" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_02.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://dqebsrpjie7dh" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_05.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dsvaetqnq4enp" path="res://Assets/Graphics/Char_Zoth_head.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cbwjv2fhudkj3" path="res://Assets/Graphics/Char_Zoth_head_doppel.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://hu4ap3gf88ff" path="res://Assets/Graphics/Char_Roman_Doppel_Extra_Arms.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://buc357soi25ed" path="res://Assets/Graphics/Char_Zoth_nose.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cxalfl6rdqpkp" path="res://Assets/Graphics/Char_Zoth_nose_doppel.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://clq714i5pbydh" path="res://Assets/Graphics/Char_Zoth_eyes.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://b61g7h3ggwxp6" path="res://Assets/Graphics/Char_Zoth_eyes_doppel.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bii20xralwpmp" path="res://Assets/Graphics/Char_Zoth_eyebrows.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://v83j8wksx31s" path="res://Assets/Graphics/Char_Zoth_eyebrows_doppel.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dghainqis0i4j" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_01.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://kfhsevcgt2px" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_03.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://8rbbu1737gmn" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_04.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://kngl6s4flt45" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_02.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dqebsrpjie7dh" path="res://Assets/Graphics/Char_Gauss_Mouth_Doppel_05.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dmr4t32nxqwi8" path="res://Assets/Graphics/Char_Zoth_body.png" id="16"]
 [ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="17"]
 [ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="18"]
 [ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="19"]
@@ -26,7 +26,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12")
+"texture": ExtResource("11")
 }],
 "loop": true,
 "name": &"CLOSE",
@@ -34,6 +34,9 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
 "texture": ExtResource("12")
 }, {
 "duration": 1.0,
@@ -43,16 +46,13 @@ animations = [{
 "texture": ExtResource("14")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15")
+"texture": ExtResource("12")
 }, {
 "duration": 1.0,
 "texture": ExtResource("13")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16")
+"texture": ExtResource("15")
 }],
 "loop": true,
 "name": &"TALK",
@@ -246,66 +246,60 @@ _data = {
 script = null
 
 [node name="Zoth" type="Node2D"]
+z_index = -1
 position = Vector2(998, 280)
 scale = Vector2(0.75, 0.75)
 script = ExtResource("1")
-
-[node name="Body" type="Node2D" parent="."]
-
-[node name="Body" type="Sprite2D" parent="Body"]
-z_index = 1
-position = Vector2(-38.6667, 634.667)
-texture = ExtResource("2")
 
 [node name="Head" type="Node2D" parent="."]
 
 [node name="Head" type="Sprite2D" parent="Head"]
 position = Vector2(-40, 93.3333)
-texture = ExtResource("3")
+texture = ExtResource("2")
 
 [node name="Head_doppel" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-34.6667, 93.3333)
-texture = ExtResource("4")
+texture = ExtResource("3")
 
 [node name="Arms" type="Sprite2D" parent="Head"]
 z_index = 1
 position = Vector2(-34.6667, 418.667)
-texture = ExtResource("5")
+texture = ExtResource("4")
 
 [node name="Arms_doppel" type="Sprite2D" parent="Head"]
 visible = false
 z_index = 1
 position = Vector2(-34.6667, 424)
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("5")
+texture = ExtResource("4")
 
 [node name="Nose" type="Sprite2D" parent="Head"]
 position = Vector2(-34.6667, 1.33333)
-texture = ExtResource("6")
+texture = ExtResource("5")
 
 [node name="Nose_doppel" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-34.6667, 10.6667)
-texture = ExtResource("7")
+texture = ExtResource("6")
 
 [node name="Eyes" type="Sprite2D" parent="Head"]
 position = Vector2(-42.6667, -29.3333)
-texture = ExtResource("8")
+texture = ExtResource("7")
 
 [node name="Eyes_doppel" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-41.3333, -29.3333)
-texture = ExtResource("9")
+texture = ExtResource("8")
 
 [node name="Eyebrows" type="Sprite2D" parent="Head"]
 position = Vector2(-42.6667, -101.333)
-texture = ExtResource("10")
+texture = ExtResource("9")
 
 [node name="Eyebrows_doppel" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-42.6667, -101.333)
-texture = ExtResource("11")
+texture = ExtResource("10")
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 position = Vector2(-32, 190.667)
@@ -313,6 +307,12 @@ scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("1")
 animation = &"CLOSE"
 frame_progress = 0.738857
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="Body"]
+position = Vector2(-38.6667, 634.667)
+texture = ExtResource("16")
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {

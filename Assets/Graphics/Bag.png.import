@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dg0t8capp4lvs"
+path="res://.godot/imported/Bag.png-7386c0bc2f8f2563143b1765336fd78e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Bag.png"
+dest_files=PackedStringArray("res://.godot/imported/Bag.png-7386c0bc2f8f2563143b1765336fd78e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

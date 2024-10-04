@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://k31f5jycpi66"
+path="res://.godot/imported/Newspaper.png-85c757ef7c7498e7d9272eeca9194a64.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Newspaper.png"
+dest_files=PackedStringArray("res://.godot/imported/Newspaper.png-85c757ef7c7498e7d9272eeca9194a64.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

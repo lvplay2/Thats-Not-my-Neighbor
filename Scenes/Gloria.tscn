@@ -1,52 +1,50 @@
-[gd_scene load_steps=45 format=3]
+[gd_scene load_steps=46 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Gloria.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://doo8de4ibdymg" path="res://Assets/Graphics/Char_Gloria_Body.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://ssejqjvqylii" path="res://Assets/Graphics/Char_Gloria_Hair.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://eh1g3c5lby5r" path="res://Assets/Graphics/Char_Gloria_Head.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://dxxe2tpi1knpl" path="res://Assets/Graphics/Char_Gloria_Nose.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://bh4okmrx4ins" path="res://Assets/Graphics/Char_Arnold_Nose.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://djg8m2gfv5v3n" path="res://Assets/Graphics/Char_Gloria_Eyes.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://dtp3xtc5vfgv5" path="res://Assets/Graphics/Char_Gloria_Eyebrows.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://jm6fy1li3s8j" path="res://Assets/Graphics/Char_Gloria_Mouth_01.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://lhdnxxxrn01g" path="res://Assets/Graphics/Char_Gloria_Mouth_02.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://b8vq0y3ira0px" path="res://Assets/Graphics/Char_Gloria_Mouth_03.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://dtydqtyp71b53" path="res://Assets/Graphics/Char_Gloria_Mouth_04.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://sjqasj7akasy" path="res://Assets/Graphics/Char_Gloria_Mouth_05.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://b4ptt72vg3mw0" path="res://Assets/Graphics/Char_Lois_Mole.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://ban43fniwwki4" path="res://Assets/Graphics/Char_Gloria_Worm_Hole.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://cqccfq4vnlk2n" path="res://Assets/Graphics/Char_Gloria_Worm_01.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://dcg6if47mu6g8" path="res://Assets/Graphics/Char_Gloria_Worm_02.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://cnlp6xyb2e6s1" path="res://Assets/Graphics/Char_Gloria_Worm_03.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://bil8xbv1vitho" path="res://Assets/Graphics/Char_Gloria_Worm_04.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://ce86qhsvci1yq" path="res://Assets/Graphics/Char_Gloria_Worm_05.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://b1ptc8wasqrts" path="res://Assets/Graphics/Char_Lois_tripo.png" id="23"]
-[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="24"]
-[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="25"]
-[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="26"]
-[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="27"]
-[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="28"]
-[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="29"]
-[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="30"]
-[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="31"]
-[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="32"]
+[ext_resource type="Texture2D" uid="uid://b4k1cfgmcm7ph" path="res://Assets/Graphics/Char_Gloria_Nose_doppel.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bh4okmrx4ins" path="res://Assets/Graphics/Char_Arnold_Nose.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://djg8m2gfv5v3n" path="res://Assets/Graphics/Char_Gloria_Eyes.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dtp3xtc5vfgv5" path="res://Assets/Graphics/Char_Gloria_Eyebrows.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://jm6fy1li3s8j" path="res://Assets/Graphics/Char_Gloria_Mouth_01.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://lhdnxxxrn01g" path="res://Assets/Graphics/Char_Gloria_Mouth_02.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://b8vq0y3ira0px" path="res://Assets/Graphics/Char_Gloria_Mouth_03.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dtydqtyp71b53" path="res://Assets/Graphics/Char_Gloria_Mouth_04.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://sjqasj7akasy" path="res://Assets/Graphics/Char_Gloria_Mouth_05.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://b4ptt72vg3mw0" path="res://Assets/Graphics/Char_Lois_Mole.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://ban43fniwwki4" path="res://Assets/Graphics/Char_Gloria_Worm_Hole.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cqccfq4vnlk2n" path="res://Assets/Graphics/Char_Gloria_Worm_01.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dcg6if47mu6g8" path="res://Assets/Graphics/Char_Gloria_Worm_02.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cnlp6xyb2e6s1" path="res://Assets/Graphics/Char_Gloria_Worm_03.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bil8xbv1vitho" path="res://Assets/Graphics/Char_Gloria_Worm_04.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://ce86qhsvci1yq" path="res://Assets/Graphics/Char_Gloria_Worm_05.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://rvagxrme076f" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://mbvltht72hcc" path="res://Assets/Graphics/Char_Roman_Doppel_3rd_eye_pupil.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://b1ptc8wasqrts" path="res://Assets/Graphics/Char_Lois_tripo.png" id="24"]
+[ext_resource type="AudioStream" uid="uid://ce88gj4w7l4b5" path="res://Assets/SFX-Music/SFX_Rough_Voice_01.wav" id="25"]
+[ext_resource type="AudioStream" uid="uid://c81la8wkvnvbr" path="res://Assets/SFX-Music/SFX_Rough_Voice_02.wav" id="26"]
+[ext_resource type="AudioStream" uid="uid://b3fmapjn7b38m" path="res://Assets/SFX-Music/SFX_Rough_Voice_03.wav" id="27"]
+[ext_resource type="AudioStream" uid="uid://r55jtscbhhe6" path="res://Assets/SFX-Music/SFX_Rough_Voice_04.wav" id="28"]
+[ext_resource type="AudioStream" uid="uid://dbidkrx3kiax3" path="res://Assets/SFX-Music/SFX_Footsteps.wav" id="29"]
+[ext_resource type="AudioStream" uid="uid://dr5dpjhv1dted" path="res://Assets/SFX-Music/SFX_Evil_Voice_01.wav" id="30"]
+[ext_resource type="AudioStream" uid="uid://btoe0ejjhae76" path="res://Assets/SFX-Music/SFX_Evil_Voice_02.wav" id="31"]
+[ext_resource type="AudioStream" uid="uid://c16xlrk8styou" path="res://Assets/SFX-Music/SFX_Evil_Voice_03.wav" id="32"]
+[ext_resource type="AudioStream" uid="uid://dyxscs22ka1xs" path="res://Assets/SFX-Music/SFX_Evil_Voice_04.wav" id="33"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9")
+"texture": ExtResource("10")
 }],
 "loop": true,
 "name": &"CLOSE",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("9")
-}, {
 "duration": 1.0,
 "texture": ExtResource("10")
 }, {
@@ -60,10 +58,13 @@ animations = [{
 "texture": ExtResource("13")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11")
+"texture": ExtResource("14")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10")
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
 }],
 "loop": true,
 "name": &"TALK",
@@ -75,9 +76,6 @@ script = null
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("16")
-}, {
-"duration": 1.0,
 "texture": ExtResource("17")
 }, {
 "duration": 1.0,
@@ -88,6 +86,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
 }],
 "loop": true,
 "name": &"IDLE",
@@ -344,18 +345,23 @@ texture = ExtResource("4")
 position = Vector2(-24, 134.667)
 texture = ExtResource("5")
 
+[node name="Nose_Doppel" type="Sprite2D" parent="Head"]
+visible = false
+position = Vector2(-22.6667, 146.667)
+texture = ExtResource("6")
+
 [node name="Doppel_Nose" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(-25.3333, 133.333)
-texture = ExtResource("6")
+texture = ExtResource("7")
 
 [node name="Eyes" type="Sprite2D" parent="Head"]
 position = Vector2(-24, 66.6667)
-texture = ExtResource("7")
+texture = ExtResource("8")
 
 [node name="Eyebrows" type="Sprite2D" parent="Head"]
 position = Vector2(-25.3333, -13.3333)
-texture = ExtResource("8")
+texture = ExtResource("9")
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 position = Vector2(-22.6667, 310.667)
@@ -364,17 +370,17 @@ animation = &"CLOSE"
 
 [node name="Mole" type="Sprite2D" parent="Head"]
 position = Vector2(-249.333, 304)
-texture = ExtResource("14")
+texture = ExtResource("15")
 
 [node name="Doppel_Mole" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(192, 305.333)
-texture = ExtResource("14")
+texture = ExtResource("15")
 
 [node name="Worm_Hole" type="Sprite2D" parent="Head"]
 visible = false
 position = Vector2(224, 204)
-texture = ExtResource("15")
+texture = ExtResource("16")
 
 [node name="Worm" type="AnimatedSprite2D" parent="Head/Worm_Hole"]
 sprite_frames = SubResource("2")
@@ -391,11 +397,11 @@ rotation = 1.44861
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye2"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("21")
+texture = ExtResource("22")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye2"]
 position = Vector2(-124, 16)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye2"]
 libraries = {
@@ -409,11 +415,11 @@ scale = Vector2(1.1, 1.1)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye3"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("21")
+texture = ExtResource("22")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye3"]
 position = Vector2(-124, 16)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye3"]
 libraries = {
@@ -427,11 +433,11 @@ scale = Vector2(1.1, 1.1)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye6"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("21")
+texture = ExtResource("22")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye6"]
 position = Vector2(-124, 16)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye6"]
 libraries = {
@@ -445,11 +451,11 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye4"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("21")
+texture = ExtResource("22")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye4"]
 position = Vector2(-124, 16)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye4"]
 libraries = {
@@ -463,11 +469,11 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Eye" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye5"]
 position = Vector2(-124, 18.6667)
-texture = ExtResource("21")
+texture = ExtResource("22")
 
 [node name="Iris" type="Sprite2D" parent="Head/Lot_of_Eyes/third_Eye5"]
 position = Vector2(-124, 16)
-texture = ExtResource("22")
+texture = ExtResource("23")
 
 [node name="Animation" type="AnimationPlayer" parent="Head/Lot_of_Eyes/third_Eye5"]
 libraries = {
@@ -479,12 +485,12 @@ visible = false
 position = Vector2(-202.667, 216)
 rotation = 0.00314204
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Tripo" type="Sprite2D" parent="Head/Tripo"]
 position = Vector2(709.414, 24.4378)
 rotation = 0.405249
-texture = ExtResource("23")
+texture = ExtResource("24")
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {
@@ -497,37 +503,37 @@ libraries = {
 }
 
 [node name="Voice_01" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("24")
-pitch_scale = 1.8
-
-[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("25")
 pitch_scale = 1.8
 
-[node name="Voice_03" type="AudioStreamPlayer" parent="."]
+[node name="Voice_02" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("26")
 pitch_scale = 1.8
 
-[node name="Voice_04" type="AudioStreamPlayer" parent="."]
+[node name="Voice_03" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("27")
 pitch_scale = 1.8
 
-[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+[node name="Voice_04" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("28")
+pitch_scale = 1.8
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29")
 
 [node name="Voice_05" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("29")
+stream = ExtResource("30")
 pitch_scale = 1.5
 
 [node name="Voice_06" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("30")
+stream = ExtResource("31")
 
 [node name="Voice_07" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("31")
+stream = ExtResource("32")
 pitch_scale = 1.5
 
 [node name="Voice_08" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("32")
+stream = ExtResource("33")
 pitch_scale = 2.0
 
 [connection signal="finished" from="Voice_01" to="." method="_on_voice_01_finished"]

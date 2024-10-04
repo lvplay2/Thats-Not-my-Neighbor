@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://vrhgg0hjmdx4"
+path="res://.godot/imported/SFX_Zipper.wav-15c703047e4b680791a25c81777ad22f.sample"
+
+[deps]
+
+source_file="res://Assets/SFX-Music/SFX_Zipper.wav"
+dest_files=PackedStringArray("res://.godot/imported/SFX_Zipper.wav-15c703047e4b680791a25c81777ad22f.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

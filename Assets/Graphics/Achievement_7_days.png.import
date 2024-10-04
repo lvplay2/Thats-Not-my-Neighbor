@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bd2v3cmvjiuem"
+path="res://.godot/imported/Achievement_7_days.png-8730dd47ab34155cb47453a092123019.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Achievement_7_days.png"
+dest_files=PackedStringArray("res://.godot/imported/Achievement_7_days.png-8730dd47ab34155cb47453a092123019.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

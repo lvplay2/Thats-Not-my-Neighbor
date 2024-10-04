@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cvruddnvuh5sh"
+path="res://.godot/imported/Achievement_final_conspiracy.png-e334ded65472f70d88157e6f6f5fa28f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Achievement_final_conspiracy.png"
+dest_files=PackedStringArray("res://.godot/imported/Achievement_final_conspiracy.png-e334ded65472f70d88157e6f6f5fa28f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

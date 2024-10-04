@@ -1,4 +1,4 @@
-[gd_scene load_steps=216 format=3]
+[gd_scene load_steps=216 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Office.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://cqmxhel8us5yw" path="res://Assets/Graphics/Text_border.png" id="2"]
@@ -2743,7 +2743,6 @@ offset_right = -195.0
 offset_bottom = -23.0
 
 [node name="TextEdit" type="TextEdit" parent="Camera/Question"]
-clip_contents = true
 layout_mode = 0
 offset_right = 500.0
 offset_bottom = 100.0

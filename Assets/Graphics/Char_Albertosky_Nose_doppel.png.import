@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dksf5jyabe6io"
+path="res://.godot/imported/Char_Albertosky_Nose_doppel.png-6e977303985a62aba68b6efe0cbf110f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Albertosky_Nose_doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Albertosky_Nose_doppel.png-6e977303985a62aba68b6efe0cbf110f.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

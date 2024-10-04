@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3]
+[gd_scene load_steps=58 format=4]
 
 [ext_resource type="Script" path="res://Scripts/Record.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://ch0ldsrmub4ft" path="res://Assets/Graphics/Background.png" id="2"]
@@ -21,29 +21,36 @@
 [ext_resource type="Texture2D" uid="uid://cbjanxue7vko1" path="res://Assets/Graphics/Achievement_evil_chester.png" id="19"]
 [ext_resource type="Texture2D" uid="uid://ct0858vhhxq38" path="res://Assets/Graphics/Achievement_haunted.png" id="20"]
 [ext_resource type="Texture2D" uid="uid://c18luarkkghgb" path="res://Assets/Graphics/Achievement_entity.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://by7wjfmh50epm" path="res://Assets/Graphics/Achievement_all.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://bsmqbtsrpaduh" path="res://Assets/Graphics/Folder_button_exit.png" id="23"]
-[ext_resource type="Texture2D" uid="uid://cvxpib0018mvr" path="res://Assets/Graphics/Folder_button_exit_hover.png" id="24"]
-[ext_resource type="Texture2D" uid="uid://buhd2plmahjhe" path="res://Assets/Graphics/Folder_floors.png" id="25"]
-[ext_resource type="Texture2D" uid="uid://uj3p33ne0vb3" path="res://Assets/Graphics/Achievement_s_rank.png" id="26"]
-[ext_resource type="Texture2D" uid="uid://bqe7gl7bwhgf4" path="res://Assets/Graphics/Achievement_kill.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://d4hwhe10d083c" path="res://Assets/Graphics/Achievement_be_kill.png" id="28"]
-[ext_resource type="Texture2D" uid="uid://vwji35bwcbug" path="res://Assets/Graphics/Achievement_100_doppels.png" id="29"]
-[ext_resource type="Texture2D" uid="uid://bckupt7jjgfxb" path="res://Assets/Graphics/Achievement_alive.png" id="30"]
-[ext_resource type="Texture2D" uid="uid://b1ahlcg0uixn" path="res://Assets/Graphics/Achievement_no_folders.png" id="31"]
-[ext_resource type="Texture2D" uid="uid://biseaud3bqpc" path="res://Assets/Graphics/Achievement_chester_quiz.png" id="32"]
-[ext_resource type="Texture2D" uid="uid://dxgfxvcjtsyib" path="res://Assets/Graphics/Achievement_unlikely.png" id="33"]
-[ext_resource type="Texture2D" uid="uid://uh65l2fj46bb" path="res://Assets/Graphics/Achievement_40_days.png" id="34"]
-[ext_resource type="Texture2D" uid="uid://c5xlkduda45yj" path="res://Assets/Graphics/Achievement_f_rank.png" id="35"]
-[ext_resource type="Texture2D" uid="uid://c7kcccfn6ph14" path="res://Assets/Graphics/Achievement_100_runs.png" id="36"]
-[ext_resource type="Texture2D" uid="uid://0e8at3imu40k" path="res://Assets/Graphics/Achievement_catch_doppel.png" id="37"]
-[ext_resource type="Texture2D" uid="uid://cp16rqlni7y4e" path="res://Assets/Graphics/Achievement_42.png" id="38"]
-[ext_resource type="Texture2D" uid="uid://bprltj72wcp5i" path="res://Assets/Graphics/Achievement_peach.png" id="39"]
-[ext_resource type="Texture2D" uid="uid://d0m2w7du4p31o" path="res://Assets/Graphics/Achievement_secret.png" id="40"]
-[ext_resource type="AudioStream" uid="uid://dq2opcunboupj" path="res://Assets/SFX-Music/SFX_Select.wav" id="41"]
-[ext_resource type="AudioStream" uid="uid://dalcaapplmsmw" path="res://Assets/SFX-Music/SFX_Accept.wav" id="42"]
-[ext_resource type="AudioStream" uid="uid://57r147slhgnl" path="res://Assets/SFX-Music/Music_Menu.ogg" id="43"]
-[ext_resource type="AudioStream" uid="uid://dfu8mr0j8a1nf" path="res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav" id="44"]
+[ext_resource type="Texture2D" uid="uid://bd2v3cmvjiuem" path="res://Assets/Graphics/Achievement_7_days.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://jpvgdi2xb36r" path="res://Assets/Graphics/Achievement_15_days.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cybpwwer82ycy" path="res://Assets/Graphics/Achievement_final_dead.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://b5awkuxkkyqpe" path="res://Assets/Graphics/Achievement_final_detained.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bahts47xukuli" path="res://Assets/Graphics/Achievement_final_regular.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://cvruddnvuh5sh" path="res://Assets/Graphics/Achievement_final_conspiracy.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://bxbeopo3r2rle" path="res://Assets/Graphics/Achievement_final_best.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://by7wjfmh50epm" path="res://Assets/Graphics/Achievement_all.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://bsmqbtsrpaduh" path="res://Assets/Graphics/Folder_button_exit.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://cvxpib0018mvr" path="res://Assets/Graphics/Folder_button_exit_hover.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://buhd2plmahjhe" path="res://Assets/Graphics/Folder_floors.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://uj3p33ne0vb3" path="res://Assets/Graphics/Achievement_s_rank.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://bqe7gl7bwhgf4" path="res://Assets/Graphics/Achievement_kill.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://d4hwhe10d083c" path="res://Assets/Graphics/Achievement_be_kill.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://vwji35bwcbug" path="res://Assets/Graphics/Achievement_100_doppels.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://bckupt7jjgfxb" path="res://Assets/Graphics/Achievement_alive.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://b1ahlcg0uixn" path="res://Assets/Graphics/Achievement_no_folders.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://biseaud3bqpc" path="res://Assets/Graphics/Achievement_chester_quiz.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://dxgfxvcjtsyib" path="res://Assets/Graphics/Achievement_unlikely.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://uh65l2fj46bb" path="res://Assets/Graphics/Achievement_40_days.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://c5xlkduda45yj" path="res://Assets/Graphics/Achievement_f_rank.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://c7kcccfn6ph14" path="res://Assets/Graphics/Achievement_100_runs.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://0e8at3imu40k" path="res://Assets/Graphics/Achievement_catch_doppel.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://cp16rqlni7y4e" path="res://Assets/Graphics/Achievement_42.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://bprltj72wcp5i" path="res://Assets/Graphics/Achievement_peach.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://d0m2w7du4p31o" path="res://Assets/Graphics/Achievement_secret.png" id="47"]
+[ext_resource type="AudioStream" uid="uid://dq2opcunboupj" path="res://Assets/SFX-Music/SFX_Select.wav" id="48"]
+[ext_resource type="AudioStream" uid="uid://dalcaapplmsmw" path="res://Assets/SFX-Music/SFX_Accept.wav" id="49"]
+[ext_resource type="AudioStream" uid="uid://57r147slhgnl" path="res://Assets/SFX-Music/Music_Menu.ogg" id="50"]
+[ext_resource type="AudioStream" uid="uid://dfu8mr0j8a1nf" path="res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav" id="51"]
 
 [sub_resource type="StyleBoxEmpty" id="1"]
 script = null
@@ -617,9 +624,156 @@ position = Vector2(570, 307.5)
 scale = Vector2(26.4, 34.8)
 shape = SubResource("4")
 
-[node name="ALL" type="Node2D" parent="Achievements_Folder2"]
+[node name="ENDLESS_7" type="Node2D" parent="Achievements_Folder2"]
 visible = false
 position = Vector2(920, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/ENDLESS_7"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/ENDLESS_7"]
+visible = false
+texture = ExtResource("22")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/ENDLESS_7"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/ENDLESS_7/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="ENDLESS_15" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(1210, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/ENDLESS_15"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/ENDLESS_15"]
+visible = false
+texture = ExtResource("23")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/ENDLESS_15"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/ENDLESS_15/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="FINAL_A" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(1500, 586)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/FINAL_A"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/FINAL_A"]
+visible = false
+texture = ExtResource("24")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/FINAL_A"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/FINAL_A/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="FINAL_B" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(340, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/FINAL_B"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/FINAL_B"]
+visible = false
+texture = ExtResource("25")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/FINAL_B"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/FINAL_B/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="FINAL_C" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(630, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/FINAL_C"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/FINAL_C"]
+visible = false
+texture = ExtResource("26")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/FINAL_C"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/FINAL_C/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="FINAL_D" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(920, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/FINAL_D"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/FINAL_D"]
+visible = false
+texture = ExtResource("27")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/FINAL_D"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/FINAL_D/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="FINAL_E" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(1210, 886)
+scale = Vector2(0.2, 0.2)
+
+[node name="locked" type="Sprite2D" parent="Achievements_Folder2/FINAL_E"]
+texture = ExtResource("14")
+
+[node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/FINAL_E"]
+visible = false
+texture = ExtResource("28")
+
+[node name="Area2D" type="Area2D" parent="Achievements_Folder2/FINAL_E"]
+position = Vector2(-465, -255)
+scale = Vector2(0.8, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Achievements_Folder2/FINAL_E/Area2D"]
+position = Vector2(570, 307.5)
+scale = Vector2(26.4, 34.8)
+shape = SubResource("4")
+
+[node name="ALL" type="Node2D" parent="Achievements_Folder2"]
+visible = false
+position = Vector2(1500, 886)
 scale = Vector2(0.2, 0.2)
 
 [node name="locked" type="Sprite2D" parent="Achievements_Folder2/ALL"]
@@ -627,7 +781,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder2/ALL"]
 visible = false
-texture = ExtResource("22")
+texture = ExtResource("29")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder2/ALL"]
 position = Vector2(-465, -235)
@@ -644,8 +798,8 @@ offset_top = 34.0
 offset_right = 866.0
 offset_bottom = 122.0
 action_mode = 0
-texture_normal = ExtResource("23")
-texture_hover = ExtResource("24")
+texture_normal = ExtResource("30")
+texture_hover = ExtResource("31")
 
 [node name="Panel" type="Panel" parent="Achievements_Folder2"]
 visible = false
@@ -689,7 +843,7 @@ position = Vector2(40, 1060)
 [node name="Folder" type="Sprite2D" parent="Achievements_Folder"]
 position = Vector2(920, 550)
 scale = Vector2(0.9, 0.9)
-texture = ExtResource("25")
+texture = ExtResource("32")
 
 [node name="S_Rank" type="Node2D" parent="Achievements_Folder"]
 position = Vector2(340, 286)
@@ -700,7 +854,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/S_Rank"]
 visible = false
-texture = ExtResource("26")
+texture = ExtResource("33")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/S_Rank"]
 position = Vector2(-465, -250)
@@ -720,7 +874,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/KILL"]
 visible = false
-texture = ExtResource("27")
+texture = ExtResource("34")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/KILL"]
 position = Vector2(-450, -235)
@@ -740,7 +894,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/BE_KILL"]
 visible = false
-texture = ExtResource("28")
+texture = ExtResource("35")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/BE_KILL"]
 position = Vector2(-460, -250)
@@ -760,7 +914,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/CATCH"]
 visible = false
-texture = ExtResource("29")
+texture = ExtResource("36")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/CATCH"]
 position = Vector2(-460, -245)
@@ -780,7 +934,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/ALIVE"]
 visible = false
-texture = ExtResource("30")
+texture = ExtResource("37")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/ALIVE"]
 position = Vector2(-465, -245)
@@ -800,7 +954,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/NO_FOLDER"]
 visible = false
-texture = ExtResource("31")
+texture = ExtResource("38")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/NO_FOLDER"]
 position = Vector2(-450, -235)
@@ -820,7 +974,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/CHESTER"]
 visible = false
-texture = ExtResource("32")
+texture = ExtResource("39")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/CHESTER"]
 position = Vector2(-465, -245)
@@ -840,7 +994,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/UNLIKELY"]
 visible = false
-texture = ExtResource("33")
+texture = ExtResource("40")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/UNLIKELY"]
 position = Vector2(-465, -255)
@@ -860,7 +1014,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/DAYS_40"]
 visible = false
-texture = ExtResource("34")
+texture = ExtResource("41")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/DAYS_40"]
 position = Vector2(-460, -230)
@@ -880,7 +1034,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/F_Rank"]
 visible = false
-texture = ExtResource("35")
+texture = ExtResource("42")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/F_Rank"]
 position = Vector2(-450, -245)
@@ -900,7 +1054,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/DAYS_100"]
 visible = false
-texture = ExtResource("36")
+texture = ExtResource("43")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/DAYS_100"]
 position = Vector2(-445, -255)
@@ -920,7 +1074,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/DOPPEL"]
 visible = false
-texture = ExtResource("37")
+texture = ExtResource("44")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/DOPPEL"]
 position = Vector2(-465, -245)
@@ -940,7 +1094,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/SECRET_42"]
 visible = false
-texture = ExtResource("38")
+texture = ExtResource("45")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/SECRET_42"]
 position = Vector2(-465, -235)
@@ -960,7 +1114,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/PEACH"]
 visible = false
-texture = ExtResource("39")
+texture = ExtResource("46")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/PEACH"]
 position = Vector2(-465, -245)
@@ -980,7 +1134,7 @@ texture = ExtResource("14")
 
 [node name="Unlocked" type="Sprite2D" parent="Achievements_Folder/SECRET"]
 visible = false
-texture = ExtResource("40")
+texture = ExtResource("47")
 
 [node name="Area2D" type="Area2D" parent="Achievements_Folder/SECRET"]
 position = Vector2(-465, -235)
@@ -997,8 +1151,8 @@ offset_top = 34.0
 offset_right = 514.0
 offset_bottom = 122.0
 action_mode = 0
-texture_normal = ExtResource("23")
-texture_hover = ExtResource("24")
+texture_normal = ExtResource("30")
+texture_hover = ExtResource("31")
 
 [node name="Panel" type="Panel" parent="Achievements_Folder"]
 visible = false
@@ -1036,17 +1190,17 @@ text = "Page 1"
 flat = true
 
 [node name="Select" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("41")
+stream = ExtResource("48")
 
 [node name="Accept" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("42")
+stream = ExtResource("49")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("43")
+stream = ExtResource("50")
 pitch_scale = 0.8
 
 [node name="Pick_Up_Folder" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("44")
+stream = ExtResource("51")
 
 [connection signal="mouse_entered" from="Menu" to="." method="_on_menu_mouse_entered"]
 [connection signal="mouse_exited" from="Menu" to="." method="_on_menu_mouse_exited"]
@@ -1071,6 +1225,20 @@ stream = ExtResource("44")
 [connection signal="mouse_exited" from="Achievements_Folder2/GHOST/Area2D" to="." method="_on_area_mouse_exited"]
 [connection signal="mouse_entered" from="Achievements_Folder2/ENTITY/Area2D" to="." method="_on_entity_mouse_entered"]
 [connection signal="mouse_exited" from="Achievements_Folder2/ENTITY/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/ENDLESS_7/Area2D" to="." method="_on_endless_7_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/ENDLESS_7/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/ENDLESS_15/Area2D" to="." method="_on_endless_15_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/ENDLESS_15/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/FINAL_A/Area2D" to="." method="_on_final_a_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/FINAL_A/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/FINAL_B/Area2D" to="." method="_on_final_b_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/FINAL_B/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/FINAL_C/Area2D" to="." method="_on_final_c_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/FINAL_C/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/FINAL_D/Area2D" to="." method="_on_final_d_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/FINAL_D/Area2D" to="." method="_on_area_mouse_exited"]
+[connection signal="mouse_entered" from="Achievements_Folder2/FINAL_E/Area2D" to="." method="_on_final_e_mouse_entered"]
+[connection signal="mouse_exited" from="Achievements_Folder2/FINAL_E/Area2D" to="." method="_on_area_mouse_exited"]
 [connection signal="mouse_entered" from="Achievements_Folder2/ALL/Area2D" to="." method="_on_all_mouse_entered"]
 [connection signal="mouse_exited" from="Achievements_Folder2/ALL/Area2D" to="." method="_on_area_mouse_exited"]
 [connection signal="pressed" from="Achievements_Folder2/Exit" to="." method="_on_exit_pressed"]

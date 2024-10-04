@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cqw7wfcjpknkp"
+path="res://.godot/imported/Char_Arnold_Eyes_doppel.png-cf4ca0956755af951630ab3c5e701651.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Arnold_Eyes_doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Arnold_Eyes_doppel.png-cf4ca0956755af951630ab3c5e701651.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

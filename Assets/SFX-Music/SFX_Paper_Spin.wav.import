@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://qqqppqfxmrsw"
+path="res://.godot/imported/SFX_Paper_Spin.wav-32ee0e5258e7ac21ba7de0de9920fef2.sample"
+
+[deps]
+
+source_file="res://Assets/SFX-Music/SFX_Paper_Spin.wav"
+dest_files=PackedStringArray("res://.godot/imported/SFX_Paper_Spin.wav-32ee0e5258e7ac21ba7de0de9920fef2.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

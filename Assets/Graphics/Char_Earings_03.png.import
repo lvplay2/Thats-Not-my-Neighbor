@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bj0mlmpu7s2wo"
+path="res://.godot/imported/Char_Earings_03.png-f6e001ea12da87a27a1ae5d5dff94593.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Earings_03.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Earings_03.png-f6e001ea12da87a27a1ae5d5dff94593.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

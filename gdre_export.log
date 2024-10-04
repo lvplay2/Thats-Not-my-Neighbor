@@ -1,8 +1,10 @@
-GDRE Tools v0.7.0-prerelease.1
+GDRE Tools v0.4.2-198-gbb0965
 Windows 10.0.19045, NVIDIA GeForce GTX 1650 SUPER, opengl3
-Extracted 2989 files, no errors detected!
+Extracted 3188 files, no errors detected!
 WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
    at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:65)
+Script version 4.3.0 (rev 0x77af6ca) detected
+Saved project config project.godot.
 Did not rewrite import metadata for res://icon.svg
 Saved project config project.godot.
 
@@ -10,11 +12,11 @@ Saved project config project.godot.
 ********************************EXPORT REPORT********************************
 
 Totals:                                 
-Decompiled scripts:                     0
+Decompiled scripts:                     68
 Failed scripts:                         0
-Imported resources for export session:  2989
-Successfully converted:                 1462
-Lossy:                                  72
+Imported resources for export session:  3188
+Successfully converted:                 1523
+Lossy:                                  77
 Rewrote metadata:                       0
 Non-importable conversions:             1
 Not converted:                          0
@@ -39,6 +41,7 @@ res://.godot/imported/SFX_Badge.wav-70d4f38faf2045cdf5845129927cf0dc.sample to r
 res://.godot/imported/SFX_Bite.wav-200550453122c18be0260265e6e52b54.sample to res://Assets/SFX-Music/SFX_Bite.wav
 res://.godot/imported/SFX_Button.wav-30a4aaf106520ef640c5669b09867568.sample to res://Assets/SFX-Music/SFX_Button.wav
 res://.godot/imported/SFX_Calling_Tone.wav-d269b4fc07ff1e409227351968c57ea7.sample to res://Assets/SFX-Music/SFX_Calling_Tone.wav
+res://.godot/imported/SFX_Chains.wav-b3e83d63198c6b63b22f510fe8698551.sample to res://Assets/SFX-Music/SFX_Chains.wav
 res://.godot/imported/SFX_Close_Door.wav-cf946e57e3a86ed2d9b474735e289691.sample to res://Assets/SFX-Music/SFX_Close_Door.wav
 res://.godot/imported/SFX_Countdown.wav-472611fa4647921d1cd20211e571a1ac.sample to res://Assets/SFX-Music/SFX_Countdown.wav
 res://.godot/imported/SFX_Dark_voice_clown.wav-60f9c35eb01e233b61f08e0d3a2d47d7.sample to res://Assets/SFX-Music/SFX_Dark_voice_clown.wav
@@ -66,9 +69,12 @@ res://.godot/imported/SFX_Footsteps.wav-896b9ad8188ffa429caddebdd1d12379.sample 
 res://.godot/imported/SFX_Hang_Down_Phone.wav-a67519332bfcd52802148e524a5210b7.sample to res://Assets/SFX-Music/SFX_Hang_Down_Phone.wav
 res://.godot/imported/SFX_Horn.wav-4688b98bb6c8055224300cb666344cd7.sample to res://Assets/SFX-Music/SFX_Horn.wav
 res://.godot/imported/SFX_Interference.wav-d241dacd16d11fd669602f848a7a7db5.sample to res://Assets/SFX-Music/SFX_Interference.wav
+res://.godot/imported/SFX_Jail.wav-c3fb80717bb1f229db3d48e6b6b9ac05.sample to res://Assets/SFX-Music/SFX_Jail.wav
 res://.godot/imported/SFX_Laugh.wav-21cb386619e20afa599e8c7745dba81b.sample to res://Assets/SFX-Music/SFX_Laugh.wav
+res://.godot/imported/SFX_Light_Switch.wav-2a6dd579265855356997fe1d6a5d4c7d.sample to res://Assets/SFX-Music/SFX_Light_Switch.wav
 res://.godot/imported/SFX_Magic_Dust.wav-b92aff7e3a9b218755a2fec81dd9eabb.sample to res://Assets/SFX-Music/SFX_Magic_Dust.wav
 res://.godot/imported/SFX_Open_Door.wav-f74f5b3ba86bd51c7312e8992b547938.sample to res://Assets/SFX-Music/SFX_Open_Door.wav
+res://.godot/imported/SFX_Paper_Spin.wav-32ee0e5258e7ac21ba7de0de9920fef2.sample to res://Assets/SFX-Music/SFX_Paper_Spin.wav
 res://.godot/imported/SFX_Phone_Ring.ogg-86936e39709ad13a20074f888c3a5f29.oggvorbisstr to res://Assets/SFX-Music/SFX_Phone_Ring.ogg
 res://.godot/imported/SFX_Pick_Up_Folder.wav-66a9d029f879c56ad8f79d8a2cbe9bdc.sample to res://Assets/SFX-Music/SFX_Pick_Up_Folder.wav
 res://.godot/imported/SFX_Pick_Up_Phone.wav-35a34f3138ba64d2f9f81b4094689990.sample to res://Assets/SFX-Music/SFX_Pick_Up_Phone.wav
@@ -94,6 +100,7 @@ res://.godot/imported/SFX_Trypophobia.wav-19a83358f28086f371f3393c6827d72e.sampl
 res://.godot/imported/SFX_Window.wav-fe191f3b35cf8ea85f967a7a932efd22.sample to res://Assets/SFX-Music/SFX_Window.wav
 res://.godot/imported/SFX_Window_Break.wav-bd7d959cbb2d00265fb901fed315ae0d.sample to res://Assets/SFX-Music/SFX_Window_Break.wav
 res://.godot/imported/SFX_Write.wav-c111c33270466e5bd33002efb090153d.sample to res://Assets/SFX-Music/SFX_Write.wav
+res://.godot/imported/SFX_Zipper.wav-15c703047e4b680791a25c81777ad22f.sample to res://Assets/SFX-Music/SFX_Zipper.wav
 res://.godot/imported/SFX_voice_clown.wav-feedd5de2d9e4953b9c8d117955591f9.sample to res://Assets/SFX-Music/SFX_voice_clown.wav
 res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
 ------
@@ -105,7 +112,7 @@ res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.a
 
 ------------------------------------------------------------------------------------
 
-Use Godot editor version 4.2.0 to edit the project.
+Use Godot editor version 4.3.0 to edit the project.
 Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
 If you find that you have many non-import errors upon opening the project 
 (i.e. scripts or shaders have many errors), use the original game's binary as the export template.

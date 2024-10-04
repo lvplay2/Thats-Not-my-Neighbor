@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://32w3cedheatl"
+path="res://.godot/imported/Char_Mclooy_Nose_Doppel.png-dcbc6d3748775f80aae97cfec5f189c9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/Graphics/Char_Mclooy_Nose_Doppel.png"
+dest_files=PackedStringArray("res://.godot/imported/Char_Mclooy_Nose_Doppel.png-dcbc6d3748775f80aae97cfec5f189c9.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

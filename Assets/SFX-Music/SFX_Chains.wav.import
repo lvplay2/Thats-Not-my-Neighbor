@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dhv5xknp1vdqm"
+path="res://.godot/imported/SFX_Chains.wav-b3e83d63198c6b63b22f510fe8698551.sample"
+
+[deps]
+
+source_file="res://Assets/SFX-Music/SFX_Chains.wav"
+dest_files=PackedStringArray("res://.godot/imported/SFX_Chains.wav-b3e83d63198c6b63b22f510fe8698551.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0
