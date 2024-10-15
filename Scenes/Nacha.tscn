@@ -327,7 +327,7 @@ position = Vector2(-48, 113.333)
 texture = ExtResource("17")
 
 [node name="Eyebrows" type="Sprite2D" parent="Head"]
-position = Vector2(-48, 1.33333)
+position = Vector2(-49.3333, 10.6667)
 texture = ExtResource("18")
 
 [node name="Scar" type="Sprite2D" parent="Head"]
