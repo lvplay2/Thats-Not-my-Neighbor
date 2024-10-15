@@ -27,7 +27,7 @@ const RECORD_TEXT_SPANISH = "Registro"
 const MENU_TEXT_SPANISH = "Menú"
 const QUIT_TEXT_SPANISH = "Salir"
 const DAY_TEXT_ENGLISH = "Day: "
-const TITLE_TEXT_ENGLISH = "Lastest News"
+const TITLE_TEXT_ENGLISH = "Latest News"
 const INFO_01_ENGLISH = "The Doppelgangers keep coming.\n\nBut the D.D.D. is\nhere to stop them\nonce and for all."
 
 
